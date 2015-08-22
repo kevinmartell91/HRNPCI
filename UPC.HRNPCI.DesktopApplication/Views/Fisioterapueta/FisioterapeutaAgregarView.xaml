@@ -1,0 +1,121 @@
+﻿<Window x:Class="UPC.HRNPCI.DesktopApplication.Views.Fisioterapueta.FisioterapeutaAgregarView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:UPC.HRNPCI.DesktopApplication.ViewModels.Fisioterapueta"
+        xmlns:validacion="clr-namespace:UPC.HRNPCI.DesktopApplication.ViewModels"
+        Title="Agregar nuevo fisioterapeuta" Height="500" Width="400" WindowStyle="ToolWindow"
+             >
+
+    <Window.Resources>
+       
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="..\ValidationStyle.xaml"/>
+                <!--<ResourceDictionary Source="" />-->
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="73*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="44*"/>
+            <ColumnDefinition Width="79*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="44*"/>
+        </Grid.RowDefinitions>
+        
+        <Rectangle Fill="#FFF4F4F5" Height="160" Margin="10,12,10,0" Grid.RowSpan="4" Stroke="Black" VerticalAlignment="Top"/>
+        <Image Source="{Binding UrlFoto}" Stretch="Fill" Height="145" Margin="17,20,17,0" Grid.RowSpan="4" VerticalAlignment="Top" MouseDown="Image_MouseDown_1"/>
+        <Button Content="Cargar foto" Margin="10,7,10,0" Grid.Row="4" VerticalAlignment="Top" Height="20"
+        	Command="{Binding ObtenerUrlFotoCommand}" CommandParameter="{Binding ElementName=txtSexo}" Click="Button_Click_2"/>
+
+
+        <TextBox Grid.Column="3" Height="23" Margin="7,10,8,0" TextWrapping="Wrap" VerticalAlignment="Top" 
+                 Style="{StaticResource valStyle}" Name="txtNombre" Text="{Binding Nombre, ValidatesOnDataErrors=True, NotifyOnValidationError=True, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBlock Margin="10,11,8,0" TextWrapping="Wrap" Text="Nombre :" VerticalAlignment="Top" Grid.Column="2" Height="16"/>
+
+        <TextBox Grid.Column="3" Height="23" Margin="7,10,8,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top"
+                 Style="{StaticResource valStyle}" Text="{Binding Apellidos, ValidatesOnDataErrors=True, NotifyOnValidationError=True, UpdateSourceTrigger=PropertyChanged}" Name="txtApellidos"/>
+        <TextBlock Margin="9,11,2,0" Grid.Row="1" TextWrapping="Wrap" Text="Apellidos :" VerticalAlignment="Top" Grid.Column="2" Height="16"/>
+        <TextBox  Grid.Column="3" Margin="7,10,106,0" Grid.Row="2" Height="22" VerticalAlignment="Top"  
+        	Style="{StaticResource valStyle}" Text="{Binding Sexo, NotifyOnValidationError=True, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" x:Name="txtSexo"/>
+
+
+        <ComboBox ItemsSource="{Binding lstGeneros}" SelectedIndex="{Binding iGeneroSeleccionado}" Grid.Column="3" Margin="7,10,8,0" Grid.Row="2" VerticalAlignment="Top" Height="22"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Sexo :" VerticalAlignment="Top" Grid.Column="2" Height="16" Width="85" Grid.ColumnSpan="2"/>
+
+        <TextBox MaxLength="12" Grid.Column="3" Height="23" Margin="7,10,8,0" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top"
+                 Style="{StaticResource valStyle}" Text="{Binding Celular, ValidatesOnDataErrors=True, NotifyOnValidationError=True, UpdateSourceTrigger=PropertyChanged}" Name="txtCelular"/>
+        <TextBlock Margin="10,10,2,17" Grid.Row="3" TextWrapping="Wrap" Text="Celular :" Grid.Column="2"/>
+
+        <TextBox  MaxLength="12" Grid.Column="3" Height="23" Margin="7,10,8,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top"
+                 Style="{StaticResource valStyle}" Text="{Binding Telefono, ValidatesOnDataErrors=True, NotifyOnValidationError=True, UpdateSourceTrigger=PropertyChanged}" Name="txtTelefono" />
+        <TextBlock Margin="10,11,2,0" Grid.Row="4" TextWrapping="Wrap" Text="Teléfono :" VerticalAlignment="Top" Grid.Column="2" Height="16"/>
+
+        <TextBox Grid.ColumnSpan="2" Grid.Column="2" Height="23" Margin="3,10,10,0" Grid.Row="5" TextWrapping="Wrap" VerticalAlignment="Top"
+                 Style="{StaticResource valStyle}" Text="{Binding CentLaboral, ValidatesOnDataErrors=True, NotifyOnValidationError=True, UpdateSourceTrigger=PropertyChanged}" Name="txtCentLaboral"/>
+        <TextBlock Margin="31,11,27,0" Grid.Row="5" TextWrapping="Wrap" Text="Centro laboral :" VerticalAlignment="Top" Height="16"/>
+
+        <TextBox Grid.ColumnSpan="2" Grid.Column="2" Height="23" Margin="3,10,10,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top"
+                 Style="{StaticResource valStyle}" Text="{Binding Email, ValidatesOnDataErrors=True, NotifyOnValidationError=True, UpdateSourceTrigger=PropertyChanged}" Name="txtEmail"/>
+        <TextBlock Margin="31,11,37,0" Grid.Row="6" TextWrapping="Wrap" Text="Email :" VerticalAlignment="Top" Height="16"/>
+
+        <TextBox Grid.ColumnSpan="2" Grid.Column="2" Height="23" Margin="3,10,10,0" Grid.Row="7" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False"
+                 Text="{Binding Rol, Mode=OneWay}" Name="txtRol" />
+        <TextBlock Margin="29,11,10,0" Grid.Row="7" TextWrapping="Wrap" Text="Rol :" VerticalAlignment="Top" Height="16"/>
+
+        <TextBox MaxLength="6" Grid.ColumnSpan="2" Grid.Column="2" Height="23" Margin="3,10,10,0" Grid.Row="8" TextWrapping="Wrap" VerticalAlignment="Top"
+                 Style="{StaticResource valStyle}" Text="{Binding NCTMP, ValidatesOnDataErrors=True, NotifyOnValidationError=True, UpdateSourceTrigger=PropertyChanged}" Name="txtNCTMP"/>
+        <TextBlock Margin="31,11,10,0" Grid.Row="8" TextWrapping="Wrap" Text="N° CTMP :" VerticalAlignment="Top" Height="16"/>
+
+        <TextBox MaxLength="6" Grid.ColumnSpan="2" Grid.Column="2" Height="23" Margin="3,10,10,0" Grid.Row="9" TextWrapping="Wrap" VerticalAlignment="Top"
+                  Style="{StaticResource valStyle}" Text="{Binding NNDTA, ValidatesOnDataErrors=True, NotifyOnValidationError=True, UpdateSourceTrigger=PropertyChanged}" Name="txtNNDTA"/>
+        <TextBlock Margin="31,11,10,0" Grid.Row="9" TextWrapping="Wrap" Text="N° NDTA :" VerticalAlignment="Top" Height="16"/>
+
+        <Button Content="Grabar" Grid.Column="2" HorizontalAlignment="Left" Margin="65,10,0,0" Grid.Row="10" VerticalAlignment="Top" Width="75" Height="20"
+                Command="{Binding AgregarCommand}" CommandParameter="{Binding ElementName=pbContrasena}" Grid.ColumnSpan="2" Click="Button_Click_3">
+
+
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="IsEnabled" Value="False"/>
+                    <Style.Triggers>
+                        
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding ElementName=txtNombre, Path=(Validation.HasError)}" Value="false"/>
+                                <Condition Binding="{Binding ElementName=txtApellidos, Path=(Validation.HasError)}" Value="false"/>
+                                <Condition Binding="{Binding ElementName=txtSexo, Path=(Validation.HasError)}" Value="false"/>
+                                <Condition Binding="{Binding ElementName=txtCelular, Path=(Validation.HasError)}" Value="false"/>
+                                <Condition Binding="{Binding ElementName=txtTelefono, Path=(Validation.HasError)}" Value="false"/>
+                                <Condition Binding="{Binding ElementName=txtCentLaboral, Path=(Validation.HasError)}" Value="false"/>
+                                <Condition Binding="{Binding ElementName=txtEmail, Path=(Validation.HasError)}" Value="false"/>
+                                <Condition Binding="{Binding ElementName=txtNCTMP, Path=(Validation.HasError)}" Value="false"/>
+                                <Condition Binding="{Binding ElementName=txtNNDTA, Path=(Validation.HasError)}" Value="false"/>
+                                <!--<Condition Binding="{Binding ElementName=txtDescription, Path=(Validation.HasError)}" Value="false"/>-->
+                            </MultiDataTrigger.Conditions>
+                            <Setter Property="IsEnabled" Value="True"/>
+                        </MultiDataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Button Content="Cancelar" Grid.Column="3" HorizontalAlignment="Left" Margin="73,10,0,0" Grid.Row="10" VerticalAlignment="Top" Width="75" Height="20" Click="Button_Click_1"/>
+       
+
+    </Grid>
+</Window>
+

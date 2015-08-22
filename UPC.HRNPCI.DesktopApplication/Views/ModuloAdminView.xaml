@@ -1,0 +1,65 @@
+﻿<Window x:Class="UPC.HRNPCI.DesktopApplication.Views.ModuloAdminView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:v1="clr-namespace:UPC.HRNPCI.DesktopApplication.Views.Fisioterapueta"
+        xmlns:v2="clr-namespace:UPC.HRNPCI.DesktopApplication.Views.Pacinete"
+        xmlns:v3="clr-namespace:UPC.HRNPCI.DesktopApplication.Views.AsociarPacienteFisioterapeuta"
+        xmlns:vm1="clr-namespace:UPC.HRNPCI.DesktopApplication.ViewModels.Fisioterapueta"
+        xmlns:vm2="clr-namespace:UPC.HRNPCI.DesktopApplication.ViewModels.Pacinete"
+        xmlns:vm3="clr-namespace:UPC.HRNPCI.DesktopApplication.ViewModels.AsociarPacienteFisioterapeuta"
+        Title="HRNPCI" Height="555.977" Width="1200" FontWeight="Bold" FontFamily="Segoe UI Light" FontSize="18" Background="White" WindowStyle="ThreeDBorderWindow"
+        >
+    
+    <Window.Resources>
+        <DataTemplate x:Key="ListarFisioterapeutas">
+            <v1:ListarFisioterapeutasView/>
+        </DataTemplate>
+        <DataTemplate  x:Key="ListarPacientes">
+            <v2:ListarPacientesView/>
+        </DataTemplate>
+        <DataTemplate x:Key="ListaPacientesAsociacion">
+            <v3:ListaPacientesAsociacionView/>
+        </DataTemplate>
+    </Window.Resources>
+
+    <Grid Width="Auto" Height="Auto"  Margin="0,0,0,1" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="44"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="63*"/>
+            <ColumnDefinition Width="533*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <!--Menu -->
+        <!-- Rol del que ingreso al sistema -->
+        <!--Menu -->
+        <Menu Height="31" VerticalAlignment="Top" FontFamily="Segoe UI Light" Margin="0,0,0,0" Grid.ColumnSpan="2">
+            <MenuItem Header="Inicio" FontSize="18" Height="26" Width="50">
+                <!--Command="{Binding CerrarSesionCommand}"-->
+                <MenuItem Header="Cerrar sessión" Checked="MenuItem_Checked_1" Click="MenuItem_Click_1" FontSize="16" />
+            </MenuItem>
+        </Menu>
+
+
+        <TextBlock HorizontalAlignment="Right" Margin="0,0,7,3" VerticalAlignment="Center" Text="{Binding RolLogueado}" TextWrapping="Wrap" Height="28" Width="119" FontSize="18" Grid.Column="1" FontFamily="Segoe UI Semibold"/>
+
+
+        <!--Tabs -->
+        <TabControl Height="458" Margin="10,10,10,-423" Grid.Row="1" VerticalAlignment="Top" FontWeight="Normal" FontFamily="Segoe UI Light" FontSize="16" Grid.ColumnSpan="2">
+            <TabItem DataContext="{Binding Children[0]}" x:Name="Tab1" Header="Fisioterapeutas" FontFamily="Segoe UI Light">
+                <ContentControl Content="{Binding}" ContentTemplate="{StaticResource ListarFisioterapeutas}" FontFamily="Segoe UI Light"  />
+            </TabItem>
+            <TabItem DataContext="{Binding Children[1]}" Header="Pacientes">
+                <ContentControl Content="{Binding}" ContentTemplate="{StaticResource ListarPacientes}"/>
+            </TabItem>
+            <TabItem DataContext="{Binding Children[2]}" Header="Asociar pacientes a fisioterapeutas">
+                <ContentControl Content="{Binding}" ContentTemplate="{StaticResource ListaPacientesAsociacion}"/>
+            </TabItem>
+        </TabControl>
+
+
+    </Grid>
+</Window>

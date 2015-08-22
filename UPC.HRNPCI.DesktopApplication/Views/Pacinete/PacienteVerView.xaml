@@ -1,0 +1,99 @@
+﻿<Window x:Class="UPC.HRNPCI.DesktopApplication.Views.Pacinete.PacienteVerView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+       Title="Visualizar datos de paciente" Height="549.45" Width="715.384" WindowStyle="ToolWindow" FontFamily="Segoe UI Light" Background="White">
+     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="351*"/>
+            <ColumnDefinition Width="74*"/>
+            <ColumnDefinition Width="282*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+        </Grid.RowDefinitions>
+        <GroupBox Header="Datos del Paciente" Margin="158,10,15,21" Grid.ColumnSpan="3" Grid.RowSpan="5" Background="#FFFBFBFB"/>
+        <GroupBox Header="Datos del Apoderado" Margin="10,10,10,26" Grid.RowSpan="7" Grid.Row="5" Background="#FFFBFBFB"/>
+        <GroupBox Header="Diagnóstico médico ( PCI ) " Margin="10,10,15,28" Grid.RowSpan="4" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" Background="#FFFBFBFB"/>
+        <Rectangle Fill="#FFEAEAEA" Margin="10,12,215,28" Grid.RowSpan="5" Stroke="#FFFBFBFB"/>
+        <Image Source="{Binding strUrlFotoPaciente}" Margin="17,20,222,35" Grid.RowSpan="5" Stretch="Fill" OpacityMask="Black"/>
+        <GroupBox Header="Médico Neurólogo de referencia" Margin="10,17,15,26" Grid.RowSpan="4" Grid.Row="8" Grid.Column="1" Grid.ColumnSpan="2" Background="#FFFBFBFB"/>
+        
+         <TextBox Height="23" Margin="263,9,26,0" TextWrapping="Wrap" VerticalAlignment="Top"
+        	Text="{Binding strNombres}" IsEnabled="False" Grid.ColumnSpan="2" Grid.Row="1"/>
+        <TextBlock Margin="178,10,103,0" TextWrapping="Wrap" Text="Nombres :" VerticalAlignment="Top" Height="16" Grid.Row="1"/>
+        
+         <TextBox Height="23" Margin="263,9,26,0" TextWrapping="Wrap" VerticalAlignment="Top"
+        	Text="{Binding strApellidos}" IsEnabled="False" Grid.ColumnSpan="2" Grid.Row="2"/>
+        <TextBlock Margin="178,10,103,0" TextWrapping="Wrap" Text="Apellidos :" VerticalAlignment="Top" Height="16" Grid.Row="2"/>
+
+        <TextBlock Margin="178,10,103,0" TextWrapping="Wrap" Text="Género :" VerticalAlignment="Top" Height="16" Grid.Row="3"/>
+        <TextBox Height="23" Margin="263,10,26,0" TextWrapping="Wrap" VerticalAlignment="Top"
+        	Text="{Binding chrGenero}" IsEnabled="False" Grid.ColumnSpan="2" Grid.Row="3" />
+         
+        <TextBox Height="23" Margin="100,9,32,0" TextWrapping="Wrap" VerticalAlignment="Top"
+        	Text="{Binding strDNI}" IsEnabled="False" Grid.Column="2" Grid.Row="1"/>
+        <TextBlock Margin="15,10,190,0" TextWrapping="Wrap" Text="DNI :" VerticalAlignment="Top" Height="16" Grid.Column="2" Grid.Row="1"/>
+
+        <TextBlock Margin="13,10,154,0" TextWrapping="Wrap" Text="Fecha Nacimiento :" VerticalAlignment="Top" Height="16" Grid.Column="2" Grid.Row="2" RenderTransformOrigin="0.619,0.586"/>
+        <TextBox Height="23" Margin="135,10,35,0" TextWrapping="Wrap" VerticalAlignment="Top"
+        	Text="{Binding strFecNacimiento}" IsEnabled="False" Grid.Column="2" Grid.Row="2"/>
+         
+         <TextBox Height="23" Margin="135,9,28,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top"
+        	Text="{Binding strNombresApod}" IsEnabled="False" />
+        <TextBlock Margin="34,10,222,0" Grid.Row="6" TextWrapping="Wrap" Text="Nombres Apderado :" VerticalAlignment="Top" Height="16"/>
+        
+         <TextBox Height="23" Margin="135,9,28,0" Grid.Row="7" TextWrapping="Wrap" VerticalAlignment="Top"
+        	Text="{Binding strApellidosApod}"  IsEnabled="False"/>
+        <TextBlock Margin="34,10,222,0" Grid.Row="7" TextWrapping="Wrap" Text="Apellidos :" VerticalAlignment="Top" Height="16"/>
+        
+         <TextBox Height="23" Margin="135,9,28,0" Grid.Row="8" TextWrapping="Wrap" VerticalAlignment="Top"
+        	Text="{Binding strParentescoApod}"  IsEnabled="False"/>
+        <TextBlock Margin="34,10,222,0" Grid.Row="8" TextWrapping="Wrap" Text="Parentesco :" VerticalAlignment="Top" Height="16"/>
+        
+         <TextBox Height="23" Margin="135,9,28,0" Grid.Row="9" TextWrapping="Wrap" VerticalAlignment="Top"
+        	Text="{Binding strCelularApod}" IsEnabled="False"/>
+        <TextBlock Margin="34,10,222,0" Grid.Row="9" TextWrapping="Wrap" Text="Celular :" VerticalAlignment="Top" Height="16"/>
+        
+         <TextBox Height="23" Margin="135,9,28,0" Grid.Row="10" TextWrapping="Wrap" VerticalAlignment="Top"
+        	Text="{Binding strTeléfonoApod}" IsEnabled="False" />
+        <TextBlock Margin="34,10,222,0" Grid.Row="10" TextWrapping="Wrap" Text="Teléfono :" VerticalAlignment="Top" Height="16"/>
+
+        <TextBox Height="23" Margin="27,8,37,0" TextWrapping="Wrap" VerticalAlignment="Top"
+        	Text="{Binding iNivel}" IsEnabled="False" Grid.Column="2" Grid.Row="6"/>
+        <TextBlock Margin="29,9,274,0" TextWrapping="Wrap" Text="Nivel :" VerticalAlignment="Top" Height="16" Grid.Column="1" Grid.Row="6" Grid.ColumnSpan="2"/>
+
+        <TextBox Height="23" Margin="126,8,37,0" TextWrapping="Wrap" VerticalAlignment="Top"
+        	Text="{Binding strEdadCronologica}" IsEnabled="False" Grid.Column="2" Grid.Row="3"/>
+        <TextBlock Margin="13,10,167,0" TextWrapping="Wrap" Text="Edad cronológica :" VerticalAlignment="Top" Height="16" Grid.Column="2" Grid.Row="3"/>
+        
+         <TextBox Height="23" Margin="27,10,37,0" TextWrapping="Wrap" VerticalAlignment="Top"
+        	Text="{Binding iPorcentajeNivel}" IsEnabled="False" Grid.Column="2" Grid.Row="7"/>
+        <TextBlock Margin="33,12,263,0" TextWrapping="Wrap" Text="% Nivel :" VerticalAlignment="Top" Height="16" Grid.Column="1" Grid.Row="7" Grid.ColumnSpan="2"/>
+        
+         <TextBox Height="23" Margin="66,9,28,0" Grid.Row="9" TextWrapping="Wrap" VerticalAlignment="Top"
+        	Text="{Binding strNomApeMedNeuroReferencia}" IsEnabled="False" Grid.Column="2"/>
+        <TextBlock Margin="24,10,219,0" Grid.Row="9" TextWrapping="Wrap" Text="Nombre y Apellido :" VerticalAlignment="Top" Height="16" Grid.ColumnSpan="2" Grid.Column="1"/>
+        
+         <TextBox Height="23" Margin="66,8,28,0" Grid.Row="10" TextWrapping="Wrap" VerticalAlignment="Top"
+        	Text="{Binding strCelMedNeuroReferencia}" IsEnabled="False" Grid.Column="2" />
+        <TextBlock Margin="26,9,217,0" Grid.Row="10" TextWrapping="Wrap" Text="Celular :" VerticalAlignment="Top" Height="16" Grid.ColumnSpan="2" Grid.Column="1"/>
+        
+        <Button Content="Cancelar" Margin="0,30,37,0" Grid.Row="11" VerticalAlignment="Top" Height="20" Grid.Column="2" Grid.RowSpan="2" HorizontalAlignment="Right" Width="75" Click="Button_Click_1"/>
+
+
+
+    </Grid>
+    
+</Window>

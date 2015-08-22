@@ -1,0 +1,94 @@
+﻿<UserControl x:Class="UPC.HRNPCI.DesktopApplication.Views.testUserControlView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:custns="clr-namespace:UPC.HRNPCI.DesktopApplication.ViewModels"
+             
+            xmlns:converters="clr-namespace:UPC.HRNPCI.DesktopApplication.Converters"
+             
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="800">
+
+
+    <UserControl.Resources>
+        <custns:ModuloAdminViewModel x:Key="test"/>
+        <converters:IsBiggerThanConverter x:Key="IsBiggerThanConverter" />
+    </UserControl.Resources>
+
+    <Grid >
+        <StackPanel Orientation="Vertical"
+                    Margin="20"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Top">
+            <Button Content="Refresh"
+                    Style="{StaticResource ButtonStyle1}"
+                    HorizontalAlignment="Left"
+                    Command="{Binding RefreshDateCommand}" />
+            <TextBlock Text="{Binding MyDateTime}" />
+            <Button Content="Randomize Grid Data"
+                    HorizontalAlignment="Left"
+                    Margin="0 20 0 0"
+                    Command="{Binding RefreshPersonsCommand}" />
+            <DataGrid ItemsSource="{Binding PersonsCollection}"
+                      AutoGenerateColumns="False"
+                      CanUserAddRows="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                        Header="Name (string)" />
+                    <DataGridTextColumn Binding="{Binding Age}"
+                                        IsReadOnly="True"
+                                        Header="Age (int)" />
+                    <DataGridTemplateColumn Header="Age &gt; 16"
+                                            IsReadOnly="True">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <Image Source="{StaticResource SampleSmileyIcon}"
+                                           Width="16"
+                                           Height="16">
+                                        <Image.Style>
+                                            <Style TargetType="{x:Type Image}">
+                                                <Setter Property="Visibility"
+                                                        Value="Collapsed" />
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding Age, ConverterParameter=18, Converter={StaticResource IsBiggerThanConverter}}"
+                                                                 Value="True">
+                                                        <Setter Property="Visibility"
+                                                                Value="Visible" />
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Image.Style>
+                                    </Image>
+                                </Grid>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridCheckBoxColumn Binding="{Binding IsMarried, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                            Header="IsMarried (bool)" />
+                    <DataGridTextColumn Binding="{Binding Height, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                        Header="Height (double)" />
+                    <DataGridTextColumn Binding="{Binding BirthDate}"
+                                        IsReadOnly="True"
+                                        Header="BirthDate (DateTime)" />
+                    <DataGridTemplateColumn Header="FavoriteColor (SolidColorBrush)"
+                                            IsReadOnly="True">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Grid Background="{Binding FavoriteColor}" />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <Button Content="can execute command?"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Left"
+                    Margin="0 20 0 0"
+                    Command="{Binding DoNothingCommand}" />
+        </StackPanel>
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,6 @@
+E:\UPC\Tesis\Software demos\Primary demos\HRNPCI_v1.3\UPC.HRNPCI.Model\bin\Debug\UPC.HRNPCI.Model.dll.config
+E:\UPC\Tesis\Software demos\Primary demos\HRNPCI_v1.3\UPC.HRNPCI.Model\bin\Debug\UPC.HRNPCI.Model.dll
+E:\UPC\Tesis\Software demos\Primary demos\HRNPCI_v1.3\UPC.HRNPCI.Model\bin\Debug\UPC.HRNPCI.Model.pdb
+E:\UPC\Tesis\Software demos\Primary demos\HRNPCI_v1.3\UPC.HRNPCI.Model\obj\Debug\UPC.HRNPCI.Model.dll
+E:\UPC\Tesis\Software demos\Primary demos\HRNPCI_v1.3\UPC.HRNPCI.Model\obj\Debug\UPC.HRNPCI.Model.pdb
+E:\UPC\Tesis\Software demos\Primary demos\HRNPCI_v1.3\UPC.HRNPCI.Model\obj\Debug\UPC.HRNPCI.Model.csprojResolveAssemblyReference.cache

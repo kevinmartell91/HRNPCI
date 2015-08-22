@@ -1,0 +1,133 @@
+﻿<Window x:Class="UPC.HRNPCI.DesktopApplication.Views.Pacinete.PacienteActualizarView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+       Title="Actulizar datos paciente" Height="549.45" Width="715.384">
+
+    <Window.Resources>
+        <ResourceDictionary >
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="..\ValidationStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="351*"/>
+            <ColumnDefinition Width="74*"/>
+            <ColumnDefinition Width="282*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+        </Grid.RowDefinitions>
+        <GroupBox Header="Datos del Paciente" Margin="158,10,15,21" Grid.ColumnSpan="3" Grid.RowSpan="5"/>
+        <GroupBox Header="Datos del Apoderado" Margin="10,10,10,26" Grid.RowSpan="7" Grid.Row="5"/>
+        <GroupBox Header="Diagnóstico médico ( PCI ) " Margin="10,10,15,28" Grid.RowSpan="4" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Rectangle Fill="#FFF4F4F5" Margin="10,12,215,28" Grid.RowSpan="5" Stroke="Black"/>
+        <Image Source="{Binding strUrlFotoPaciente}" Margin="17,20,222,35" Grid.RowSpan="5"/>
+        <!--<Button Content="Cargar foto" Margin="10,19,215,0" Grid.Row="4" VerticalAlignment="Top" Height="20"
+        	Command="{Binding faltaImplemetasr}" CommandParameter="{Binding ElementName=pbContrasena}" />-->
+        <GroupBox Header="Médico Neurólogo de referencia" Margin="10,17,15,26" Grid.RowSpan="4" Grid.Row="8" Grid.Column="1" Grid.ColumnSpan="2"/>
+        
+        <TextBox Height="23" Margin="263,9,26,0" TextWrapping="Wrap" VerticalAlignment="Top"
+        	Text="{Binding strNombres}" IsEnabled="False" Grid.ColumnSpan="2" Grid.Row="1"/>
+        <TextBlock Margin="178,10,103,0" TextWrapping="Wrap" Text="Nombres :" VerticalAlignment="Top" Height="16" Grid.Row="1"/>
+        
+        <TextBox Height="23" Margin="263,9,26,0" TextWrapping="Wrap" VerticalAlignment="Top"
+        	Text="{Binding strApellidos}" IsEnabled="False" Grid.ColumnSpan="2" Grid.Row="2"/>
+        <TextBlock Margin="178,10,103,0" TextWrapping="Wrap" Text="Apellidos :" VerticalAlignment="Top" Height="16" Grid.Row="2"/>
+        
+        <TextBox  IsEnabled="False" HorizontalAlignment="Left" Margin="263,10,0,0" Grid.Row="3" VerticalAlignment="Top" Height="23" Grid.ColumnSpan="2"
+                  Text="{Binding chrGenero}" Width="136"/>
+        <TextBlock Margin="178,10,103,0" TextWrapping="Wrap" Text="Género :" VerticalAlignment="Top" Height="16" Grid.Row="3"/>
+        
+        <TextBox Height="23" Margin="100,9,32,0" TextWrapping="Wrap" VerticalAlignment="Top"
+        	Text="{Binding strDNI}" IsEnabled="False" Grid.Column="2" Grid.Row="1"/>
+        <TextBlock Margin="15,10,190,0" TextWrapping="Wrap" Text="DNI :" VerticalAlignment="Top" Height="16" Grid.Column="2" Grid.Row="1"/>
+
+        <TextBox Grid.Column="2" Margin="128,10,32,0" Grid.Row="2" VerticalAlignment="Top" Height="23" 
+                    Text="{Binding strFecNacimiento}" IsEnabled="False"/>
+        <TextBlock Margin="15,10,152,0" TextWrapping="Wrap" Text="Fecha Nacimiento :" VerticalAlignment="Top" Height="16" Grid.Column="2" Grid.Row="2"/>
+
+        <TextBox Name="txtNombresApod" Height="23" Margin="135,9,28,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top"
+        	Style="{StaticResource valStyle}" Text="{Binding strNombresApod, ValidatesOnDataErrors=True, NotifyOnValidationError=True, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBlock Margin="34,10,222,0" Grid.Row="6" TextWrapping="Wrap" Text="Nombres Apderado :" VerticalAlignment="Top" Height="16"/>
+
+        <TextBox Name="txtApellidosApod" Height="23" Margin="135,9,28,0" Grid.Row="7" TextWrapping="Wrap" VerticalAlignment="Top"
+        	Style="{StaticResource valStyle}" Text="{Binding strApellidosApod, ValidatesOnDataErrors=True, NotifyOnValidationError=True, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBlock Margin="34,10,222,0" Grid.Row="7" TextWrapping="Wrap" Text="Apellidos :" VerticalAlignment="Top" Height="16"/>
+
+        <TextBox Name="txtParentescoApod" Height="23" Margin="135,9,28,0" Grid.Row="8" TextWrapping="Wrap" VerticalAlignment="Top"
+        	Style="{StaticResource valStyle}" Text="{Binding strParentescoApod, ValidatesOnDataErrors=True, NotifyOnValidationError=True, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBlock Margin="34,10,222,0" Grid.Row="8" TextWrapping="Wrap" Text="Parentesco :" VerticalAlignment="Top" Height="16"/>
+
+        <TextBox Name="strCelularApod"  MaxLength="12" Height="23" Margin="135,9,28,0" Grid.Row="9" TextWrapping="Wrap" VerticalAlignment="Top"
+        	Style="{StaticResource valStyle}" Text="{Binding strCelularApod, ValidatesOnDataErrors=True, NotifyOnValidationError=True, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBlock Margin="34,10,222,0" Grid.Row="9" TextWrapping="Wrap" Text="Celular :" VerticalAlignment="Top" Height="16"/>
+
+        <TextBox Name="txtTelefonoApod" MaxLength="12" Height="23" Margin="135,9,28,0" Grid.Row="10" TextWrapping="Wrap" VerticalAlignment="Top"
+        	Style="{StaticResource valStyle}" Text="{Binding strTelefonoApod, ValidatesOnDataErrors=True, NotifyOnValidationError=True, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBlock Margin="34,10,222,0" Grid.Row="10" TextWrapping="Wrap" Text="Teléfono :" VerticalAlignment="Top" Height="16"/>
+
+
+        <TextBlock Margin="29,9,274,0" TextWrapping="Wrap" Text="Nivel :" VerticalAlignment="Top" Height="16" Grid.Column="1" Grid.Row="6" Grid.ColumnSpan="2"/>
+        <TextBox Text="{Binding iNivel}" IsEnabled="False" HorizontalAlignment="Left" Margin="23,8,0,0" Grid.Row="6" VerticalAlignment="Top" Width="227" Grid.Column="2" Height="22"/>
+
+        <TextBox Height="23" Margin="128,10,32,0" TextWrapping="Wrap" VerticalAlignment="Top"
+        	Text="{Binding strEdadCronologica}" IsEnabled="False" Grid.Column="2" Grid.Row="3"/>
+        <TextBlock Margin="15,12,165,0" TextWrapping="Wrap" Text="Edad cronológica :" VerticalAlignment="Top" Height="16" Grid.Column="2" Grid.Row="3"/>
+        
+        <TextBox Height="23" Margin="23,9,32,0" TextWrapping="Wrap" VerticalAlignment="Top"
+        	Text="{Binding iPorcentajeNivel}" IsEnabled="False" Grid.Column="2" Grid.Row="7"/>
+        <TextBlock Margin="29,11,267,0" TextWrapping="Wrap" Text="% Nivel :" VerticalAlignment="Top" Height="16" Grid.Column="1" Grid.Row="7" Grid.ColumnSpan="2"/>
+        
+        <TextBox Height="23" Margin="66,9,28,0" Grid.Row="9" TextWrapping="Wrap" VerticalAlignment="Top"
+        	Text="{Binding strNomApeMedNeuroReferencia}" IsEnabled="False" Grid.Column="2"/>
+        <TextBlock Margin="29,10,214,0" Grid.Row="9" TextWrapping="Wrap" Text="Nombre y Apelldo :" VerticalAlignment="Top" Height="16" Grid.ColumnSpan="2" Grid.Column="1"/>
+        
+        <TextBox Height="23" Margin="66,8,28,0" Grid.Row="10" TextWrapping="Wrap" VerticalAlignment="Top"
+        	Text="{Binding strCelMedNeuroReferencia}" IsEnabled="False" Grid.Column="2" />
+        <TextBlock Margin="29,9,214,0" Grid.Row="10" TextWrapping="Wrap" Text="Celular :" VerticalAlignment="Top" Height="16" Grid.ColumnSpan="2" Grid.Column="1"/>
+        
+        
+
+
+        <Button Content="Actualizar" Margin="0,30,133,0" Grid.Row="11" VerticalAlignment="Top" Height="20"
+        	Command="{Binding ActualizarCommand}" Grid.Column="2" Grid.RowSpan="2" HorizontalAlignment="Right" Width="75" Click="Button_Click_2">
+
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="IsEnabled" Value="False"/>
+                    <Style.Triggers>
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding ElementName=txtNombresApod, Path=(Validation.HasError)}" Value="false"/>
+                                <Condition Binding="{Binding ElementName=txtApellidosApod, Path=(Validation.HasError)}" Value="false"/>
+                                <Condition Binding="{Binding ElementName=txtParentescoApod, Path=(Validation.HasError)}" Value="false"/>
+                                <Condition Binding="{Binding ElementName=strCelularApod, Path=(Validation.HasError)}" Value="false"/>
+                                <Condition Binding="{Binding ElementName=txtTelefonoApod, Path=(Validation.HasError)}" Value="false"/>
+                            </MultiDataTrigger.Conditions>
+                            <Setter Property="IsEnabled" Value="True"/>
+                        </MultiDataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+
+        </Button>
+        <Button Content="Cancelar" Margin="0,30,37,0" Grid.Row="11" VerticalAlignment="Top" Height="20" Grid.Column="2" Grid.RowSpan="2" HorizontalAlignment="Right" Width="75" Click="Button_Click_1"/>
+
+
+    </Grid>
+</Window>

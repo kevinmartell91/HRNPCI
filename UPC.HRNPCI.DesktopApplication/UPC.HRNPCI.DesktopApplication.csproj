@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4B4C27DA-3BDB-4684-8DD9-9C1D9CCC9B8A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UPC.HRNPCI.DesktopApplication</RootNamespace>
+    <AssemblyName>UPC.HRNPCI.DesktopApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>_DLL\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="BootStrapper.cs" />
+    <Compile Include="Helpers\GridViewColumnVisibilityManager.cs" />
+    <Compile Include="ViewModels\AsociarPacienteFisioterapeuta\AsociacionCU.cs" />
+    <Compile Include="ViewModels\AsociarPacienteFisioterapeuta\AsociarPacienteFisioterapeutaViewModel.cs" />
+    <Compile Include="ViewModels\AsociarPacienteFisioterapeuta\ListaPacientesAsociacionViewModel.cs" />
+    <Compile Include="ViewModels\AsociarPacienteFisioterapeuta\Mode.cs" />
+    <Compile Include="ViewModels\Fisioterapueta\FisioterapeutaActualizarViewModel.cs" />
+    <Compile Include="ViewModels\Fisioterapueta\FisioterapeutaAgregarViewModel.cs" />
+    <Compile Include="ViewModels\Fisioterapueta\FisioterapeutaBusinessObject.cs" />
+    <Compile Include="ViewModels\Fisioterapueta\FisioterapeutaCRUDViewModel.cs" />
+    <Compile Include="ViewModels\Fisioterapueta\FisioterapeutaStatic.cs" />
+    <Compile Include="ViewModels\Fisioterapueta\FisioterapeutaVerViewModel.cs" />
+    <Compile Include="ViewModels\Fisioterapueta\ListarFisioterapeutasViewModel.cs" />
+    <Compile Include="ViewModels\ModuloAdminViewModel.cs" />
+    <Compile Include="ViewModels\Pacinete\ListarPacientesViewModel.cs" />
+    <Compile Include="ViewModels\Pacinete\PacienteActualizarViewModel.cs" />
+    <Compile Include="ViewModels\Pacinete\PacienteAgregarViewModel.cs" />
+    <Compile Include="ViewModels\Pacinete\PacienteBusinessObject.cs" />
+    <Compile Include="ViewModels\Pacinete\PacienteCRUDViewModel.cs" />
+    <Compile Include="ViewModels\Pacinete\PacienteStatic.cs" />
+    <Compile Include="ViewModels\Pacinete\PacienteVerViewModel.cs" />
+    <Compile Include="Views\AsociarPacienteFisioterapeuta\AsociarPacienteFisioterapeutaView.xaml.cs">
+      <DependentUpon>AsociarPacienteFisioterapeutaView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AsociarPacienteFisioterapeuta\ListaPacientesAsociacionView.xaml.cs">
+      <DependentUpon>ListaPacientesAsociacionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AsociarPacienteFisioterapeuta\MultiSelectComboBoxAsociacionView.xaml.cs">
+      <DependentUpon>MultiSelectComboBoxAsociacionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dialogs\AsociarPacienteFisioterapeutaViewDialog.cs" />
+    <Compile Include="Views\Dialogs\FisioterapeutaActualizarViewDialog.cs" />
+    <Compile Include="Views\Dialogs\FisioterapeutaAgregarViewDialog.cs" />
+    <Compile Include="Views\Dialogs\FisioterapeutaVerViewDialog.cs" />
+    <Compile Include="Views\Dialogs\PacienteActualizarViewDialog.cs" />
+    <Compile Include="Views\Dialogs\PacienteAgregarViewDialog.cs" />
+    <Compile Include="Views\Dialogs\PacienteVerViewDialog.cs" />
+    <Compile Include="Views\Fisioterapueta\FisioterapeutaActualizarView.xaml.cs">
+      <DependentUpon>FisioterapeutaActualizarView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Fisioterapueta\FisioterapeutaAgregarView.xaml.cs">
+      <DependentUpon>FisioterapeutaAgregarView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Fisioterapueta\FisioterapeutaVerView.xaml.cs">
+      <DependentUpon>FisioterapeutaVerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dialogs\ModuloAdminViewDialog.cs" />
+    <Compile Include="Views\Fisioterapueta\ListarFisioterapeutasView.xaml.cs">
+      <DependentUpon>ListarFisioterapeutasView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Fisioterapueta\MultiSelectComboBoxView.xaml.cs">
+      <DependentUpon>MultiSelectComboBoxView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ModuloAdminView.xaml.cs">
+      <DependentUpon>ModuloAdminView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pacinete\ListarPacientesView.xaml.cs">
+      <DependentUpon>ListarPacientesView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pacinete\MultiSelectComboBoxPacienteView.xaml.cs">
+      <DependentUpon>MultiSelectComboBoxPacienteView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pacinete\PacienteActualizarView.xaml.cs">
+      <DependentUpon>PacienteActualizarView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pacinete\PacienteAgregarView.xaml.cs">
+      <DependentUpon>PacienteAgregarView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pacinete\PacienteVerView.xaml.cs">
+      <DependentUpon>PacienteVerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\testUserControlView.xaml.cs">
+      <DependentUpon>testUserControlView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\VentanaInicio.xaml.cs">
+      <DependentUpon>VentanaInicio.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="_Common\CommandBase.cs" />
+    <Compile Include="_Common\ViewModelBase.cs" />
+    <Compile Include="_Interface\IModalDialog.cs" />
+    <Compile Include="_Interface\IServiceLocator.cs" />
+    <Compile Include="_Services\ServiceProvider.cs" />
+    <Compile Include="_Services\UnityServiceLocator.cs" />
+    <Compile Include="_ViewModel\CustomerViewModel.cs" />
+    <Compile Include="_View\CustomerViewDialog.cs" />
+    <Page Include="Resources\IconsResourceDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\ImplicitStylesResourceDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\MainDictionary.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\StylesResourceDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AsociarPacienteFisioterapeuta\AsociarPacienteFisioterapeutaView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AsociarPacienteFisioterapeuta\ListaPacientesAsociacionView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AsociarPacienteFisioterapeuta\MultiSelectComboBoxAsociacionView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Fisioterapueta\FisioterapeutaActualizarView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Fisioterapueta\FisioterapeutaAgregarView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Fisioterapueta\FisioterapeutaVerView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Fisioterapueta\ListarFisioterapeutasView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Fisioterapueta\MultiSelectComboBoxView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LoginView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Converters\IsBiggerThanConverter.cs" />
+    <Compile Include="Helpers\Converters.cs" />
+    <Compile Include="Helpers\DelegateCommand.cs" />
+    <Compile Include="Helpers\DialogCloser.cs" />
+    <Compile Include="Helpers\IClosableViewModel.cs" />
+    <Compile Include="Helpers\NotificationObject.cs" />
+    <Compile Include="Helpers\RandomHelper.cs" />
+    <Compile Include="Helpers\RelayCommand.cs" />
+    <Compile Include="Models\Person.cs" />
+    <Compile Include="Helpers\BaseViewModel.cs" />
+    <Compile Include="ViewModels\LoginViewModel.cs" />
+    <Compile Include="ViewModels\MainWindowViewModel.cs" />
+    <Compile Include="Views\LoginView.xaml.cs">
+      <DependentUpon>LoginView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Views\ModuloAdminView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pacinete\ListarPacientesView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pacinete\MultiSelectComboBoxPacienteView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pacinete\PacienteActualizarView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pacinete\PacienteAgregarView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pacinete\PacienteVerView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\testUserControlView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ValidationStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\VentanaInicio.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="_Validation\ValidationStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UPC.HRNPCI.Model\UPC.HRNPCI.Model.csproj">
+      <Project>{17858c11-f361-424f-90aa-f8f15501f188}</Project>
+      <Name>UPC.HRNPCI.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UPC.HRNPCI.ViewModel\UPC.HRNPCI.ViewModel.csproj">
+      <Project>{0b494f5c-dede-4951-a4f6-a87f6f6637b7}</Project>
+      <Name>UPC.HRNPCI.ViewModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Imagenes\Fisioterapeutas\" />
+    <Folder Include="Imagenes\Pacientes\" />
+    <Folder Include="_Services Refences\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\Resourses\testImg.jpg" />
+    <Resource Include="Views\Fisioterapueta\Resourses\testImg.jpg" />
+    <Resource Include="Views\Pacinete\Resourses\testImg.jpg" />
+    <Resource Include="Views\AsociarPacienteFisioterapeuta\Resourses\testImg.jpg" />
+    <Resource Include="Views\AsociarPacienteFisioterapeuta\Resourses\test1Img.jpg" />
+    <Resource Include="ViewModels\AsociarPacienteFisioterapeuta\Resourses\test1Img.jpg" />
+    <Resource Include="ViewModels\AsociarPacienteFisioterapeuta\Resourses\testImg.jpg" />
+    <Resource Include="Views\Fisioterapueta\Resourses\add_icon.jpg" />
+    <Resource Include="Views\Fisioterapueta\Resourses\delete_icon.jpg" />
+    <Resource Include="Views\Fisioterapueta\Resourses\edit_icon.jpg" />
+    <Resource Include="Views\Fisioterapueta\Resourses\see_icon.jpg" />
+    <Resource Include="Views\Pacinete\Resourses\add_icon.jpg" />
+    <Resource Include="Views\Pacinete\Resourses\delete_icon.jpg" />
+    <Resource Include="Views\Pacinete\Resourses\edit_icon.jpg" />
+    <Resource Include="Views\Pacinete\Resourses\see_icon.jpg" />
+    <Resource Include="Views\AsociarPacienteFisioterapeuta\Resourses\add_icon.jpg" />
+    <Resource Include="Views\AsociarPacienteFisioterapeuta\Resourses\delete_icon.jpg" />
+    <Resource Include="Views\AsociarPacienteFisioterapeuta\Resourses\edit_icon.jpg" />
+    <Resource Include="Views\AsociarPacienteFisioterapeuta\Resourses\see_icon.jpg" />
+    <Content Include="_DLL\Microsoft.Practices.Unity.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
