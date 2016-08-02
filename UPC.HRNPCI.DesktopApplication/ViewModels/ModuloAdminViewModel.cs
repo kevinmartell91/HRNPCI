@@ -6,10 +6,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Collections.ObjectModel;
 using UPC.HRNPCI.DesktopApplication.Helpers;
-using UPC.HRNPCI.DesktopApplication.Models;
 using UPC.HRNPCI.DesktopApplication.ViewModels.Fisioterapueta;
 using UPC.HRNPCI.DesktopApplication.ViewModels.Pacinete;
 using UPC.HRNPCI.DesktopApplication.ViewModels.AsociarPacienteFisioterapeuta;
+using UPC.HRNPCI.DesktopApplication.ViewModels.ResultadosPacientesReportes;
+using UPC.HRNPCI.DesktopApplication.ViewModels.RutasAlmacenamiento;
 
 
 namespace UPC.HRNPCI.DesktopApplication.ViewModels
@@ -41,10 +42,17 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels
             _children.Add(ListarFisioterapeutasViewModel.Instance());
             _children.Add(ListarPacientesViewModel.Instance());
             _children.Add(ListaPacientesAsociacionViewModel.Instance());
+            _children.Add(ListarResultadosReportesViewModel.Instance());
+            _children.Add(RutasAlmacenamientoViewModel.Instance());
+
             CloseWindowFlag = true;
 
             CerrarSesionCommand = new RelayCommand(CerrarSesion);
             RolLogueado = "Administrador";
+
+            //cargamos las configuranes de base de datos
+
+
         }
 
         private void CerrarSesion(object parameter)

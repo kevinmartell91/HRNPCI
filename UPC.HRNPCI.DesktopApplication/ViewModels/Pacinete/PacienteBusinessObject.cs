@@ -31,41 +31,43 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Pacinete
         {
 
             List<PacienteCRUDViewModel> lstPacientes = new List<PacienteCRUDViewModel>();
-            List<Paciente> lstPacientesDL = PacienteDL.ObtenerPacientes();
-
-            IEnumerable<Paciente> ordenadosPacietes = lstPacientesDL.OrderBy(p => p.vApellidosPaciente);
-
-            if (ordenadosPacietes != null)
+            List<PacienteB> lstPacientesDL = PacienteDL.ObtenerPacientes();
+            if (lstPacientesDL != null)
             {
-                foreach (var pacienteDL in ordenadosPacietes)
+                IEnumerable<PacienteB> ordenadosPacietes = lstPacientesDL.OrderBy(p => p.vApellidosPaciente);
+
+                if (ordenadosPacietes != null)
                 {
-                    PacienteCRUDViewModel pacienteCRUD = new PacienteCRUDViewModel();
+                    foreach (var pacienteDL in ordenadosPacietes)
+                    {
+                        PacienteCRUDViewModel pacienteCRUD = new PacienteCRUDViewModel();
 
 
-                    pacienteCRUD.iCodigo = pacienteDL.iCodigoPaciente;
-                    pacienteCRUD.strNombres = pacienteDL.vNombresPaciente;
-                    pacienteCRUD.strApellidos = pacienteDL.vApellidosPaciente;
-                    pacienteCRUD.chrGenero = Convert.ToChar(pacienteDL.cGeneroPaciente);
-                    pacienteCRUD.strDNI = pacienteDL.cDNIPaciente;
-                    pacienteCRUD.strFecNacimiento =  Convert.ToDateTime(pacienteDL.daFecNacPaciente).ToString("yyyy/MM/dd");
-                    pacienteCRUD.strFisioAsignadoUno = (pacienteDL.iCodigoFisioterapeutaUno).ToString();
-                    pacienteCRUD.strFisioAsignadoDos = (pacienteDL.iCodigoFisioterapeutaDos).ToString();
-                    pacienteCRUD.strDiagnosticoMedico = pacienteDL.vDiagnosticoMedicoPaciente;
-                    pacienteCRUD.iNivel = Convert.ToInt32(pacienteDL.iNivelPaciente);
-                    pacienteCRUD.iPorcentajeNivel = Convert.ToInt32(pacienteDL.iPorcentajeNivelPaciente);
-                    pacienteCRUD.strNomApeMedNeuroReferencia = pacienteDL.vNomApeMedNeuroReferencia;
-                    pacienteCRUD.strCelMedNeuroReferencia = pacienteDL.vCelMedNeuroReferencia;
-                    pacienteCRUD.strNombresApod = pacienteDL.vNombresApoderado;
-                    pacienteCRUD.strApellidosApod = pacienteDL.vApellidoApoderado;
-                    pacienteCRUD.strCelularApod = pacienteDL.vCelularApoderado;
-                    pacienteCRUD.strTeléfonoApod = pacienteDL.vTelefonoApoderado;
-                    pacienteCRUD.strParentescoApod = pacienteDL.vParentescoApoderado;
-                    pacienteCRUD.iBorrrado = Convert.ToInt32(pacienteDL.iFlagBorrradoPaciente);
-                    pacienteCRUD.iFisioAsigPaciente = Convert.ToInt32(pacienteDL.iFlagFisioAsigPaciente);
-                    pacienteCRUD.strEdadCronologica = pacienteDL.vEdadCronologicaPaciente;
-                    pacienteCRUD.strUrlFotoPaciente = pacienteDL.vUrlFotoPaciente;
+                        pacienteCRUD.iCodigo = pacienteDL.iCodigoPaciente;
+                        pacienteCRUD.strNombres = pacienteDL.vNombresPaciente;
+                        pacienteCRUD.strApellidos = pacienteDL.vApellidosPaciente;
+                        pacienteCRUD.chrGenero = Convert.ToChar(pacienteDL.cGeneroPaciente);
+                        pacienteCRUD.strDNI = pacienteDL.cDNIPaciente;
+                        pacienteCRUD.strFecNacimiento = Convert.ToDateTime(pacienteDL.daFecNacPaciente).ToString("yyyy/MM/dd");
+                        pacienteCRUD.strFisioAsignadoUno = (pacienteDL.iCodigoFisioterapeutaUno).ToString();
+                        pacienteCRUD.strFisioAsignadoDos = (pacienteDL.iCodigoFisioterapeutaDos).ToString();
+                        pacienteCRUD.strDiagnosticoMedico = pacienteDL.vDiagnosticoMedicoPaciente;
+                        pacienteCRUD.iNivel = Convert.ToInt32(pacienteDL.iNivelPaciente);
+                        pacienteCRUD.iPorcentajeNivel = Convert.ToInt32(pacienteDL.iPorcentajeNivelPaciente);
+                        pacienteCRUD.strNomApeMedNeuroReferencia = pacienteDL.vNomApeMedNeuroReferencia;
+                        pacienteCRUD.strCelMedNeuroReferencia = pacienteDL.vCelMedNeuroReferencia;
+                        pacienteCRUD.strNombresApod = pacienteDL.vNombresApoderado;
+                        pacienteCRUD.strApellidosApod = pacienteDL.vApellidoApoderado;
+                        pacienteCRUD.strCelularApod = pacienteDL.vCelularApoderado;
+                        pacienteCRUD.strTeléfonoApod = pacienteDL.vTelefonoApoderado;
+                        pacienteCRUD.strParentescoApod = pacienteDL.vParentescoApoderado;
+                        pacienteCRUD.iBorrrado = Convert.ToInt32(pacienteDL.iFlagBorrradoPaciente);
+                        pacienteCRUD.iFisioAsigPaciente = Convert.ToInt32(pacienteDL.iFlagFisioAsigPaciente);
+                        pacienteCRUD.strEdadCronologica = pacienteDL.vEdadCronologicaPaciente;
+                        pacienteCRUD.strUrlFotoPaciente = pacienteDL.vUrlFotoPaciente;
 
-                    lstPacientes.Add(pacienteCRUD);
+                        lstPacientes.Add(pacienteCRUD);
+                    }
                 }
             }
             return lstPacientes;
@@ -76,7 +78,7 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Pacinete
         {
 
             List<PacienteCRUDViewModel> lstPacienteResutadoCRUD = new List<PacienteCRUDViewModel>();
-            List<Paciente> lstPacienteResultadoDL = PacienteDL.BuscaPorCampoPaciente(piColumna, pstrBuscar);
+            List<PacienteB> lstPacienteResultadoDL = PacienteDL.BuscaPorCampoPaciente(piColumna, pstrBuscar);
 
             if (lstPacienteResultadoDL != null)
             {
@@ -117,7 +119,7 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Pacinete
         {
 
             List<AsociacionCU> lstPacientes = new List<AsociacionCU>();
-            List<Paciente> lstPacientesDL = PacienteDL.ObtenerPacientes();
+            List<PacienteB> lstPacientesDL = PacienteDL.ObtenerPacientes();
 
             if (lstPacientesDL != null)
             {
@@ -160,7 +162,7 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Pacinete
         {
 
             List<AsociacionCU> lstPacienteResutadoCRUD = new List<AsociacionCU>();
-            List<Paciente> lstPacienteResultadoDL = PacienteDL.BuscaPorCampoPaciente(piColumna, pstrBuscar);
+            List<PacienteB> lstPacienteResultadoDL = PacienteDL.BuscaPorCampoPaciente(piColumna, pstrBuscar);
 
             if (lstPacienteResultadoDL != null)
             {
@@ -199,7 +201,7 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Pacinete
 
         //para actulizar  la lista de la aplicacion y para yo no estar actualizando directamente de la base de datos
         //agragar y actualizar
-        public PacienteCRUDViewModel ObtenerPacienteCRUD(Paciente pPaciente)
+        public PacienteCRUDViewModel ObtenerPacienteCRUD(PacienteB pPaciente)
         {
             if (pPaciente != null)
             {

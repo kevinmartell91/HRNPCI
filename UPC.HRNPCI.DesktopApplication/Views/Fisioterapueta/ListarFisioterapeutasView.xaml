@@ -6,7 +6,7 @@
              xmlns:vm="clr-namespace:UPC.HRNPCI.DesktopApplication.ViewModels.Fisioterapueta"
              xmlns:control="clr-namespace:UPC.HRNPCI.DesktopApplication.Views.Fisioterapueta"
           
-             mc:Ignorable="d" Width="1100" Height="426" FontFamily="Segoe UI Light">
+             mc:Ignorable="d" FontFamily="Segoe UI Light" >
 
     <UserControl.Resources>
         <!--<Image x:Key="MyImage" Source="{Binding ImagenVer}"/>-->
@@ -14,17 +14,17 @@
             <StackPanel Orientation="Horizontal">
                 <Button Command="{Binding VerFisioterapuetaCommand}">
                     <StackPanel>
-                        <Image Source="Resourses\see_icon.jpg"  Width="15" Height="15" Stretch="Fill" />
+                        <Image Source="..\..\Resources\imagenes\see_icon.jpg"  Width="15" Height="15" Stretch="Fill" />
                     </StackPanel>
                 </Button>
                 <Button Command="{Binding ActualizarFisioterapuetaCommand}">
                     <StackPanel>
-                        <Image Source="Resourses\edit_icon.jpg" Width="15" Height="15" Stretch="Fill" />
+                        <Image Source="..\..\Resources\imagenes\edit_icon.jpg" Width="15" Height="15" Stretch="Fill" />
                     </StackPanel>
                 </Button>
                 <Button Command="{Binding EliminarFisioterapuetaCommand}">
                     <StackPanel>
-                        <Image Source="Resourses\delete_icon.jpg" Width="15" Height="15" Stretch="Fill" />
+                        <Image Source="..\..\Resources\imagenes\delete_icon.jpg" Width="15" Height="15" Stretch="Fill" />
                     </StackPanel>
                 </Button>
             </StackPanel>
@@ -34,35 +34,38 @@
 
     <Grid  x:Name="m_MyGrid"  Margin="0,0,0,10" >
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="116*"/>
-            <ColumnDefinition Width="159*"/>
+            <ColumnDefinition Width="51*"/>
+            <ColumnDefinition Width="123*"/>
+            <ColumnDefinition Width="173*"/>
+            <ColumnDefinition Width="3*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="0*"/>
-            <RowDefinition Height="33*"/>
-            <RowDefinition Height="23*"/>
             <RowDefinition Height="34*"/>
-            <RowDefinition Height="243*"/>
-            <RowDefinition Height="39*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="533*"/>
+            <RowDefinition Height="45*"/>
         </Grid.RowDefinitions>
 
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Lista de fisioterapeutas"  VerticalAlignment="Top" Height="26" Width="348" Grid.Row="1" FontSize="16" TextDecorations="{x:Null}" Margin="0,10,0,0" FontFamily="Segoe UI Semibold"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,5,0,0" TextWrapping="Wrap" Text="Búsqueda :" VerticalAlignment="Top" Grid.Row="2" Height="20" Width="79"/>
-        <TextBlock Margin="0,5,90,0" TextWrapping="Wrap" Text="Filtar columnas a mostrar :" VerticalAlignment="Top" Grid.Row="2" Height="20" HorizontalAlignment="Right" Width="338" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Lista de fisioterapeutas"  VerticalAlignment="Top" Height="26" Width="348" Grid.Row="1" FontSize="16" TextDecorations="{x:Null}" Margin="0,10,0,0" FontFamily="Segoe UI Semibold" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="6,5,0,0" TextWrapping="Wrap" Text="Búsqueda :" VerticalAlignment="Top" Grid.Row="3" Height="20" Width="79" Grid.Column="1"/>
+        <TextBlock Margin="0,5,85,0" TextWrapping="Wrap" Text="Filtar columnas a mostrar :" VerticalAlignment="Top" Grid.Row="3" Height="20" HorizontalAlignment="Right" Width="338" Grid.Column="1" Grid.ColumnSpan="2"/>
 
         <!-- Filtrar columnas -->
-        <Button Content="Filtrar" Margin="0,5,10,0" Grid.Row="3" VerticalAlignment="Top" Height="30" HorizontalAlignment="Right" Width="75"
-                Command="{Binding RefrescarComboxColumanasSeleccionadasCommand}" Grid.Column="1" Background="#FF007ACC" Foreground="White" FontFamily="Segoe UI Semibold"/>
-        <control:MultiSelectComboBoxView  x:Name="MC" Margin="0,5,90,3" Grid.Row="3" HorizontalAlignment="Right" Width="338" 
-                                          ItemsSource="{Binding Items}" SelectedItems="{Binding SelectedItems}" Grid.Column="1"/>
+        <Button Content="Filtrar" Margin="0,5,5,0" Grid.Row="4" VerticalAlignment="Top" Height="30" HorizontalAlignment="Right" Width="75"
+                Command="{Binding RefrescarComboxColumanasSeleccionadasCommand}" Grid.Column="2" Background="#FF007ACC" Foreground="White" FontFamily="Segoe UI Semibold"/>
+        <control:MultiSelectComboBoxView  x:Name="MC" Margin="0,5,85,0" Grid.Row="4" HorizontalAlignment="Right" Width="338" 
+                                          ItemsSource="{Binding Items}" SelectedItems="{Binding SelectedItems}" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Top" Height="30"/>
 
         <!-- Filtrar datos -->
-        <ComboBox ItemsSource="{Binding ItemsCampos}" SelectedItem="{Binding CampoSeleccionado}"  HorizontalAlignment="Left" Margin="10,5,0,0" Grid.Row="3" VerticalAlignment="Top" Width="95" Height="30"/>
-        <TextBox Text="{Binding BuscarTexto, Mode=TwoWay}" Name="txtBuscar"  HorizontalAlignment="Left" Margin="110,5,0,3" Grid.Row="3" TextWrapping="Wrap" Width="145" MaxLength="60"/>
+        <ComboBox ItemsSource="{Binding ItemsCampos}" SelectedItem="{Binding CampoSeleccionado}"  HorizontalAlignment="Left" Margin="6,5,0,0" Grid.Row="4" VerticalAlignment="Top" Width="95" Height="30" Grid.Column="1"/>
+        <TextBox Text="{Binding BuscarTexto, Mode=TwoWay}" Name="txtBuscar"  HorizontalAlignment="Left" Margin="106,5,0,0" Grid.Row="4" TextWrapping="Wrap" Width="145" MaxLength="60" Grid.Column="1" Height="27" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
 
 
 
-        <ListView  ItemsSource="{Binding ListaFisioterapeutas}" SelectedItem="{Binding FisioterapeutaSeleccionado}"  Margin="10" Grid.Row="4" Grid.ColumnSpan="2">
+        <ListView  ItemsSource="{Binding ListaFisioterapeutas}" SelectedItem="{Binding FisioterapeutaSeleccionado}"  Margin="6,10,5,10" Grid.Row="5" Grid.ColumnSpan="2" Grid.Column="1">
             <ListView.View>
                 <GridView x:Name="GridViewColumns" >
                     <GridView.Columns>
@@ -90,18 +93,33 @@
             </ListView.View>
         </ListView>
 
-        <Button Content="Agregar" Command="{Binding AgreagarFiosioterapeutaCommand}"  Margin="0,10,10,0" Grid.Row="5" VerticalAlignment="Top" Height="28" HorizontalAlignment="Right" Width="75" Grid.Column="1" Background="#FFF33030" Foreground="White" FontFamily="Segoe UI Semibold"/>
-        <!--<Button  Command="{Binding AgreagarFiosioterapeutaCommand}"  Margin="0,10,10,0" Grid.Row="5" VerticalAlignment="Top" Height="20" HorizontalAlignment="Right" Width="138">
-            <StackPanel>
-                <Image Source="Resourses\testImg.jpg" Height="57" Stretch="Fill" />
-            </StackPanel>
-        </Button>-->
+        <Button Content="Agregar" Command="{Binding AgreagarFiosioterapeutaCommand}"  Margin="0,10,5,0" Grid.Row="6" VerticalAlignment="Top" Height="28" HorizontalAlignment="Right" Width="75" Grid.Column="2" Background="#FFF33030" Foreground="White" FontFamily="Segoe UI Semibold"/>
 
-        <TextBlock Margin="287,125,286,131" TextWrapping="Wrap" Grid.Row="4"
-                   Text="{Binding MesajeResultadoBusqueda}" Grid.ColumnSpan="2" />
+        <TextBlock TextWrapping="Wrap" Grid.Row="5"
+        	Text="{Binding MesajeResultadoBusqueda}" Grid.Column="1" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown_1" Margin="396,200,451,26" Grid.ColumnSpan="2" TextAlignment="Center" />
         <!--<TextBlock HorizontalAlignment="Left" Margin="484,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Row="3" Height="16" Width="27"
                    Text="{Binding ShowStatusColumn000}" />-->
-        <Button Command="{Binding BuscarCommand}" Content="Buscar" HorizontalAlignment="Left" Margin="260,5,0,0" Grid.Row="3" VerticalAlignment="Top" Width="76" Height="30" Background="#FF007ACC" Foreground="White" FontFamily="Segoe UI Semibold"/>
+        <Button Command="{Binding BuscarCommand}" Content="Buscar" HorizontalAlignment="Left" Margin="262,5,0,0" Grid.Row="4" VerticalAlignment="Top" Width="76" Height="30" Background="#FF007ACC" Foreground="White" FontFamily="Segoe UI Semibold" Grid.Column="1"/>
+        <Image Source="/UPC.HRNPCI.DesktopApplication;component/Resources/imagenes/fisioterapeuta_icon.png" Stretch="Fill" Margin="11,10,6,313" RenderTransformOrigin="0.5,0.5" Grid.Row="5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Source="/UPC.HRNPCI.DesktopApplication;component/Resources/imagenes/notas_icon.png" Stretch="Fill" Margin="21,268,12,91" RenderTransformOrigin="0.5,0.5" Grid.Row="5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
 
 
     </Grid>

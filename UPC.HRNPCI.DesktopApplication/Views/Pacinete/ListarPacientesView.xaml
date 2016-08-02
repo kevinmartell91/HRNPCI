@@ -5,8 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:vm="clr-namespace:UPC.HRNPCI.DesktopApplication.ViewModels.Pacinete"
              xmlns:control="clr-namespace:UPC.HRNPCI.DesktopApplication.Views.Pacinete"
-             mc:Ignorable="d" 
-             d:DesignHeight="300" Width="1100" Height="426" FontFamily="Segoe UI Light">
+             mc:Ignorable="d" FontFamily="Segoe UI Light" >
     <UserControl.Resources>
         <!--<vm:ListarPacientesViewModel x:Key="listarPacientesViewModel"/>-->
 
@@ -14,17 +13,17 @@
             <StackPanel Orientation="Horizontal">
                 <Button  Command="{Binding VerPacienteCommand}">
                     <StackPanel>
-                        <Image Source="Resourses\see_icon.jpg" Width="15" Height="15" Stretch="Fill" />
+                        <Image Source="..\..\Resources\imagenes\see_icon.jpg" Width="15" Height="15" Stretch="Fill" />
                     </StackPanel>
                 </Button>
                 <Button Command="{Binding ActualizarPacienteCommand}">
                     <StackPanel>
-                        <Image Source="Resourses\edit_icon.jpg" Width="15" Height="15" Stretch="Fill" />
+                        <Image Source="..\..\Resources\imagenes\edit_icon.jpg" Width="15" Height="15" Stretch="Fill" />
                     </StackPanel>
                 </Button>
                 <Button  Command="{Binding EliminarPacienteCommand}">
                     <StackPanel>
-                        <Image Source="Resourses\delete_icon.jpg" Width="15" Height="15" Stretch="Fill" />
+                        <Image Source="..\..\Resources\imagenes\delete_icon.jpg" Width="15" Height="15" Stretch="Fill" />
                     </StackPanel>
                 </Button>
             </StackPanel>
@@ -33,30 +32,37 @@
     </UserControl.Resources>
 
     <Grid  x:Name="m_MyGrid" Margin="0,0,0,10" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="51*"/>
+            <ColumnDefinition Width="123*"/>
+            <ColumnDefinition Width="173*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="0*"/>
-            <RowDefinition Height="33*"/>
-            <RowDefinition Height="23*"/>
             <RowDefinition Height="34*"/>
-            <RowDefinition Height="243*"/>
-            <RowDefinition Height="39*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="533*"/>
+            <RowDefinition Height="45*"/>
         </Grid.RowDefinitions>
 
-        <TextBlock HorizontalAlignment="Left" Margin="0,10,0,0" TextWrapping="Wrap" Text="Lista de pacientes" VerticalAlignment="Top" Height="27" Width="336" Grid.Row="1" FontSize="16" FontFamily="Segoe UI Semibold"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,5,0,0" TextWrapping="Wrap" Text="Búsqueda :" VerticalAlignment="Top" Grid.Row="2" Height="20" Width="79"/>
-        <TextBlock Margin="0,5,80,0" TextWrapping="Wrap" Text="Filtar columnas a mostrar :" VerticalAlignment="Top" Grid.Row="2" Height="20" HorizontalAlignment="Right" Width="348"/>
+        <TextBlock HorizontalAlignment="Left" Margin="0,10,0,0" TextWrapping="Wrap" Text="Lista de pacientes" VerticalAlignment="Top" Height="27" Width="336" Grid.Row="1" FontSize="16" FontFamily="Segoe UI Semibold" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="7,5,0,0" TextWrapping="Wrap" Text="Búsqueda :" VerticalAlignment="Top" Grid.Row="3" Height="20" Width="79" Grid.Column="1"/>
+        <TextBlock Margin="0,5,74,0" TextWrapping="Wrap" Text="Filtar columnas a mostrar :" VerticalAlignment="Top" Grid.Row="3" Height="20" HorizontalAlignment="Right" Width="348" Grid.Column="2"/>
 
         <!-- Filtrar columnas -->
-        <Button Content="Filtrar" Margin="0,5,10,0" Grid.Row="3" VerticalAlignment="Top" Height="30" HorizontalAlignment="Right" Width="75"
-                Command="{Binding RefrescarComboxColumanasSeleccionadasCommand}"  Background="#FF007ACC" Foreground="White" FontFamily="Segoe UI Semibold"/>
-        <control:MultiSelectComboBoxPacienteView  x:Name="MC" Margin="0,5,90,3" Grid.Row="3" HorizontalAlignment="Right" Width="338" 
-                                          ItemsSource="{Binding dicItems}" SelectedItems="{Binding dicSelectedItems}"/>
+        <Button Content="Filtrar" Margin="0,5,4,0" Grid.Row="4" VerticalAlignment="Top" Height="30" HorizontalAlignment="Right" Width="75"
+                Command="{Binding RefrescarComboxColumanasSeleccionadasCommand}"  Background="#FF007ACC" Foreground="White" FontFamily="Segoe UI Semibold" Grid.Column="2"/>
+        <control:MultiSelectComboBoxPacienteView  x:Name="MC" Margin="0,5,84,3" Grid.Row="4" HorizontalAlignment="Right" Width="338" 
+                                          ItemsSource="{Binding dicItems}" SelectedItems="{Binding dicSelectedItems}" Grid.Column="2" Height="Auto"/>
 
         <!-- Filtrar datos -->
-        <ComboBox ItemsSource="{Binding ocltnItemsCampos}" SelectedItem="{Binding strCampoSeleccionado}"  HorizontalAlignment="Left" Margin="10,5,0,0" Grid.Row="3" VerticalAlignment="Top" Width="95" Height="30"/>
-        <TextBox Text="{Binding strBuscarTexto, Mode=TwoWay}" Name="txtBuscar"  HorizontalAlignment="Left" Margin="110,5,0,3" Grid.Row="3" TextWrapping="Wrap" Width="145" MaxLength="60"/>
+        <ComboBox ItemsSource="{Binding ocltnItemsCampos}" SelectedItem="{Binding strCampoSeleccionado}"  HorizontalAlignment="Left" Margin="7,5,0,0" Grid.Row="4" VerticalAlignment="Top" Width="95" Height="30" Grid.Column="1"/>
+        <TextBox Text="{Binding strBuscarTexto, Mode=TwoWay}" Name="txtBuscar"  HorizontalAlignment="Left" Margin="107,5,0,3" Grid.Row="4" TextWrapping="Wrap" Width="145" MaxLength="60" Grid.Column="1"/>
 
-        <ListView ItemsSource="{Binding ocltnPacientesCRUD}" SelectedItem="{Binding PacienteSeleccionado}"  Margin="10" Grid.Row="4">
+        <ListView ItemsSource="{Binding ocltnPacientesCRUD}" SelectedItem="{Binding PacienteSeleccionado}"  Margin="7,10,4,10" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2">
             <ListView.View>
                 <GridView x:Name="GridViewColumnsPaciente">
                     <GridView.Columns>
@@ -93,14 +99,35 @@
             </ListView.View>
         </ListView>
 
-        <Button  Content="Agregar" Command="{Binding AgreagarPacienteCommand}"  Margin="0,10,10,0" Grid.Row="5" VerticalAlignment="Top" Height="28" HorizontalAlignment="Right" Width="75" Background="#FFF33030" Foreground="White" FontFamily="Segoe UI Semibold"/>
+        <Button  Content="Agregar" Command="{Binding AgreagarPacienteCommand}"  Margin="0,10,4,0" Grid.Row="6" VerticalAlignment="Top" Height="28" HorizontalAlignment="Right" Width="75" Background="#FFF33030" Foreground="White" FontFamily="Segoe UI Semibold" Grid.Column="2"/>
 
-        <TextBlock Margin="287,125,286,131" TextWrapping="Wrap" Grid.Row="4"
-                   Text="{Binding strMesajeResultadoBusqueda}" />
+        <TextBlock Margin="401,200,376,53" TextWrapping="Wrap" Grid.Row="5"
+                   Text="{Binding strMesajeResultadoBusqueda}" Grid.Column="1" Grid.ColumnSpan="2" TextAlignment="Center" />
         <!--<TextBlock HorizontalAlignment="Left" Margin="484,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Row="3" Height="16" Width="27"
                    Text="{Binding blnShowStatusColumn}" />-->
-        <Button Command="{Binding BuscarCommand}" Content="Buscar" HorizontalAlignment="Left" Margin="260,5,0,0" Grid.Row="3" VerticalAlignment="Top" Width="76" Height="30"  Background="#FF007ACC" Foreground="White" FontFamily="Segoe UI Semibold"/>
-        
+        <Button Command="{Binding BuscarCommand}" Content="Buscar" HorizontalAlignment="Left" Margin="257,5,0,0" Grid.Row="4" VerticalAlignment="Top" Width="76" Height="30"  Background="#FF007ACC" Foreground="White" FontFamily="Segoe UI Semibold" Grid.Column="1"/>
+
+        <Image Source="/UPC.HRNPCI.DesktopApplication;component/Resources/imagenes/paciente_icon.jpg" Stretch="Fill" Margin="11,10,6,313" RenderTransformOrigin="0.5,0.5" Grid.Row="5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Source="/UPC.HRNPCI.DesktopApplication;component/Resources/imagenes/notas_icon.png" Stretch="Fill" Margin="21,268,12,91" RenderTransformOrigin="0.5,0.5" Grid.Row="5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
 
 
     </Grid>

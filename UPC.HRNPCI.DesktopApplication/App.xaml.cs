@@ -15,6 +15,9 @@ namespace UPC.HRNPCI.DesktopApplication
             base.OnStartup(e);
 
             LoginView window = new LoginView();
+            //ModuloFisioterapeutaView window = new ModuloFisioterapeutaView();
+            //ModuloAdminView window = new ModuloAdminView();
+
             window.Show();
 
             BootStrapper.Initialize();

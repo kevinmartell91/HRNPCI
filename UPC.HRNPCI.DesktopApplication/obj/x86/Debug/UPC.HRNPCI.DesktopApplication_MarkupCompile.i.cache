@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\UPC\Tesis\Repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\
+C:\Tesis\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\
 UPC.HRNPCI.DesktopApplication
 none
 false
 DEBUG;TRACE
-E:\UPC\Tesis\Repo\HRNPCI\UPC.HRNPCI.DesktopApplication\App.xaml
-24221072621
-1-378307121
-75-1188106921
-17900580706
-Resources\IconsResourceDictionary.xaml;Resources\ImplicitStylesResourceDictionary.xaml;Resources\MainDictionary.xaml;Resources\StylesResourceDictionary.xaml;Views\AsociarPacienteFisioterapeuta\AsociarPacienteFisioterapeutaView.xaml;Views\AsociarPacienteFisioterapeuta\ListaPacientesAsociacionView.xaml;Views\AsociarPacienteFisioterapeuta\MultiSelectComboBoxAsociacionView.xaml;Views\Fisioterapueta\FisioterapeutaActualizarView.xaml;Views\Fisioterapueta\FisioterapeutaAgregarView.xaml;Views\Fisioterapueta\FisioterapeutaVerView.xaml;Views\Fisioterapueta\ListarFisioterapeutasView.xaml;Views\Fisioterapueta\MultiSelectComboBoxView.xaml;Views\LoginView.xaml;Views\MainWindow.xaml;Views\ModuloAdminView.xaml;Views\Pacinete\ListarPacientesView.xaml;Views\Pacinete\MultiSelectComboBoxPacienteView.xaml;Views\Pacinete\PacienteActualizarView.xaml;Views\Pacinete\PacienteAgregarView.xaml;Views\Pacinete\PacienteVerView.xaml;Views\testUserControlView.xaml;Views\ValidationStyle.xaml;Views\VentanaInicio.xaml;_Validation\ValidationStyle.xaml;
+C:\Tesis\HRNPCI\UPC.HRNPCI.DesktopApplication\App.xaml
+32565375554
+23-1784250289
+109-1709960882
+271735287100
+Control\Block.xaml;Control\LoadingAnimation.xaml;Resources\IconsResourceDictionary.xaml;Resources\ImplicitStylesResourceDictionary.xaml;Resources\MainDictionary.xaml;Resources\StylesResourceDictionary.xaml;Views\AsociarPacienteFisioterapeuta\AsociarPacienteFisioterapeutaView.xaml;Views\AsociarPacienteFisioterapeuta\ListaPacientesAsociacionView.xaml;Views\AsociarPacienteFisioterapeuta\MultiSelectComboBoxAsociacionView.xaml;Views\Fisioterapueta\FisioterapeutaActualizarView.xaml;Views\Fisioterapueta\FisioterapeutaAgregarView.xaml;Views\Fisioterapueta\FisioterapeutaTestAnalisisView.xaml;Views\Fisioterapueta\FisioterapeutaVerView.xaml;Views\Fisioterapueta\ListarFisioterapeutasView.xaml;Views\Fisioterapueta\MultiSelectComboBoxView.xaml;Views\LoginView.xaml;Views\ModuloAdminView.xaml;Views\ModuloFisioterapeutaView.xaml;Views\Pacinete\ListarPacientesView.xaml;Views\Pacinete\MultiSelectComboBoxPacienteView.xaml;Views\Pacinete\PacienteActualizarView.xaml;Views\Pacinete\PacienteAgregarView.xaml;Views\Pacinete\PacienteVerView.xaml;Views\ResultadosReportesPacientes\ListarResultadosReporteView.xaml;Views\ResultadosReportesPacientes\ReportesBuscarView.xaml;Views\ResultadosReportesPacientes\ReportesVer2View.xaml;Views\ResultadosReportesPacientes\ReportesVerView.xaml;Views\ResultadosReportesPacientes\ResultadosBuscarView.xaml;Views\ResultadosReportesPacientes\ResultadosVerView.xaml;Views\RutasAlmacenamiento\RutasAlmacenamientosView.xaml;Views\ValidationStyle.xaml;_Validation\ValidationStyle.xaml;
 
-True
+False
 

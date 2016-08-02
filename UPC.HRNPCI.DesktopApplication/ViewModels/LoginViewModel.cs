@@ -16,6 +16,9 @@ using UPC.HRNPCI.DesktopApplication.Helpers;
 using UPC.HRNPCI.DesktopApplication.ViewModels;
 using System.Windows.Controls;
 using UPC.HRNPCI.DesktopApplication.ViewModels.Fisioterapueta;
+using UPC.HRNPCI.DesktopApplication.ViewModels.RutasAlmacenamiento;
+using UPC.HRNPCI.Model.ConfiguracionModel;
+using UPC.HRNPCI.DesktopApplication.ViewModels.Pacinete;
 
 
 
@@ -74,6 +77,8 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels
             Usuario = "";
             CloseWindowFlag = false;
 
+
+
         }
 
        
@@ -81,50 +86,69 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels
         {
             var passwordBox = parameter as PasswordBox;
 
-            //if (passwordBox.Password == "" && Usuario == "")
-            //{
-            //    UsuarioMensajeError = "Debe ingresar un usuario ";
-            //    ContrasenaMensajeError = "Debe ingresar una contraseña";
-            //    return;
-            //}
-            //if (Usuario == "")
-            //{
-            //    UsuarioMensajeError = "Debe ingresar un usuario";
-            //    ContrasenaMensajeError = "";
-
-            //    return;
-            //}
-            //if (passwordBox.Password == "")
-            //{
-            //    ContrasenaMensajeError = "Debe ingresar una contraseña";
-            //    UsuarioMensajeError = "";
-            //    return;
-            //}
-
-            int iStatusLogin = FisioterapeutaDL.ValidarUsuario(Usuario, passwordBox.Password);
-            switch (iStatusLogin)
+            try
             {
-                //case -1:
-                //    ContrasenaMensajeError = "Usuario y/o contraseña incorrectas";
-                //    break;
-                //case 0:
-                //    //login fisoterapueta
-                //    MessageBox.Show("Simulación de ingreso a módulofisioterapeuta", " Rol Fisioterapeuta");
-                //    FisioterapeutaStatic.kblnLoginExitoso = true;
-                //    break;
+                if (RutasConfiguracionDL.GetRutaFotos() != null)
+                    RutasAlmacenamientoStatic.strRutaFotos = RutasConfiguracionDL.GetRutaFotos().vRutaEstatica;
+                if (RutasConfiguracionDL.GetRutaReportes() != null)
+                    RutasAlmacenamientoStatic.strRutaReportes = RutasConfiguracionDL.GetRutaReportes().vRutaEstatica;
 
-                case 1:
+                PacienteStatic.kstrRutaFoto = RutasAlmacenamientoStatic.strRutaFotos;
+                FisioterapeutaStatic.kstrRutaFoto = RutasAlmacenamientoStatic.strRutaFotos;
 
-                    ModuloAdminViewModel mav = new ModuloAdminViewModel();
-                    IModalDialog dialog = ServiceProvider.Instance.Get<IModalDialog>();
-                    dialog.BindViewModel(mav);
-                    dialog.ShowDialog();
-                    FisioterapeutaStatic.kblnLoginExitoso = true;
+                
 
-                    break;
+
+                int iStatusLogin = FisioterapeutaDL.ValidarUsuario(Usuario, passwordBox.Password);
+                switch (iStatusLogin)
+                {
+
+                    case 0:
+
+                        FisioterapeutaB f = FisioterapeutaDL.ObtenerFisioterapeutaLoguedo(Usuario, passwordBox.Password);
+                        FisioterapeutaStatic.FisioterapeutaLogueado = f;
+
+                        //login fisoterapueta
+                        ModuloFisioterapeutaViewModel mfv = new ModuloFisioterapeutaViewModel();
+
+                        IModalDialog dialogModuloFisioterapeuta = ServiceProvider.Instance8.Get<IModalDialog>();
+                        dialogModuloFisioterapeuta.BindViewModel(mfv);
+
+
+                        //FisioterapeutaTestAnalisisViewModel ftm = mfv.Children.GetType();
+                       
+                        
+                        dialogModuloFisioterapeuta.ShowDialog();
+
+                        FisioterapeutaStatic.kblnLoginExitoso = true;
+
+
+                        // FisioterapeutaAgregarViewModel fvm = new FisioterapeutaAgregarViewModel();
+                        //IModalDialog dialog = ServiceProvider.Instance2.Get<IModalDialog>();
+
+                        //dialog.BindViewModel(fvm);
+                        //dialog.ShowDialog();
+
+                        break;
+
+                    case 1:
+
+                        ModuloAdminViewModel mav = new ModuloAdminViewModel();
+                        IModalDialog dialogModuloAdmin = ServiceProvider.Instance.Get<IModalDialog>();
+                        dialogModuloAdmin.BindViewModel(mav);
+                        dialogModuloAdmin.ShowDialog();
+                        FisioterapeutaStatic.kblnLoginExitoso = true;
+
+                        break;
+                }
+
+                CloseWindowFlag = true;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
             }
 
-            CloseWindowFlag = true;
 
         }
 

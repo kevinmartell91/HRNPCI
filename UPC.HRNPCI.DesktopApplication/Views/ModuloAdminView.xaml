@@ -4,10 +4,14 @@
         xmlns:v1="clr-namespace:UPC.HRNPCI.DesktopApplication.Views.Fisioterapueta"
         xmlns:v2="clr-namespace:UPC.HRNPCI.DesktopApplication.Views.Pacinete"
         xmlns:v3="clr-namespace:UPC.HRNPCI.DesktopApplication.Views.AsociarPacienteFisioterapeuta"
+        xmlns:v4="clr-namespace:UPC.HRNPCI.DesktopApplication.Views.ResultadosReportesPacientes"
+        xmlns:v5="clr-namespace:UPC.HRNPCI.DesktopApplication.Views.RutasAlmacenamiento"
         xmlns:vm1="clr-namespace:UPC.HRNPCI.DesktopApplication.ViewModels.Fisioterapueta"
         xmlns:vm2="clr-namespace:UPC.HRNPCI.DesktopApplication.ViewModels.Pacinete"
         xmlns:vm3="clr-namespace:UPC.HRNPCI.DesktopApplication.ViewModels.AsociarPacienteFisioterapeuta"
-        Title="HRNPCI" Height="555.977" Width="1200" FontWeight="Bold" FontFamily="Segoe UI Light" FontSize="18" Background="White" WindowStyle="ThreeDBorderWindow"
+        xmlns:vm4="clr-namespace:UPC.HRNPCI.DesktopApplication.ViewModels.ResultadosPacientesReportes"
+        xmlns:vm5="clr-namespace:UPC.HRNPCI.DesktopApplication.ViewModels.RutasAlmacenamiento"
+        Title="HRNPCI" Height="698.477" Width="1200" FontWeight="Bold" FontFamily="Segoe UI Light" FontSize="18" Background="White" WindowStyle="None" ResizeMode="NoResize" WindowState="Maximized"
         >
     
     <Window.Resources>
@@ -20,12 +24,20 @@
         <DataTemplate x:Key="ListaPacientesAsociacion">
             <v3:ListaPacientesAsociacionView/>
         </DataTemplate>
+        <DataTemplate x:Key="ListaResultadosReportesPacientes">
+            <v4:ListarResultadosReporteView/>
+        </DataTemplate>
+        <DataTemplate x:Key="RutasALmacenamiento">
+            <v5:RutasAlmacenamientosView/>
+        </DataTemplate>
     </Window.Resources>
 
     <Grid Width="Auto" Height="Auto"  Margin="0,0,0,1" >
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
             <RowDefinition Height="44"/>
+            <RowDefinition Height="112*"/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="63*"/>
@@ -36,19 +48,19 @@
         <!--Menu -->
         <!-- Rol del que ingreso al sistema -->
         <!--Menu -->
-        <Menu Height="31" VerticalAlignment="Top" FontFamily="Segoe UI Light" Margin="0,0,0,0" Grid.ColumnSpan="2">
-            <MenuItem Header="Inicio" FontSize="18" Height="26" Width="50">
+        <Menu Height="31" VerticalAlignment="Top" FontFamily="Segoe UI Light" Margin="0,0,0,0" Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <MenuItem Header="Inicio" FontSize="18" Height="26" Width="63">
                 <!--Command="{Binding CerrarSesionCommand}"-->
                 <MenuItem Header="Cerrar sessión" Checked="MenuItem_Checked_1" Click="MenuItem_Click_1" FontSize="16" />
             </MenuItem>
         </Menu>
 
 
-        <TextBlock HorizontalAlignment="Right" Margin="0,0,7,3" VerticalAlignment="Center" Text="{Binding RolLogueado}" TextWrapping="Wrap" Height="28" Width="119" FontSize="18" Grid.Column="1" FontFamily="Segoe UI Semibold"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,0,7,2" VerticalAlignment="Center" Text="{Binding RolLogueado}" TextWrapping="Wrap" Height="28" Width="119" FontSize="18" Grid.Column="1" FontFamily="Segoe UI Semibold"/>
 
 
         <!--Tabs -->
-        <TabControl Height="458" Margin="10,10,10,-423" Grid.Row="1" VerticalAlignment="Top" FontWeight="Normal" FontFamily="Segoe UI Light" FontSize="16" Grid.ColumnSpan="2">
+        <TabControl Margin="10,11,10,6" Grid.Row="1" FontWeight="Normal" FontFamily="Segoe UI Light" FontSize="16" Grid.ColumnSpan="2" Grid.RowSpan="2">
             <TabItem DataContext="{Binding Children[0]}" x:Name="Tab1" Header="Fisioterapeutas" FontFamily="Segoe UI Light">
                 <ContentControl Content="{Binding}" ContentTemplate="{StaticResource ListarFisioterapeutas}" FontFamily="Segoe UI Light"  />
             </TabItem>
@@ -58,6 +70,13 @@
             <TabItem DataContext="{Binding Children[2]}" Header="Asociar pacientes a fisioterapeutas">
                 <ContentControl Content="{Binding}" ContentTemplate="{StaticResource ListaPacientesAsociacion}"/>
             </TabItem>
+            <TabItem DataContext="{Binding Children[3]}" Header="Resultados de pacientes">
+                <ContentControl Content="{Binding}" ContentTemplate="{StaticResource ListaResultadosReportesPacientes}"/>
+            </TabItem>
+            <TabItem DataContext="{Binding Children[4]}" Header="Rutas de almacenamiento">
+                <ContentControl Content="{Binding}" ContentTemplate="{StaticResource RutasALmacenamiento}"/>
+            </TabItem>
+            
         </TabControl>
 
 

@@ -14,6 +14,7 @@ using UPC.HRNPCI.DesktopApplication._Service;
 using UPC.HRNPCI.Model;
 using UPC.HRNPCI.Model.FisioterapeutaModel;
 using UPC.HRNPCI.DesktopApplication.ViewModels.Fisioterapueta;
+using UPC.HRNPCI.DesktopApplication.ViewModels.AsociarPacienteFisioterapeuta;
 using System.ComponentModel;
 
 
@@ -203,6 +204,7 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Fisioterapueta
             ObtenerUrlFotoCommand = new RelayCommand(ObtenerURLfotoFisioterapeuta);
             Rol = FisioterapeutaStatic.Rol;
             Sexo = '-';
+            businesssObject = new FisioterapeutaBusinessObject();
             
         }
 
@@ -210,7 +212,7 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Fisioterapueta
         {
             try
             {
-                Fisioterapeuta f = new Fisioterapeuta();
+                FisioterapeutaB f = new FisioterapeutaB();
                 f.vNombresFisioterapeuta = Nombre;
                 f.vApellidosFisioterapeuta = Apellidos;
                 f.vCelularFisioterapeuta = Celular;
@@ -220,18 +222,23 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Fisioterapueta
                 f.vNumCTMPFisioterapeuta = NCTMP;
                 f.vNumNDTAFisioterapeuta = NNDTA;
                 f.vRolFisioterapeuta = Rol;
-                f.vUsuarioFiosioterapeuta = Nombre ;
-                f.vContrasenaFisioterapeuta = Nombre + Apellidos;
-                f.cGenero = Sexo;
+                char[] delimiterChars = {'@'};
+                string[] strEmail = Email.Split(delimiterChars);
+                f.vUsuarioFiosioterapeuta = strEmail[0];
+
+                Random r = new Random();
+                f.vContrasenaFisioterapeuta = r.Next(1000,10000).ToString();
+                f.cGenero = Sexo.ToString();
                 f.vUrlFotoFosioterapeuta = UrlFoto;
                 f.iFlagBorradoFisioterapeuta= 0;
 
-                //GuardarImagenCargada();
+                GuardarImagenCargada();
 
                 if (FisioterapeutaDL.GuardarFisiotaerapeuta(f))
                 {
                     businesssObject = new FisioterapeutaBusinessObject();
-                    ListarFisioterapeutasViewModel.Instance().ListaFisioterapeutas.Add(businesssObject.ObtenerFisioterapeutaCRUD(f)); 
+                    ListarFisioterapeutasViewModel.Instance().ListaFisioterapeutas.Add(businesssObject.ObtenerFisioterapeutaCRUD(f));
+                    
                     MessageBox.Show("El fisioterapuesta ha sido registrado.");
                 }
 
@@ -255,7 +262,7 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Fisioterapueta
                 Stream s = ofdImage.OpenFile();
                 UrlFoto = ofdImage.FileName;
                 strExtension = ofdImage.DefaultExt;
-                GuardarImagenCargada();
+                
             }  
             
         }
@@ -266,7 +273,7 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Fisioterapueta
             try
             {
                 string strFolderDestino = FisioterapeutaStatic.kstrRutaFoto;
-                string strNombreFoto = Apellidos + "_" + Nombre;
+                string strNombreFoto = "\\" + Apellidos + "_" + Nombre;
                 string strDestino = strFolderDestino + strNombreFoto + "." + strExtension;
                 FileInfo fileInfo = new FileInfo(strDestino);
                 if (!fileInfo.Exists && strExtension != null)

@@ -75,15 +75,6 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Pacinete
             //VerButton.Name = "Ver";
             VerButton.Command = VerPacienteCommand;
 
-            Uri resourceUri = new Uri("Imagenes/Resourses/testImg.jpg", UriKind.Relative);
-            StreamResourceInfo streamInfo = Application.GetResourceStream(resourceUri);
-
-            BitmapFrame temp = BitmapFrame.Create(streamInfo.Stream);
-            var brush = new ImageBrush();
-            brush.ImageSource = temp;
-            VerButton.Background = brush;
-
-
             ActualizarButton = new Button();
             ActualizarButton.Name = "Actualizar";
             ActualizarButton.Command = ActualizarPacienteCommand;
@@ -136,7 +127,7 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Pacinete
                             {
                                 ListarPacientesViewModel.Instance().ocltnPacientesCRUD.RemoveAt(i);
                                 //ListarPacientesViewModel.Instance().ForzarListaRefresh();
-                                MessageBox.Show("Se eliminó al fisioterpapeuta " + strNombres + " " + strApellidos + ".", "Advertencia");
+                                MessageBox.Show("Se eliminó al fisioterpapeuta " + strNombres + " " + strApellidos + ".", "Mensaje");
                             }
                         }
                     }
@@ -146,14 +137,14 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Pacinete
             //ListarPacientesViewModel.Instance().refrescarListaFiosioterapeutas();
         }
 
-        public Paciente GetPaciente()
+        public PacienteB GetPaciente()
         {
-            Paciente paciente = new Paciente();
+            PacienteB paciente = new PacienteB();
 
                paciente.iCodigoPaciente           =  iCodigo                         ;
                paciente.vNombresPaciente =  strNombres;
                paciente.vApellidosPaciente        =  strApellidos               ;
-               paciente.cGeneroPaciente           =  chrGenero                  ;
+               paciente.cGeneroPaciente           =  Convert.ToString(chrGenero)                  ;
                paciente.cDNIPaciente              =  strDNI                     ;
                //strFecNacimiento = Convert.ToDateTime(paciente.daFecNacPaciente).ToString("yyyy/MM/dd");
                paciente.daFecNacPaciente          =  DateTime.ParseExact(strFecNacimiento,"yyyy/MM/dd",null);

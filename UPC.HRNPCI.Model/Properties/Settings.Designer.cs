@@ -26,11 +26,22 @@ namespace UPC.HRNPCI.Model.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=KEVIN-PC\\SQLEXPRESS2012;Initial Catalog=demo;Integrated Security=True" +
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=EASYTAXIPERU\\SQLEXPRESS;Initial Catalog=demo;Integrated Security=True" +
             "")]
         public string demoConnectionString {
             get {
                 return ((string)(this["demoConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=SQL5018.Smarterasp.net;Initial Catalog=DB_9DFD4A_HRNPCI;User ID=DB_9D" +
+            "FD4A_HRNPCI_admin;Password=tesis123456")]
+        public string DB_9DFD4A_HRNPCIConnectionString {
+            get {
+                return ((string)(this["DB_9DFD4A_HRNPCIConnectionString"]));
             }
         }
     }

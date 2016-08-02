@@ -31,9 +31,9 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Fisioterapueta
         {
 
             List<FisioterapeutaCRUDViewModel> listaFisioterapeutas = new List<FisioterapeutaCRUDViewModel>();
-            List<Fisioterapeuta> aux = FisioterapeutaDL.ObtenerFisioterapeutas();
+            List<FisioterapeutaB> aux = FisioterapeutaDL.ObtenerFisioterapeutas();
 
-            IEnumerable<Fisioterapeuta> ordenadosFisioterapeutas = aux.OrderBy(f => f.vApellidosFisioterapeuta) ;
+            IEnumerable<FisioterapeutaB> ordenadosFisioterapeutas = aux.OrderBy(f => f.vApellidosFisioterapeuta);
             foreach (var f in ordenadosFisioterapeutas)
             {
                 FisioterapeutaCRUDViewModel fcrudvm = new FisioterapeutaCRUDViewModel();
@@ -47,13 +47,12 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Fisioterapueta
                 fcrudvm.Rol = f.vRolFisioterapeuta;
                 fcrudvm.NCTMP = f.vNumCTMPFisioterapeuta;
                 fcrudvm.NNDTA = f.vNumNDTAFisioterapeuta;
-                fcrudvm.Sexo = (char)f.cGenero;
+                fcrudvm.Sexo = Convert.ToChar(f.cGenero);
                 fcrudvm.UrlFoto = f.vUrlFotoFosioterapeuta;
                 fcrudvm.Usuario = f.vUsuarioFiosioterapeuta;
                 fcrudvm.Contrasena = f.vContrasenaFisioterapeuta;
                 fcrudvm.UrlFoto = f.vUrlFotoFosioterapeuta;
                 listaFisioterapeutas.Add(fcrudvm);
-
             }
             return listaFisioterapeutas;
         }
@@ -62,7 +61,7 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Fisioterapueta
         {
 
             List<FisioterapeutaCRUDViewModel> listaFisioterapeutaBuscar = new List<FisioterapeutaCRUDViewModel>();
-            List<Fisioterapeuta> aux = FisioterapeutaDL.BuscaPorCampo(IdColumna, Buscar);
+            List<FisioterapeutaB> aux = FisioterapeutaDL.BuscaPorCampo(IdColumna, Buscar);
 
             if (aux != null)
             {
@@ -79,7 +78,7 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Fisioterapueta
                     fcrudvm.Rol = f.vRolFisioterapeuta;
                     fcrudvm.NCTMP = f.vNumCTMPFisioterapeuta;
                     fcrudvm.NNDTA = f.vNumNDTAFisioterapeuta;
-                    fcrudvm.Sexo = (char)f.cGenero;
+                    fcrudvm.Sexo = Convert.ToChar(f.cGenero);
                     fcrudvm.UrlFoto = f.vUrlFotoFosioterapeuta;
 
                     listaFisioterapeutaBuscar.Add(fcrudvm);
@@ -92,7 +91,7 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Fisioterapueta
         
         //para actulizar  la lista de la aplicacion y para yo no estar actualizando directamente de la base de datos
         //agragar y actualizar
-        public FisioterapeutaCRUDViewModel ObtenerFisioterapeutaCRUD(Fisioterapeuta f)
+        public FisioterapeutaCRUDViewModel ObtenerFisioterapeutaCRUD(FisioterapeutaB f)
         {
             if (f != null)
             {
@@ -107,7 +106,7 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Fisioterapueta
                 fcrudvm.Rol = f.vRolFisioterapeuta;
                 fcrudvm.NCTMP = f.vNumCTMPFisioterapeuta;
                 fcrudvm.NNDTA = f.vNumNDTAFisioterapeuta;
-                fcrudvm.Sexo = (char)f.cGenero;
+                fcrudvm.Sexo = Convert.ToChar(f.cGenero);
                 fcrudvm.UrlFoto = f.vUrlFotoFosioterapeuta;
                 fcrudvm.Usuario = f.vUsuarioFiosioterapeuta;
                 fcrudvm.Contrasena = f.vContrasenaFisioterapeuta;
@@ -118,5 +117,11 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Fisioterapueta
             return null;
 
         }
+
+        public int GuardarResultado(int iCodigoPaciente,int iCodigoPlano,int iCodigoLateralidad, int iCodigoUnidad,string strlstAngulos,DateTime dtFecAnalisisPaciente )
+        {
+           return  Model.ResultadosReportesPaciente.ResultadoDL.GuardarResultado(iCodigoPaciente, iCodigoPlano, iCodigoLateralidad,iCodigoUnidad, strlstAngulos, dtFecAnalisisPaciente );
+        }
+        
     }
 }

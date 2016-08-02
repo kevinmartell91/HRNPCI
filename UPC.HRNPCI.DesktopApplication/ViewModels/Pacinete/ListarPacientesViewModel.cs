@@ -142,7 +142,6 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Pacinete
 
         #endregion
 
-
         #region Declaraciones MultiCombobox Columnas
 
         private Dictionary<string, object> _dicItems;
@@ -214,7 +213,7 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Pacinete
 
         public void RefrescarFisioterapuestasNombres()
         {
-            FisioterapeutaNombresCompletos collection = PacienteDL.ObtenerFisioterapeutasNombresCoplemtos();
+            FisioterapeutaNombresCompletos collection = PacienteDL.ObtenerFisioterapeutasNombresCompletos();
             foreach (FisioterapeutaNombresCompletos item in collection.ocltnFisioterapeutasNombresCompletos)
             {
                 dicFisioterapeustas.Add(item.iCodigo.ToString(), item.strNombres + " " + item.strApellidos);

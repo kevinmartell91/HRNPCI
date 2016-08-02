@@ -2,7 +2,7 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:vm="clr-namespace:UPC.HRNPCI.DesktopApplication.ViewModels.AsociarPacienteFisioterapeuta"
-        Title="{Binding strNombreVentana}" Height="248" Width="463" WindowStyle="ToolWindow" FontFamily="Segoe UI Light" FontSize="14">
+        Title="{Binding strNombreVentana}" Height="248" Width="463" WindowStyle="ToolWindow" FontFamily="Segoe UI Light" FontSize="14" WindowStartupLocation="CenterScreen">
 
     <Grid>
         <Grid.ColumnDefinitions>

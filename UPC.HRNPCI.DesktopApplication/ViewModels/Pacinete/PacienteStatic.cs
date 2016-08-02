@@ -17,7 +17,7 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Pacinete
 
 
 
-        public static string kstrRutaFoto = "E:\\UPC\\Tesis\\Software demos\\Primary demos\\HRNPCI_v1.3\\UPC.HRNPCI.DesktopApplication\\Imagenes\\Pacientes\\";
+        public static string kstrRutaFoto = "";
 
     }
 }

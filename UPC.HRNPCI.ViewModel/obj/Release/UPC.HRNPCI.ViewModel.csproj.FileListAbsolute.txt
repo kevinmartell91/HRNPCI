@@ -1,0 +1,4 @@
+D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.ViewModel\bin\Release\UPC.HRNPCI.ViewModel.dll
+D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.ViewModel\bin\Release\UPC.HRNPCI.ViewModel.pdb
+D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.ViewModel\obj\Release\UPC.HRNPCI.ViewModel.dll
+D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.ViewModel\obj\Release\UPC.HRNPCI.ViewModel.pdb

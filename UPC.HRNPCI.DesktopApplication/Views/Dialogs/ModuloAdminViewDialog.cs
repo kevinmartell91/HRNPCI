@@ -7,7 +7,7 @@ using UPC.HRNPCI.DesktopApplication._Interface;
 
 namespace UPC.HRNPCI.DesktopApplication.Views.Dialogs
 {
-    class ModuloAdminViewDialog : IModalDialog
+    public class ModuloAdminViewDialog : IModalDialog
     {
         private ModuloAdminView view;
 

@@ -175,13 +175,7 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Fisioterapueta
 
         public FisioterapeutaCRUDViewModel()
         {
-            //Image img = new Image();
-            //img.Source = new BitmapImage(new Uri (@"E:\\UPC\\Tesis\\Software demos\\Primary demos\\HRNPCI_v1.3\\UPC.HRNPCI.DesktopApplication\\Imagenes\\Resourses\\testImg.jpg"));
-            //StackPanel stackPnl = new StackPanel();
-            //stackPnl.Orientation = Orientation.Horizontal;
-            //stackPnl.Margin = new Thickness(10);
-            //stackPnl.Children.Add(img);
-
+            
             VerButton = new Button();
             VerButton.Command = VerFisioterapuetaCommand;
             
@@ -242,13 +236,13 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Fisioterapueta
 
                         }
 
-                        MessageBox.Show("Se eliminó al fisioterpapeuta " + Nombre + " " + Apellidos + ".","Advertencia");
+                        MessageBox.Show("Se eliminó al fisioterpapeuta " + Nombre + " " + Apellidos + ".","Mensaje");
                     }
 
                 }
                 else 
                 {
-                    MessageBox.Show("No se puede eliminar a este fisioterapeuta ya que esta asignado a pacientes. Realice  desasignación y podrá eliminarlo." + fiosoterapeutaBean().vNombresFisioterapeuta + ".");
+                    MessageBox.Show("No se puede eliminar al fisioterapeuta seleccionado, ya que esta asignado a pacientes. Realice la desasignación y podrá eliminarlo al fisioterapeuta " + fiosoterapeutaBean().vNombresFisioterapeuta + ".");
 
                 }
 

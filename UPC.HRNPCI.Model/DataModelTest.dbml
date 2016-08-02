@@ -1,0 +1,558 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="demo" Class="DataModelTestDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=EASYTAXIPERU\SQLEXPRESS;Initial Catalog=demo;Integrated Security=True" SettingsObjectName="UPC.HRNPCI.Model.Properties.Settings" SettingsPropertyName="demoConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Administrador" Member="Administradors">
+    <Type Name="Administrador">
+      <Column Name="iCodigoAdministrador" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="vUsuarioAdministrador" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vContrasena" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Configuracion" Member="Configuracions">
+    <Type Name="Configuracion">
+      <Column Name="iCodigoConfiguracion" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="vParametro" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="vRutaEstatica" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
+      <Column Name="dtFechaCreacion" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="dtFechaActualizacion" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Fisioterapeuta" Member="Fisioterapeutas">
+    <Type Name="Fisioterapeuta">
+      <Column Name="iCodigoFisioterapeuta" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="vNombresFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vApellidosFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vRolFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vCelularFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vTelefonoFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vCentLabFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vEmailFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vNumCTMPFisioterapeuta" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="vNumNDTAFisioterapeuta" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="vContrasenaFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vUsuarioFiosioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="iFlagBorradoFisioterapeuta" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="vUrlFotoFosioterapeuta" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="cGenero" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Association Name="Fisioterapeuta_Paciente" Member="Pacientes" ThisKey="iCodigoFisioterapeuta" OtherKey="iCodigoFisioterapeutaDos" Type="Paciente" />
+      <Association Name="Fisioterapeuta_Paciente1" Member="Pacientes1" ThisKey="iCodigoFisioterapeuta" OtherKey="iCodigoFisioterapeutaUno" Type="Paciente" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Lateralidad" Member="Lateralidads">
+    <Type Name="Lateralidad">
+      <Column Name="iCodigoLateralidad" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="vNombre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="vDescripcion" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Association Name="Lateralidad_Resultado" Member="Resultados" ThisKey="iCodigoLateralidad" OtherKey="iCodigoLateralidad" Type="Resultado" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Paciente" Member="Pacientes">
+    <Type Name="Paciente">
+      <Column Name="iCodigoPaciente" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="vNombresPaciente" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vApellidosPaciente" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="cGeneroPaciente" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="vDiagnosticoMedicoPaciente" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="iNivelPaciente" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="iPorcentajeNivelPaciente" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="vEdadCronologicaPaciente" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="daFecNacPaciente" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="iCodigoFisioterapeutaUno" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="iCodigoFisioterapeutaDos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="cDNIPaciente" Type="System.String" DbType="Char(8)" CanBeNull="true" />
+      <Column Name="vNomApeMedNeuroReferencia" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vCelMedNeuroReferencia" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="vParentescoApoderado" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vNombresApoderado" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vApellidoApoderado" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vCelularApoderado" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="vTelefonoApoderado" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="iFlagBorrradoPaciente" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="iFlagFisioAsigPaciente" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="vUrlFotoPaciente" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Association Name="Paciente_Resultado" Member="Resultados" ThisKey="iCodigoPaciente" OtherKey="iCodigoPaciente" Type="Resultado" />
+      <Association Name="Fisioterapeuta_Paciente" Member="Fisioterapeuta" ThisKey="iCodigoFisioterapeutaDos" OtherKey="iCodigoFisioterapeuta" Type="Fisioterapeuta" IsForeignKey="true" />
+      <Association Name="Fisioterapeuta_Paciente1" Member="Fisioterapeuta1" ThisKey="iCodigoFisioterapeutaUno" OtherKey="iCodigoFisioterapeuta" Type="Fisioterapeuta" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Plano" Member="Planos">
+    <Type Name="Plano">
+      <Column Name="iCodigoPlano" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="vNombre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="vDescripcion" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Association Name="Plano_Resultado" Member="Resultados" ThisKey="iCodigoPlano" OtherKey="iCodigoPlano" Type="Resultado" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Reporte" Member="Reportes">
+    <Type Name="Reporte">
+      <Column Name="iCodigoReporte" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="iCodigoPaciente" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="iCodigoDetalleReporte" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="iCodigoTipoReporte" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="dtFecReportePaciente" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="vRutaReportePDF" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Association Name="ReporteDetalle_Reporte" Member="ReporteDetalle" ThisKey="iCodigoDetalleReporte" OtherKey="iCodigioReporteDetalle" Type="ReporteDetalle" IsForeignKey="true" />
+      <Association Name="TipoReporte_Reporte" Member="TipoReporte" ThisKey="iCodigoTipoReporte" OtherKey="iCodigoTipoReporte" Type="TipoReporte" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ReporteDetalle" Member="ReporteDetalles">
+    <Type Name="ReporteDetalle">
+      <Column Name="iCodigioReporteDetalle" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="iCodigoResultadoUno" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="iCodigoResultadoDos" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="iCodigoResultadoTres" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="iCodigoResultadoCuatro" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="iCodigoResultadoCinco" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="iCodigoResultadoSeis" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="iCodigoResultadoSiete" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="iCodigoResultadoOcho" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Association Name="ReporteDetalle_Reporte" Member="Reportes" ThisKey="iCodigioReporteDetalle" OtherKey="iCodigoDetalleReporte" Type="Reporte" />
+      <Association Name="Resultado_ReporteDetalle" Member="Resultado" ThisKey="iCodigoResultadoUno" OtherKey="biCodigoResultado" Type="Resultado" IsForeignKey="true" />
+      <Association Name="Resultado_ReporteDetalle1" Member="Resultado1" ThisKey="iCodigoResultadoDos" OtherKey="biCodigoResultado" Type="Resultado" IsForeignKey="true" />
+      <Association Name="Resultado_ReporteDetalle2" Member="Resultado2" ThisKey="iCodigoResultadoTres" OtherKey="biCodigoResultado" Type="Resultado" IsForeignKey="true" />
+      <Association Name="Resultado_ReporteDetalle3" Member="Resultado3" ThisKey="iCodigoResultadoCuatro" OtherKey="biCodigoResultado" Type="Resultado" IsForeignKey="true" />
+      <Association Name="Resultado_ReporteDetalle4" Member="Resultado4" ThisKey="iCodigoResultadoCinco" OtherKey="biCodigoResultado" Type="Resultado" IsForeignKey="true" />
+      <Association Name="Resultado_ReporteDetalle5" Member="Resultado5" ThisKey="iCodigoResultadoSeis" OtherKey="biCodigoResultado" Type="Resultado" IsForeignKey="true" />
+      <Association Name="Resultado_ReporteDetalle6" Member="Resultado6" ThisKey="iCodigoResultadoSiete" OtherKey="biCodigoResultado" Type="Resultado" IsForeignKey="true" />
+      <Association Name="Resultado_ReporteDetalle7" Member="Resultado7" ThisKey="iCodigoResultadoOcho" OtherKey="biCodigoResultado" Type="Resultado" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Resultado" Member="Resultados">
+    <Type Name="Resultado">
+      <Column Name="biCodigoResultado" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="iCodigoPaciente" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="iCodigoPlano" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="iCodigoLateralidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="iCodigoUnidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="vListaAngulos" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="dtFecAnalisisPaciente" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="Resultado_ReporteDetalle" Member="ReporteDetalles" ThisKey="biCodigoResultado" OtherKey="iCodigoResultadoUno" Type="ReporteDetalle" />
+      <Association Name="Resultado_ReporteDetalle1" Member="ReporteDetalles1" ThisKey="biCodigoResultado" OtherKey="iCodigoResultadoDos" Type="ReporteDetalle" />
+      <Association Name="Resultado_ReporteDetalle2" Member="ReporteDetalles2" ThisKey="biCodigoResultado" OtherKey="iCodigoResultadoTres" Type="ReporteDetalle" />
+      <Association Name="Resultado_ReporteDetalle3" Member="ReporteDetalles3" ThisKey="biCodigoResultado" OtherKey="iCodigoResultadoCuatro" Type="ReporteDetalle" />
+      <Association Name="Resultado_ReporteDetalle4" Member="ReporteDetalles4" ThisKey="biCodigoResultado" OtherKey="iCodigoResultadoCinco" Type="ReporteDetalle" />
+      <Association Name="Resultado_ReporteDetalle5" Member="ReporteDetalles5" ThisKey="biCodigoResultado" OtherKey="iCodigoResultadoSeis" Type="ReporteDetalle" />
+      <Association Name="Resultado_ReporteDetalle6" Member="ReporteDetalles6" ThisKey="biCodigoResultado" OtherKey="iCodigoResultadoSiete" Type="ReporteDetalle" />
+      <Association Name="Resultado_ReporteDetalle7" Member="ReporteDetalles7" ThisKey="biCodigoResultado" OtherKey="iCodigoResultadoOcho" Type="ReporteDetalle" />
+      <Association Name="Lateralidad_Resultado" Member="Lateralidad" ThisKey="iCodigoLateralidad" OtherKey="iCodigoLateralidad" Type="Lateralidad" IsForeignKey="true" />
+      <Association Name="Paciente_Resultado" Member="Paciente" ThisKey="iCodigoPaciente" OtherKey="iCodigoPaciente" Type="Paciente" IsForeignKey="true" />
+      <Association Name="Plano_Resultado" Member="Plano" ThisKey="iCodigoPlano" OtherKey="iCodigoPlano" Type="Plano" IsForeignKey="true" />
+      <Association Name="Unidad_Resultado" Member="Unidad" ThisKey="iCodigoUnidad" OtherKey="iCodigoUnidad" Type="Unidad" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TipoReporte" Member="TipoReportes">
+    <Type Name="TipoReporte">
+      <Column Name="iCodigoTipoReporte" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="vNombreTipoReporte" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="vDescripcionTipoReporte" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Association Name="TipoReporte_Reporte" Member="Reportes" ThisKey="iCodigoTipoReporte" OtherKey="iCodigoTipoReporte" Type="Reporte" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Unidad" Member="Unidads">
+    <Type Name="Unidad">
+      <Column Name="iCodigoUnidad" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="vNombre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="vDescripcion" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Association Name="Unidad_Resultado" Member="Resultados" ThisKey="iCodigoUnidad" OtherKey="iCodigoUnidad" Type="Resultado" />
+    </Type>
+  </Table>
+  <Function Name="dbo.SP_BackupDB" Method="SP_BackupDB">
+    <Parameter Name="pathIn" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="pathOut" Type="System.String" DbType="VarChar(500)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_BuscarFisioterapeutaApellidos" Method="SP_BuscarFisioterapeutaApellidos">
+    <Parameter Name="palabra" Type="System.String" DbType="VarChar(60)" />
+    <ElementType Name="SP_BuscarFisioterapeutaApellidosResult">
+      <Column Name="iCodigoFisioterapeuta" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="vNombresFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vApellidosFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vRolFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vCelularFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vTelefonoFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vCentLabFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vEmailFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vNumCTMPFisioterapeuta" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="vNumNDTAFisioterapeuta" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="vContrasenaFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vUsuarioFiosioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="iFlagBorradoFisioterapeuta" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="vUrlFotoFosioterapeuta" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="cGenero" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_BuscarFisioterapeutaBorrado" Method="SP_BuscarFisioterapeutaBorrado">
+    <Parameter Name="palabra" Type="System.String" DbType="VarChar(60)" />
+    <ElementType Name="SP_BuscarFisioterapeutaBorradoResult">
+      <Column Name="iCodigoFisioterapeuta" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="vNombresFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vApellidosFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vRolFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vCelularFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vTelefonoFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vCentLabFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vEmailFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vNumCTMPFisioterapeuta" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="vNumNDTAFisioterapeuta" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="vContrasenaFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vUsuarioFiosioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="iFlagBorradoFisioterapeuta" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="vUrlFotoFosioterapeuta" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="cGenero" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_BuscarFisioterapeutaCelular" Method="SP_BuscarFisioterapeutaCelular">
+    <Parameter Name="palabra" Type="System.String" DbType="VarChar(60)" />
+  </Function>
+  <Function Name="dbo.SP_BuscarFisioterapeutaCentLaboral" Method="SP_BuscarFisioterapeutaCentLaboral">
+    <Parameter Name="palabra" Type="System.String" DbType="VarChar(60)" />
+    <ElementType Name="SP_BuscarFisioterapeutaCentLaboralResult">
+      <Column Name="iCodigoFisioterapeuta" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="vNombresFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vApellidosFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vRolFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vCelularFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vTelefonoFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vCentLabFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vEmailFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vNumCTMPFisioterapeuta" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="vNumNDTAFisioterapeuta" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="vContrasenaFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vUsuarioFiosioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="iFlagBorradoFisioterapeuta" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="vUrlFotoFosioterapeuta" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="cGenero" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_BuscarFisioterapeutaCodigo" Method="SP_BuscarFisioterapeutaCodigo">
+    <Parameter Name="palabra" Type="System.String" DbType="VarChar(60)" />
+    <ElementType Name="SP_BuscarFisioterapeutaCodigoResult">
+      <Column Name="iCodigoFisioterapeuta" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="vNombresFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vApellidosFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vRolFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vCelularFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vTelefonoFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vCentLabFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vEmailFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vNumCTMPFisioterapeuta" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="vNumNDTAFisioterapeuta" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="vContrasenaFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vUsuarioFiosioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="iFlagBorradoFisioterapeuta" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="vUrlFotoFosioterapeuta" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="cGenero" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_BuscarFisioterapeutaContrasena" Method="SP_BuscarFisioterapeutaContrasena">
+    <Parameter Name="palabra" Type="System.String" DbType="VarChar(60)" />
+    <ElementType Name="SP_BuscarFisioterapeutaContrasenaResult">
+      <Column Name="iCodigoFisioterapeuta" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="vNombresFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vApellidosFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vRolFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vCelularFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vTelefonoFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vCentLabFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vEmailFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vNumCTMPFisioterapeuta" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="vNumNDTAFisioterapeuta" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="vContrasenaFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vUsuarioFiosioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="iFlagBorradoFisioterapeuta" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="vUrlFotoFosioterapeuta" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="cGenero" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_BuscarFisioterapeutaCTMP" Method="SP_BuscarFisioterapeutaCTMP">
+    <Parameter Name="palabra" Type="System.String" DbType="VarChar(60)" />
+    <ElementType Name="SP_BuscarFisioterapeutaCTMPResult">
+      <Column Name="iCodigoFisioterapeuta" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="vNombresFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vApellidosFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vRolFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vCelularFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vTelefonoFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vCentLabFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vEmailFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vNumCTMPFisioterapeuta" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="vNumNDTAFisioterapeuta" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="vContrasenaFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vUsuarioFiosioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="iFlagBorradoFisioterapeuta" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="vUrlFotoFosioterapeuta" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="cGenero" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_BuscarFisioterapeutaEmail" Method="SP_BuscarFisioterapeutaEmail">
+    <Parameter Name="palabra" Type="System.String" DbType="VarChar(60)" />
+    <ElementType Name="SP_BuscarFisioterapeutaEmailResult">
+      <Column Name="iCodigoFisioterapeuta" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="vNombresFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vApellidosFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vRolFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vCelularFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vTelefonoFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vCentLabFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vEmailFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vNumCTMPFisioterapeuta" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="vNumNDTAFisioterapeuta" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="vContrasenaFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vUsuarioFiosioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="iFlagBorradoFisioterapeuta" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="vUrlFotoFosioterapeuta" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="cGenero" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_BuscarFisioterapeutaNDTA" Method="SP_BuscarFisioterapeutaNDTA">
+    <Parameter Name="palabra" Type="System.String" DbType="VarChar(60)" />
+    <ElementType Name="SP_BuscarFisioterapeutaNDTAResult">
+      <Column Name="iCodigoFisioterapeuta" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="vNombresFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vApellidosFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vRolFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vCelularFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vTelefonoFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vCentLabFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vEmailFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vNumCTMPFisioterapeuta" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="vNumNDTAFisioterapeuta" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="vContrasenaFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vUsuarioFiosioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="iFlagBorradoFisioterapeuta" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="vUrlFotoFosioterapeuta" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="cGenero" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_BuscarFisioterapeutaNombre" Method="SP_BuscarFisioterapeutaNombre">
+    <Parameter Name="palabra" Type="System.String" DbType="VarChar(60)" />
+    <ElementType Name="SP_BuscarFisioterapeutaNombreResult">
+      <Column Name="iCodigoFisioterapeuta" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="vNombresFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vApellidosFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vRolFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vCelularFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vTelefonoFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vCentLabFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vEmailFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vNumCTMPFisioterapeuta" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="vNumNDTAFisioterapeuta" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="vContrasenaFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vUsuarioFiosioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="iFlagBorradoFisioterapeuta" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="vUrlFotoFosioterapeuta" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="cGenero" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_BuscarFisioterapeutaNombres" Method="SP_BuscarFisioterapeutaNombres">
+    <Parameter Name="palabra" Type="System.String" DbType="VarChar(60)" />
+    <ElementType Name="SP_BuscarFisioterapeutaNombresResult">
+      <Column Name="iCodigoFisioterapeuta" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="vNombresFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vApellidosFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vRolFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vCelularFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vTelefonoFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vCentLabFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vEmailFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vNumCTMPFisioterapeuta" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="vNumNDTAFisioterapeuta" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="vContrasenaFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vUsuarioFiosioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="iFlagBorradoFisioterapeuta" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="vUrlFotoFosioterapeuta" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="cGenero" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_BuscarFisioterapeutaRol" Method="SP_BuscarFisioterapeutaRol">
+    <Parameter Name="palabra" Type="System.String" DbType="VarChar(60)" />
+    <ElementType Name="SP_BuscarFisioterapeutaRolResult">
+      <Column Name="iCodigoFisioterapeuta" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="vNombresFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vApellidosFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vRolFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vCelularFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vTelefonoFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vCentLabFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vEmailFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vNumCTMPFisioterapeuta" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="vNumNDTAFisioterapeuta" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="vContrasenaFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vUsuarioFiosioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="iFlagBorradoFisioterapeuta" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="vUrlFotoFosioterapeuta" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="cGenero" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_BuscarFisioterapeutaTelefono" Method="SP_BuscarFisioterapeutaTelefono">
+    <Parameter Name="palabra" Type="System.String" DbType="VarChar(60)" />
+    <ElementType Name="SP_BuscarFisioterapeutaTelefonoResult">
+      <Column Name="iCodigoFisioterapeuta" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="vNombresFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vApellidosFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vRolFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vCelularFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vTelefonoFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vCentLabFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vEmailFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vNumCTMPFisioterapeuta" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="vNumNDTAFisioterapeuta" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="vContrasenaFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vUsuarioFiosioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="iFlagBorradoFisioterapeuta" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="vUrlFotoFosioterapeuta" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="cGenero" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_BuscarFisioterapeutaUsuario" Method="SP_BuscarFisioterapeutaUsuario">
+    <Parameter Name="palabra" Type="System.String" DbType="VarChar(60)" />
+    <ElementType Name="SP_BuscarFisioterapeutaUsuarioResult">
+      <Column Name="iCodigoFisioterapeuta" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="vNombresFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vApellidosFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vRolFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vCelularFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vTelefonoFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vCentLabFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vEmailFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vNumCTMPFisioterapeuta" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="vNumNDTAFisioterapeuta" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="vContrasenaFisioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vUsuarioFiosioterapeuta" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="iFlagBorradoFisioterapeuta" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="vUrlFotoFosioterapeuta" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="cGenero" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_BuscarReportes" Method="SP_BuscarReportes">
+    <Parameter Name="iCodigoPaciente" Type="System.Int32" DbType="Int" />
+    <Parameter Name="iCodigoTipoReporte" Type="System.Int32" DbType="Int" />
+    <Parameter Name="dtLimitInf" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="dtLimitSup" Type="System.DateTime" DbType="Date" />
+    <ElementType Name="SP_BuscarReportesResult">
+      <Column Name="iCodigoReporte" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="iCodigoPaciente" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="iCodigoDetalleReporte" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="iCodigoTipoReporte" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="vNombreTipoReporte" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="dtFecReportePaciente" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="vNombresPaciente" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vApellidosPaciente" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_BuscarResultados" Method="SP_BuscarResultados">
+    <Parameter Name="iCodigoPaciente" Type="System.Int32" DbType="Int" />
+    <Parameter Name="iCodigoUnidad" Type="System.Int32" DbType="Int" />
+    <Parameter Name="iCodigoLateralidad" Type="System.Int32" DbType="Int" />
+    <Parameter Name="dtLimitInf" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="dtLimitSup" Type="System.DateTime" DbType="Date" />
+    <ElementType Name="SP_BuscarResultadosResult">
+      <Column Name="biCodigoResultado" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="iCodigoPaciente" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="iCodigoPlano" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="iCodigoLateralidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="iCodigoUnidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="vListaAngulos" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="dtFecAnalisisPaciente" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="vNombresPaciente" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vApellidosPaciente" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vNombrePlano" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="vNombreLateralidad" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="vNombreUnidad" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_FisioterapeutaBuscarPorColumna" Method="SP_FisioterapeutaBuscarPorColumna">
+    <Parameter Name="nombreTabla" Type="System.String" DbType="VarChar(60)" />
+    <Parameter Name="nombreColumna" Type="System.String" DbType="VarChar(60)" />
+    <Parameter Name="texto" Type="System.String" DbType="VarChar(60)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_GenerarReporte" Method="SP_GenerarReporte">
+    <Parameter Name="iCodigoPaciente" Type="System.Int32" DbType="Int" />
+    <Parameter Name="iCodigoDetalleReporte" Type="System.Int32" DbType="Int" />
+    <Parameter Name="iCodigoTipoReporte" Type="System.Int32" DbType="Int" />
+    <Parameter Name="dtFecReportePaciente" Type="System.DateTime" DbType="Date" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_GuardarReporteDetalle" Method="SP_GuardarReporteDetalle">
+    <Parameter Name="iCodigoResultadoUno" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="iCodigoResultadoDos" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="iCodigoResultadoTres" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="iCodigoResultadoCuatro" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="iCodigoResultadoCinco" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="iCodigoResultadoSeis" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="iCodigoResultadoSiete" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="iCodigoResultadoOcho" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="id" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_GuardarResultado" Method="SP_GuardarResultado">
+    <Parameter Name="iCodigoPaciente" Type="System.Int32" DbType="Int" />
+    <Parameter Name="iCodigoPlano" Type="System.Int32" DbType="Int" />
+    <Parameter Name="iCodigoLateralidad" Type="System.Int32" DbType="Int" />
+    <Parameter Name="iCodigoUnidad" Type="System.Int32" DbType="Int" />
+    <Parameter Name="vListaAngulos" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="dtFecAnalisisPaciente" Type="System.DateTime" DbType="Date" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_ListaPacienteDeFisioterapeutas" Method="SP_ListaPacienteDeFisioterapeutas">
+    <Parameter Name="iCodigoFisioterapeuta" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SP_ListaPacienteDeFisioterapeutasResult">
+      <Column Name="iCodigoPaciente" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(201)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_ListarReportesPacientes" Method="SP_ListarReportesPacientes">
+    <ElementType Name="SP_ListarReportesPacientesResult">
+      <Column Name="iCodigoReporte" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="iCodigoPaciente" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="iCodigoDetalleReporte" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="iCodigoTipoReporte" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="vNombreTipoReporte" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="dtFecReportePaciente" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="vNombresPaciente" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vApellidosPaciente" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_ListarResultadosPacientes" Method="SP_ListarResultadosPacientes">
+    <ElementType Name="SP_ListarResultadosPacientesResult">
+      <Column Name="biCodigoResultado" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="iCodigoPaciente" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="iCodigoPlano" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="iCodigoLateralidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="iCodigoUnidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="vListaAngulos" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="dtFecAnalisisPaciente" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="vNombresPaciente" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vApellidosPaciente" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vNombrePlano" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="vNombreLateralidad" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="vNombreUnidad" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_SeleccionarColumnasFisioterapueta" Method="SP_SeleccionarColumnasFisioterapueta">
+    <ElementType Name="SP_SeleccionarColumnasFisioterapuetaResult">
+      <Column Name="column_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_SeleccionarColumnasPaciente" Method="SP_SeleccionarColumnasPaciente">
+    <ElementType Name="SP_SeleccionarColumnasPacienteResult">
+      <Column Name="column_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_SeleccionarFisioterapuestasCombobox" Method="SP_SeleccionarFisioterapuestasCombobox">
+    <ElementType Name="SP_SeleccionarFisioterapuestasComboboxResult">
+      <Column Name="iCodigoFisioterapeuta" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="vNombresFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="VApellidosFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_SeleccionarNombresFisioterapeutas" Method="SP_SeleccionarNombresFisioterapeutas">
+    <ElementType Name="SP_SeleccionarNombresFisioterapeutasResult">
+      <Column Name="iCodigoFisioterapeuta" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="vNombresFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vApellidosFisioterapeuta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

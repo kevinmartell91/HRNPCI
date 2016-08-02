@@ -15,7 +15,7 @@ namespace UPC.HRNPCI.DesktopApplication._Service
         {
             container = new UnityContainer();
         }
-    
+
         void IServiceLocator.Register<TInterface, TImplementation>()
         {
             container.RegisterType<TInterface, TImplementation>();
@@ -23,7 +23,7 @@ namespace UPC.HRNPCI.DesktopApplication._Service
 
         TInterface IServiceLocator.Get<TInterface>()
         {
-            return container.Resolve<TInterface>();
+            return container.Resolve<TInterface>();  
         }
     }
 }

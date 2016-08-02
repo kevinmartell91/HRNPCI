@@ -183,6 +183,8 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.AsociarPacienteFisioterapeuta
             _ocltnItemsCampos = new ObservableCollection<string>();
 
             PacienteColumnas pacienteColumnasDL = PacienteDL.ObtenerColumnasPaciente();
+            
+
             PacienteStatic.PacienteColumnas = pacienteColumnasDL;
 
             for (int i = 0; i < pacienteColumnasDL.ocltnColumnasPaciente.Count; i++)
@@ -214,7 +216,7 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.AsociarPacienteFisioterapeuta
 
         public void RefrescarFisioterapuestasNombres()
         {
-            FisioterapeutaNombresCompletos collection = PacienteDL.ObtenerFisioterapeutasNombresCoplemtos();
+            FisioterapeutaNombresCompletos collection = PacienteDL.ObtenerFisioterapeutasNombresCompletos();
             foreach (FisioterapeutaNombresCompletos item in collection.ocltnFisioterapeutasNombresCompletos)
             {
                 dicFisioterapeustas.Add(item.iCodigo.ToString(), item.strNombres + " " + item.strApellidos);

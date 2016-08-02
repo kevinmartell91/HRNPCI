@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:vm="clr-namespace:UPC.HRNPCI.DesktopApplication.ViewModels.Fisioterapueta"
         xmlns:validacion="clr-namespace:UPC.HRNPCI.DesktopApplication.ViewModels"
-        Title="Editar datos de fisioterapeuta" Height="500" Width="400">
+        Title="Editar datos de fisioterapeuta" Height="500" Width="400" WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow">
     
     <Window.Resources>
         <!--<vm:FisioterapeutaActualizarViewModel x:Key="fisioterapeutaActualizarViewModel"/>-->

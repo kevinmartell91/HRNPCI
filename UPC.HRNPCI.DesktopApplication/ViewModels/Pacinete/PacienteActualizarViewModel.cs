@@ -26,7 +26,7 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Pacinete
         PacienteBusinessObject businessObject { get; set; }
 
         public RelayCommand ActualizarCommand { get; set; }
-        public Paciente PacienteActualizar { get; set; }
+        public PacienteB PacienteActualizar { get; set; }
 
         private int _iCodigo;
         private string _strNombres;
@@ -112,12 +112,12 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Pacinete
             ActualizarCommand = new RelayCommand(ActualizarPaciente);
         }
 
-        public void SetPacienteActualizar(Paciente pPaciente)
+        public void SetPacienteActualizar(PacienteB pPaciente)
         {
             if (pPaciente != null)
             {
                 PacienteActualizar = pPaciente;
-                Paciente paciente = PacienteActualizar;
+                PacienteB paciente = PacienteActualizar;
              iCodigo                                     = paciente.iCodigoPaciente                                 ;
              strNombres                                  = paciente.vNombresPaciente                                ;
              strApellidos                                = paciente.vApellidosPaciente                              ;
@@ -150,11 +150,11 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Pacinete
         {
             try
             {
-               Paciente paciente = new Paciente();
+               PacienteB paciente = new PacienteB();
                paciente.iCodigoPaciente           =  iCodigo                                    ;
                paciente.vNombresPaciente          =  strNombres                                 ;
                paciente.vApellidosPaciente        =  strApellidos                               ;
-               paciente.cGeneroPaciente           =  chrGenero                                  ;
+               paciente.cGeneroPaciente           =  Convert.ToString(chrGenero)                                  ;
                paciente.cDNIPaciente              =  strDNI                                     ;
                paciente.daFecNacPaciente          =  DateTime.ParseExact(strFecNacimiento,"yyyy/mm/dd",null)                       ;
                if (strFisioAsignadoUno != "")
@@ -180,7 +180,7 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Pacinete
                 {
 
                     ListarPacientesViewModel.Instance().ForzarListaRefresh();
-                    MessageBox.Show("Paciente actualizado.");
+                    MessageBox.Show("El paciente fue actualizado con éxtio.","Mensaje");
 
                     //businessObject = new PacienteBusinessObject();
 
@@ -206,7 +206,7 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Pacinete
             }
             catch (Exception ex)
             {
-                throw ex;
+               // throw ex;
                  MessageBox.Show("No actualizó al paciente, intente en unos momentos.");
                  return;
             }

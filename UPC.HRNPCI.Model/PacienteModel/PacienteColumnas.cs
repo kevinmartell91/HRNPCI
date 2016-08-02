@@ -31,4 +31,30 @@ namespace UPC.HRNPCI.Model.PacienteModel
         }
 
     }
+
+    public class PacienteB
+    {
+        public int iCodigoPaciente { get; set; }
+        public string vNombresPaciente { get; set; }
+        public string vApellidosPaciente { get; set; }
+        public string cGeneroPaciente { get; set; }
+        public string vDiagnosticoMedicoPaciente { get; set; }
+        public System.Nullable<int> iNivelPaciente { get; set; }
+        public System.Nullable<int> iPorcentajeNivelPaciente { get; set; }
+        public string vEdadCronologicaPaciente { get; set; }
+        public System.Nullable<System.DateTime> daFecNacPaciente { get; set; }
+        public System.Nullable<int> iCodigoFisioterapeutaUno { get; set; }
+        public System.Nullable<int> iCodigoFisioterapeutaDos { get; set; }
+        public string cDNIPaciente { get; set; }
+        public string vNomApeMedNeuroReferencia { get; set; }
+        public string vCelMedNeuroReferencia { get; set; }
+        public string vParentescoApoderado { get; set; }
+        public string vNombresApoderado { get; set; }
+        public string vApellidoApoderado { get; set; }
+        public string vCelularApoderado { get; set; }
+        public string vTelefonoApoderado { get; set; }
+        public int iFlagBorrradoPaciente { get; set; }
+        public int iFlagFisioAsigPaciente { get; set; }
+        public string vUrlFotoPaciente { get; set; }
+    }
 }

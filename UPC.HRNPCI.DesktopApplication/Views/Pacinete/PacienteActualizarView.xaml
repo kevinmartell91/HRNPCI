@@ -1,7 +1,7 @@
 ﻿<Window x:Class="UPC.HRNPCI.DesktopApplication.Views.Pacinete.PacienteActualizarView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-       Title="Actulizar datos paciente" Height="549.45" Width="715.384">
+       Title="Actulizar datos paciente" Height="549.45" Width="715.384" WindowStyle="ToolWindow" WindowStartupLocation="CenterScreen">
 
     <Window.Resources>
         <ResourceDictionary >

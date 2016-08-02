@@ -3,3 +3,27 @@ E:\UPC\Tesis\Software demos\Primary demos\HRNPCI_v1.3\UPC.HRNPCI.ViewModel\bin\D
 E:\UPC\Tesis\Software demos\Primary demos\HRNPCI_v1.3\UPC.HRNPCI.ViewModel\obj\Debug\UPC.HRNPCI.ViewModel.dll
 E:\UPC\Tesis\Software demos\Primary demos\HRNPCI_v1.3\UPC.HRNPCI.ViewModel\obj\Debug\UPC.HRNPCI.ViewModel.pdb
 E:\UPC\Tesis\Software demos\Primary demos\HRNPCI_v1.3\UPC.HRNPCI.ViewModel\obj\Debug\UPC.HRNPCI.ViewModel.csprojResolveAssemblyReference.cache
+E:\UPC\Tesis\Repo\HRNPCI\UPC.HRNPCI.ViewModel\bin\Debug\UPC.HRNPCI.ViewModel.dll
+E:\UPC\Tesis\Repo\HRNPCI\UPC.HRNPCI.ViewModel\bin\Debug\UPC.HRNPCI.ViewModel.pdb
+E:\UPC\Tesis\Repo\HRNPCI\UPC.HRNPCI.ViewModel\obj\Debug\UPC.HRNPCI.ViewModel.csprojResolveAssemblyReference.cache
+E:\UPC\Tesis\Repo\HRNPCI\UPC.HRNPCI.ViewModel\obj\Debug\UPC.HRNPCI.ViewModel.dll
+E:\UPC\Tesis\Repo\HRNPCI\UPC.HRNPCI.ViewModel\obj\Debug\UPC.HRNPCI.ViewModel.pdb
+D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.ViewModel\bin\Debug\UPC.HRNPCI.ViewModel.dll
+D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.ViewModel\bin\Debug\UPC.HRNPCI.ViewModel.pdb
+D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.ViewModel\obj\Debug\UPC.HRNPCI.ViewModel.csprojResolveAssemblyReference.cache
+D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.ViewModel\obj\Debug\UPC.HRNPCI.ViewModel.dll
+D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.ViewModel\obj\Debug\UPC.HRNPCI.ViewModel.pdb
+D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.ViewModel\bin\Debug\UPC.HRNPCI.ViewModel.dll
+D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.ViewModel\bin\Debug\UPC.HRNPCI.ViewModel.pdb
+D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.ViewModel\obj\Debug\UPC.HRNPCI.ViewModel.dll
+D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.ViewModel\obj\Debug\UPC.HRNPCI.ViewModel.pdb
+D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.ViewModel\bin\Debug\UPC.HRNPCI.ViewModel.dll
+D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.ViewModel\bin\Debug\UPC.HRNPCI.ViewModel.pdb
+D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.ViewModel\obj\Debug\UPC.HRNPCI.ViewModel.csprojResolveAssemblyReference.cache
+D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.ViewModel\obj\Debug\UPC.HRNPCI.ViewModel.dll
+D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.ViewModel\obj\Debug\UPC.HRNPCI.ViewModel.pdb
+C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.ViewModel\bin\Debug\UPC.HRNPCI.ViewModel.dll
+C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.ViewModel\bin\Debug\UPC.HRNPCI.ViewModel.pdb
+C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.ViewModel\obj\Debug\UPC.HRNPCI.ViewModel.csprojResolveAssemblyReference.cache
+C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.ViewModel\obj\Debug\UPC.HRNPCI.ViewModel.dll
+C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.ViewModel\obj\Debug\UPC.HRNPCI.ViewModel.pdb

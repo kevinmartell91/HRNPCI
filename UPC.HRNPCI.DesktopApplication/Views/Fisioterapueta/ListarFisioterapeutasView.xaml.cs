@@ -57,6 +57,11 @@ namespace UPC.HRNPCI.DesktopApplication.Views.Fisioterapueta
             }
         }
 
+        private void TextBlock_MouseLeftButtonDown_1(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
 
     }
     //class GridViewColumnVisibilityManager

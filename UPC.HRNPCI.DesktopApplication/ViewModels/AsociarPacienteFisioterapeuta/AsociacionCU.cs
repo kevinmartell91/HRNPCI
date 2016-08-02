@@ -61,8 +61,8 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.AsociarPacienteFisioterapeuta
                 //return _iFisioAsigPaciente;
 
                 if (_iFisioAsigPaciente == 0)
-                    strNombreBoton = "Resourses\\add_icon.jpg";
-                else strNombreBoton = "Resourses\\edit_icon.jpg";
+                    strNombreBoton = @"..\..\Resources\imagenes\add_icon.jpg";
+                else strNombreBoton = @"..\..\Resources\imagenes\edit_icon.jpg";
                 return _iFisioAsigPaciente;
             }
             set
@@ -196,14 +196,14 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.AsociarPacienteFisioterapeuta
         //    //ListarPacientesViewModel.Instance().refrescarListaFiosioterapeutas();
         //}
 
-        public Paciente GetPaciente()
+        public PacienteB GetPaciente()
         {
-            Paciente paciente = new Paciente();
+            PacienteB paciente = new PacienteB();
 
                paciente.iCodigoPaciente           =  iCodigo                         ;
                paciente.vNombresPaciente =  strNombres;
                paciente.vApellidosPaciente        =  strApellidos               ;
-               paciente.cGeneroPaciente           =  chrGenero                  ;
+               paciente.cGeneroPaciente           =  Convert.ToString(chrGenero)                  ;
                paciente.cDNIPaciente              =  strDNI                     ;
                paciente.daFecNacPaciente          = DateTime.ParseExact(strFecNacimiento,"yyyy/MM/dd",null);
                //paciente.iCodigoFisioterapeutaUno  =  Convert.ToInt32(strFisioAsignadoUno)      ;

@@ -27,6 +27,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -39,14 +40,41 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Emgu.CV">
+      <HintPath>C:\Emgu\emgucv-windows-x86 2.4.0.1717\bin\Emgu.CV.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.UI">
+      <HintPath>C:\Emgu\emgucv-windows-x86 2.4.0.1717\bin\Emgu.CV.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.Util">
+      <HintPath>C:\Emgu\emgucv-windows-x86 2.4.0.1717\bin\Emgu.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.7.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa, Version=5.5.7.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\itextsharp.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xtra, Version=5.5.7.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\itextsharp.xtra.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Kinect, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Microsoft.Kinect.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>_DLL\Microsoft.Practices.Unity.dll</HintPath>
+      <HintPath>.\Microsoft.Practices.Unity.dll</HintPath>
     </Reference>
     <Reference Include="PresentationFramework.Aero" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -55,6 +83,7 @@
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
+    <Reference Include="UIAutomationProvider" />
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -65,6 +94,12 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="BootStrapper.cs" />
+    <Compile Include="Control\Block.xaml.cs">
+      <DependentUpon>Block.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Control\LoadingAnimation.xaml.cs">
+      <DependentUpon>LoadingAnimation.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Helpers\GridViewColumnVisibilityManager.cs" />
     <Compile Include="ViewModels\AsociarPacienteFisioterapeuta\AsociacionCU.cs" />
     <Compile Include="ViewModels\AsociarPacienteFisioterapeuta\AsociarPacienteFisioterapeutaViewModel.cs" />
@@ -75,9 +110,11 @@
     <Compile Include="ViewModels\Fisioterapueta\FisioterapeutaBusinessObject.cs" />
     <Compile Include="ViewModels\Fisioterapueta\FisioterapeutaCRUDViewModel.cs" />
     <Compile Include="ViewModels\Fisioterapueta\FisioterapeutaStatic.cs" />
+    <Compile Include="ViewModels\Fisioterapueta\FisioterapeutaTestAnalisisViewModel.cs" />
     <Compile Include="ViewModels\Fisioterapueta\FisioterapeutaVerViewModel.cs" />
     <Compile Include="ViewModels\Fisioterapueta\ListarFisioterapeutasViewModel.cs" />
     <Compile Include="ViewModels\ModuloAdminViewModel.cs" />
+    <Compile Include="ViewModels\ModuloFisioterapeutaViewModel.cs" />
     <Compile Include="ViewModels\Pacinete\ListarPacientesViewModel.cs" />
     <Compile Include="ViewModels\Pacinete\PacienteActualizarViewModel.cs" />
     <Compile Include="ViewModels\Pacinete\PacienteAgregarViewModel.cs" />
@@ -85,6 +122,22 @@
     <Compile Include="ViewModels\Pacinete\PacienteCRUDViewModel.cs" />
     <Compile Include="ViewModels\Pacinete\PacienteStatic.cs" />
     <Compile Include="ViewModels\Pacinete\PacienteVerViewModel.cs" />
+    <Compile Include="Helpers\ReportPDF.cs" />
+    <Compile Include="Helpers\ScreenCapture.cs" />
+    <Compile Include="ViewModels\ResultadosPacientesReportes\ListarResultadosReportesViewModel.cs" />
+    <Compile Include="ViewModels\ResultadosPacientesReportes\ReportesBuscarViewModel.cs" />
+    <Compile Include="ViewModels\ResultadosPacientesReportes\ReportesBusinessObject.cs" />
+    <Compile Include="ViewModels\ResultadosPacientesReportes\ReportesCRViewModel.cs" />
+    <Compile Include="ViewModels\ResultadosPacientesReportes\ReportesVer2ViewModel.cs" />
+    <Compile Include="ViewModels\ResultadosPacientesReportes\ReportesVerViewModel.cs" />
+    <Compile Include="ViewModels\ResultadosPacientesReportes\ResultadosBuscarViewModel.cs" />
+    <Compile Include="ViewModels\ResultadosPacientesReportes\ResultadosBusinessObject.cs" />
+    <Compile Include="ViewModels\ResultadosPacientesReportes\ResultadosPacientesReportesStatic.cs" />
+    <Compile Include="ViewModels\ResultadosPacientesReportes\ResultadosReportesStatic.cs" />
+    <Compile Include="ViewModels\ResultadosPacientesReportes\ResultadosRViewModel.cs" />
+    <Compile Include="ViewModels\ResultadosPacientesReportes\ResultadosVerViewModel.cs" />
+    <Compile Include="ViewModels\RutasAlmacenamiento\RutasAlmacenamientoStatic.cs" />
+    <Compile Include="ViewModels\RutasAlmacenamiento\RutasAlmacenamientoViewModel.cs" />
     <Compile Include="Views\AsociarPacienteFisioterapeuta\AsociarPacienteFisioterapeutaView.xaml.cs">
       <DependentUpon>AsociarPacienteFisioterapeutaView.xaml</DependentUpon>
     </Compile>
@@ -98,14 +151,27 @@
     <Compile Include="Views\Dialogs\FisioterapeutaActualizarViewDialog.cs" />
     <Compile Include="Views\Dialogs\FisioterapeutaAgregarViewDialog.cs" />
     <Compile Include="Views\Dialogs\FisioterapeutaVerViewDialog.cs" />
+    <Compile Include="Views\Dialogs\ModuloFisioterapeutaViewDialog.cs" />
     <Compile Include="Views\Dialogs\PacienteActualizarViewDialog.cs" />
     <Compile Include="Views\Dialogs\PacienteAgregarViewDialog.cs" />
     <Compile Include="Views\Dialogs\PacienteVerViewDialog.cs" />
+    <Compile Include="Views\Dialogs\ReportesBuscarViewDialog.cs" />
+    <Compile Include="Views\Dialogs\ReportesVer2ViewDialog.cs" />
+    <Compile Include="Views\Dialogs\ReportesVerViewDialog.cs" />
+    <Compile Include="Views\Dialogs\ResultadosBuscarViewDialog.cs" />
+    <Compile Include="Views\Dialogs\ResultadosVerViewDialog.cs" />
+    <Compile Include="Views\Fisioterapueta\BezierSpline.cs" />
+    <Compile Include="Views\Fisioterapueta\CLEyeCameraDevice.cs" />
+    <Compile Include="Views\Fisioterapueta\CLEyeCameraImage.cs" />
+    <Compile Include="Views\Fisioterapueta\CustomCanvas.cs" />
     <Compile Include="Views\Fisioterapueta\FisioterapeutaActualizarView.xaml.cs">
       <DependentUpon>FisioterapeutaActualizarView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Fisioterapueta\FisioterapeutaAgregarView.xaml.cs">
       <DependentUpon>FisioterapeutaAgregarView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Fisioterapueta\FisioterapeutaTestAnalisisView.xaml.cs">
+      <DependentUpon>FisioterapeutaTestAnalisisView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Fisioterapueta\FisioterapeutaVerView.xaml.cs">
       <DependentUpon>FisioterapeutaVerView.xaml</DependentUpon>
@@ -119,6 +185,9 @@
     </Compile>
     <Compile Include="Views\ModuloAdminView.xaml.cs">
       <DependentUpon>ModuloAdminView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ModuloFisioterapeutaView.xaml.cs">
+      <DependentUpon>ModuloFisioterapeutaView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Pacinete\ListarPacientesView.xaml.cs">
       <DependentUpon>ListarPacientesView.xaml</DependentUpon>
@@ -135,11 +204,28 @@
     <Compile Include="Views\Pacinete\PacienteVerView.xaml.cs">
       <DependentUpon>PacienteVerView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\testUserControlView.xaml.cs">
-      <DependentUpon>testUserControlView.xaml</DependentUpon>
+    <Compile Include="Views\ResultadosReportesPacientes\BezierSpline.cs" />
+    <Compile Include="Views\ResultadosReportesPacientes\CustomCanvas.cs" />
+    <Compile Include="Views\ResultadosReportesPacientes\ListarResultadosReporteView.xaml.cs">
+      <DependentUpon>ListarResultadosReporteView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\VentanaInicio.xaml.cs">
-      <DependentUpon>VentanaInicio.xaml</DependentUpon>
+    <Compile Include="Views\ResultadosReportesPacientes\ReportesBuscarView.xaml.cs">
+      <DependentUpon>ReportesBuscarView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ResultadosReportesPacientes\ReportesVer2View.xaml.cs">
+      <DependentUpon>ReportesVer2View.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ResultadosReportesPacientes\ReportesVerView.xaml.cs">
+      <DependentUpon>ReportesVerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ResultadosReportesPacientes\ResultadosBuscarView.xaml.cs">
+      <DependentUpon>ResultadosBuscarView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ResultadosReportesPacientes\ResultadosVerView.xaml.cs">
+      <DependentUpon>ResultadosVerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RutasAlmacenamiento\RutasAlmacenamientosView.xaml.cs">
+      <DependentUpon>RutasAlmacenamientosView.xaml</DependentUpon>
     </Compile>
     <Compile Include="_Common\CommandBase.cs" />
     <Compile Include="_Common\ViewModelBase.cs" />
@@ -147,8 +233,15 @@
     <Compile Include="_Interface\IServiceLocator.cs" />
     <Compile Include="_Services\ServiceProvider.cs" />
     <Compile Include="_Services\UnityServiceLocator.cs" />
-    <Compile Include="_ViewModel\CustomerViewModel.cs" />
-    <Compile Include="_View\CustomerViewDialog.cs" />
+    <Compile Include="_ViewModel\Converters\IsBiggerThanConverter.cs" />
+    <Page Include="Control\Block.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Control\LoadingAnimation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Resources\IconsResourceDictionary.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -185,6 +278,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Fisioterapueta\FisioterapeutaTestAnalisisView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Fisioterapueta\FisioterapeutaVerView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -201,15 +298,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Converters\IsBiggerThanConverter.cs" />
     <Compile Include="Helpers\Converters.cs" />
     <Compile Include="Helpers\DelegateCommand.cs" />
     <Compile Include="Helpers\DialogCloser.cs" />
@@ -217,18 +309,16 @@
     <Compile Include="Helpers\NotificationObject.cs" />
     <Compile Include="Helpers\RandomHelper.cs" />
     <Compile Include="Helpers\RelayCommand.cs" />
-    <Compile Include="Models\Person.cs" />
     <Compile Include="Helpers\BaseViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
-    <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="Views\LoginView.xaml.cs">
       <DependentUpon>LoginView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
     <Page Include="Views\ModuloAdminView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ModuloFisioterapeutaView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -252,17 +342,37 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\testUserControlView.xaml">
+    <Page Include="Views\ResultadosReportesPacientes\ListarResultadosReporteView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ResultadosReportesPacientes\ReportesBuscarView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ResultadosReportesPacientes\ReportesVer2View.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ResultadosReportesPacientes\ReportesVerView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ResultadosReportesPacientes\ResultadosBuscarView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ResultadosReportesPacientes\ResultadosVerView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\RutasAlmacenamiento\RutasAlmacenamientosView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\ValidationStyle.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Views\VentanaInicio.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="_Validation\ValidationStyle.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -286,6 +396,7 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">
@@ -304,35 +415,78 @@
       <Name>UPC.HRNPCI.ViewModel</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Imagenes\Fisioterapeutas\" />
-    <Folder Include="Imagenes\Pacientes\" />
-    <Folder Include="_Services Refences\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Imagenes\Resourses\testImg.jpg" />
-    <Resource Include="Views\Fisioterapueta\Resourses\testImg.jpg" />
-    <Resource Include="Views\Pacinete\Resourses\testImg.jpg" />
-    <Resource Include="Views\AsociarPacienteFisioterapeuta\Resourses\testImg.jpg" />
-    <Resource Include="Views\AsociarPacienteFisioterapeuta\Resourses\test1Img.jpg" />
-    <Resource Include="ViewModels\AsociarPacienteFisioterapeuta\Resourses\test1Img.jpg" />
-    <Resource Include="ViewModels\AsociarPacienteFisioterapeuta\Resourses\testImg.jpg" />
-    <Resource Include="Views\Fisioterapueta\Resourses\add_icon.jpg" />
-    <Resource Include="Views\Fisioterapueta\Resourses\delete_icon.jpg" />
-    <Resource Include="Views\Fisioterapueta\Resourses\edit_icon.jpg" />
-    <Resource Include="Views\Fisioterapueta\Resourses\see_icon.jpg" />
-    <Resource Include="Views\Pacinete\Resourses\add_icon.jpg" />
-    <Resource Include="Views\Pacinete\Resourses\delete_icon.jpg" />
-    <Resource Include="Views\Pacinete\Resourses\edit_icon.jpg" />
-    <Resource Include="Views\Pacinete\Resourses\see_icon.jpg" />
-    <Resource Include="Views\AsociarPacienteFisioterapeuta\Resourses\add_icon.jpg" />
-    <Resource Include="Views\AsociarPacienteFisioterapeuta\Resourses\delete_icon.jpg" />
-    <Resource Include="Views\AsociarPacienteFisioterapeuta\Resourses\edit_icon.jpg" />
-    <Resource Include="Views\AsociarPacienteFisioterapeuta\Resourses\see_icon.jpg" />
+    <Content Include="Emgu.CV.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Emgu.CV.UI.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Emgu.Util.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="itextsharp.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="itextsharp.pdfa.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="iTextSharp.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="itextsharp.xtra.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Microsoft.Kinect.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Microsoft.Practices.Unity.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="opencv_core231.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="opencv_highgui231.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="opencv_imgproc231.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Resources\imagenes\add_icon.jpg" />
+    <Resource Include="Resources\imagenes\delete_icon.jpg" />
+    <Resource Include="Resources\imagenes\edit_icon.jpg" />
+    <Resource Include="Resources\imagenes\gait_phases.jpg" />
+    <Resource Include="Resources\imagenes\gait_phases_boy.jpg" />
+    <Resource Include="Resources\imagenes\gait_phases_colors_percentage.jpg" />
+    <Resource Include="Resources\imagenes\gait_phases_walking.jpg" />
+    <Resource Include="Resources\imagenes\gait_phases_walking_complete.jpg" />
+    <Resource Include="Resources\imagenes\knee_flexion_template.png" />
+    <Resource Include="Resources\imagenes\knee_flexion_template_original.png" />
+    <Resource Include="Resources\imagenes\pdf_icon.jpg" />
+    <Resource Include="Resources\imagenes\see_icon.jpg" />
+    <Resource Include="Resources\imagenes\foto_icon.jpg" />
+    <Resource Include="Resources\imagenes\login_icon.jpg" />
+    <Resource Include="Resources\imagenes\fisioterapeuta_icon.png" />
+    <Resource Include="Resources\imagenes\notas_icon.png" />
+    <Resource Include="Resources\imagenes\asociar_01_icon.png" />
+    <Resource Include="Resources\imagenes\asociar_2_icon.png" />
+    <Resource Include="Resources\imagenes\pdf_report_icon.png" />
+    <Resource Include="Resources\imagenes\resultado_icon.png" />
+    <Resource Include="Resources\imagenes\resultado_paciente_01_icon.png" />
+    <Resource Include="Resources\imagenes\resultado_paciente_02_icon.png" />
+    <Resource Include="Resources\imagenes\paciente_icon.jpg" />
+    <Content Include="_DLL\Emgu.CV.dll" />
+    <Content Include="_DLL\Emgu.CV.UI.dll" />
+    <Content Include="_DLL\Emgu.Util.dll" />
+    <Content Include="_DLL\itextsharp.dll" />
+    <Content Include="_DLL\itextsharp.pdfa.dll" />
+    <Content Include="_DLL\itextsharp.xtra.dll" />
+    <Content Include="_DLL\Microsoft.Kinect.dll" />
+    <Content Include="_DLL\opencv_core231.dll" />
+    <Content Include="_DLL\opencv_highgui231.dll" />
+    <Content Include="_DLL\opencv_imgproc231.dll" />
     <Content Include="_DLL\Microsoft.Practices.Unity.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

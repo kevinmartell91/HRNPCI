@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:vm="clr-namespace:UPC.HRNPCI.DesktopApplication.ViewModels.Fisioterapueta"
         xmlns:validacion="clr-namespace:UPC.HRNPCI.DesktopApplication.ViewModels"
-        Title="Agregar nuevo fisioterapeuta" Height="500" Width="400" WindowStyle="ToolWindow"
+        Title="Agregar nuevo fisioterapeuta" Height="500" Width="400" WindowStyle="ToolWindow" WindowStartupLocation="CenterScreen"
              >
 
     <Window.Resources>
@@ -37,8 +37,8 @@
             <RowDefinition Height="44*"/>
         </Grid.RowDefinitions>
         
-        <Rectangle Fill="#FFF4F4F5" Height="160" Margin="10,12,10,0" Grid.RowSpan="4" Stroke="Black" VerticalAlignment="Top"/>
-        <Image Source="{Binding UrlFoto}" Stretch="Fill" Height="145" Margin="17,20,17,0" Grid.RowSpan="4" VerticalAlignment="Top" MouseDown="Image_MouseDown_1"/>
+        <Rectangle Fill="#FFF4F4F5" Height="160" Margin="10,8,10,0" Grid.RowSpan="4" Stroke="Black" VerticalAlignment="Top"/>
+        <Image Source="{Binding UrlFoto}" Stretch="Fill" Height="145" Margin="17,16,17,0" Grid.RowSpan="4" VerticalAlignment="Top" MouseDown="Image_MouseDown_1"/>
         <Button Content="Cargar foto" Margin="10,7,10,0" Grid.Row="4" VerticalAlignment="Top" Height="20"
         	Command="{Binding ObtenerUrlFotoCommand}" CommandParameter="{Binding ElementName=txtSexo}" Click="Button_Click_2"/>
 

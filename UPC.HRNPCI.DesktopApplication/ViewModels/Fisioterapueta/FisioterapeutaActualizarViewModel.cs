@@ -219,24 +219,24 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Fisioterapueta
         {
             try
             {
-                Fisioterapeuta f = new Fisioterapeuta();
+                FisioterapeutaB f = new FisioterapeutaB();
                 f.iCodigoFisioterapeuta = Codigo;
-                f.vNombresFisioterapeuta = Nombre;
-                f.vApellidosFisioterapeuta = Apellidos;
+                //f.vNombresFisioterapeuta = Nombre;
+                //f.vApellidosFisioterapeuta = Apellidos;
                 f.vCelularFisioterapeuta = Celular;
                 f.vTelefonoFisioterapeuta = Telefono;
-                f.vCentLabFisioterapeuta = CentLaboral;
+                //f.vCentLabFisioterapeuta = CentLaboral;
                 f.vEmailFisioterapeuta = Email;
-                f.vNumCTMPFisioterapeuta = NCTMP;
-                f.vNumNDTAFisioterapeuta = NNDTA;
-                f.vRolFisioterapeuta = Rol;
-                f.cGenero = Sexo;
-                f.vUsuarioFiosioterapeuta = Nombre;
-                f.vContrasenaFisioterapeuta = Nombre + Apellidos;
-                f.vUrlFotoFosioterapeuta = UrlFoto;
-                f.iFlagBorradoFisioterapeuta = FlagBorradoFisioterapeuta;
+                //f.vNumCTMPFisioterapeuta = NCTMP;
+                //f.vNumNDTAFisioterapeuta = NNDTA;
+                //f.vRolFisioterapeuta = Rol;
+                //f.cGenero = Sexo;
+                //f.vUsuarioFiosioterapeuta = Nombre;
+                //f.vContrasenaFisioterapeuta = Nombre + Apellidos;
+                //f.vUrlFotoFosioterapeuta = UrlFoto;
+                //f.iFlagBorradoFisioterapeuta = FlagBorradoFisioterapeuta;
 
-                GuardarImagenCargada();
+                //GuardarImagenCargada();
                 if (FisioterapeutaDL.ActualizarFisioterapeuta(f))
                 {
                     businesssObject = new FisioterapeutaBusinessObject();

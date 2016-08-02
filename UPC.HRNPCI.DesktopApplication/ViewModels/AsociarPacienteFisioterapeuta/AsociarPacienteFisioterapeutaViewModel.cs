@@ -15,6 +15,7 @@ using UPC.HRNPCI.Model.FisioterapeutaModel;
 using UPC.HRNPCI.DesktopApplication.ViewModels.AsociarPacienteFisioterapeuta;
 using UPC.HRNPCI.Model.PacienteModel;
 using System.IO;
+using UPC.HRNPCI.DesktopApplication.ViewModels.Fisioterapueta;
 
 namespace UPC.HRNPCI.DesktopApplication.ViewModels.AsociarPacienteFisioterapeuta
 {
@@ -55,7 +56,6 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.AsociarPacienteFisioterapeuta
                 this.OnPropertyChanged("SelectedValueUno");
             }
         }
-
         public string SelectedValueUno
         {
             get
@@ -86,7 +86,6 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.AsociarPacienteFisioterapeuta
                 this.OnPropertyChanged("SelectedValueDos");
             }
         }
-
         public string SelectedValueDos
         {
             get
@@ -105,9 +104,6 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.AsociarPacienteFisioterapeuta
             }
         }
 
-
-            
-
         public void InicializarFisioterapeutaComboBox()
         {
             data = new Dictionary<int, string>();
@@ -123,6 +119,7 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.AsociarPacienteFisioterapeuta
             }
             
         }
+
 
         #endregion
 
@@ -164,7 +161,7 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.AsociarPacienteFisioterapeuta
             {
                 if (iCodigoFisioterapueta01 == -1 && -1 == iCodigoFisioterapeuta02)
                 {
-                    if (MessageBoxResult.Yes == MessageBox.Show("Está desasignando fisioterapeutas al paciente.", "Advertencia", MessageBoxButton.OKCancel)) ;
+                    if (MessageBoxResult.Yes == MessageBox.Show("Está desasignando fisioterapeutas al paciente.", "Advertencia", MessageBoxButton.OKCancel))
                     {
                         MessageBox.Show("Paciente y fisioterapeuta(s) desasociados.", "Advertencia");
 
@@ -177,7 +174,7 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.AsociarPacienteFisioterapeuta
                 }
                 else if (iCodigoFisioterapueta01 == iCodigoFisioterapeuta02)
                 {
-                    MessageBox.Show("No se puede asociar dos mismos fisioterapeutas a un paciente.", "Advertencia");
+                    MessageBox.Show("No se puede asociar el mis fisioterapeutas a un paciente.", "Advertencia");
                 }
                 else
                 {
@@ -191,6 +188,8 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.AsociarPacienteFisioterapeuta
             }
 
 
+            // update modulo fisioterapeuta
+            //FisioterapeutaTestAnalisisViewModel.Instance().ForzarUpdate();
 
         }
     }

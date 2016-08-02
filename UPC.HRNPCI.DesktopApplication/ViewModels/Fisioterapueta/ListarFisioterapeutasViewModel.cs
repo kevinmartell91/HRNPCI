@@ -248,8 +248,6 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Fisioterapueta
             BuscarTexto = "";
             MesajeResultadoBusqueda = "";
 
-            ImagenVer = "Resourses\testImg.jpg";
-
   
             // TEST
             ShowStatusColumn = false;

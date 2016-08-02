@@ -20,7 +20,7 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Pacinete
     {
          #region Declaraciones
 
-        public Paciente PacienteVer { get; set; }
+        public PacienteB PacienteVer { get; set; }
 
         private int _iCodigo;
         private string _strNombres;
@@ -106,12 +106,12 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Pacinete
 
         }
 
-        public void SetPacienteVer(Paciente pPaciente)
+        public void SetPacienteVer(PacienteB pPaciente)
         {
             if (pPaciente != null)
             {
                 PacienteVer = pPaciente;
-                Paciente paciente = PacienteVer;
+                PacienteB paciente = PacienteVer;
               //iCodigo                              = paciente.iCodigoPaciente                                 ;
                 strNombres                           = paciente.vNombresPaciente                                ;
                 strApellidos                         = paciente.vApellidosPaciente                              ;

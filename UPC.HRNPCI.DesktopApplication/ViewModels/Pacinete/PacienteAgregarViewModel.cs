@@ -16,6 +16,7 @@ using UPC.HRNPCI.DesktopApplication._Service;
 using UPC.HRNPCI.Model;
 using UPC.HRNPCI.Model.PacienteModel;
 using UPC.HRNPCI.DesktopApplication.ViewModels.Pacinete;
+using UPC.HRNPCI.DesktopApplication.ViewModels.AsociarPacienteFisioterapeuta;
 
 
 namespace UPC.HRNPCI.DesktopApplication.ViewModels.Pacinete
@@ -210,11 +211,11 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Pacinete
 
             try
             {
-                Paciente paciente = new Paciente();
+                PacienteB paciente = new PacienteB();
                 //f.iCodigoPaciente           =  strCodigo                  ;
                 paciente.vNombresPaciente = strNombres;
                 paciente.vApellidosPaciente = strApellidos;
-                paciente.cGeneroPaciente = chrGenero;
+                paciente.cGeneroPaciente = Convert.ToString(chrGenero);
                 paciente.cDNIPaciente = strDNI;
                 paciente.daFecNacPaciente = daFecNacimiento.Date;
                 //paciente.iCodigoFisioterapeutaUno  =  Convert.ToInt32(strFisioAsignadoUno)      ;
@@ -239,9 +240,12 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Pacinete
                 if (PacienteDL.GuardarPaciente(paciente))
                 {
                     busnessObject = new PacienteBusinessObject();
-                    ListarPacientesViewModel.Instance().ocltnPacientesCRUD.Add(busnessObject.ObtenerPacienteCRUD(paciente));
+                    //ListarPacientesViewModel.Instance().ocltnPacientesCRUD.Add(busnessObject.ObtenerPacienteCRUD(paciente));
                     ListarPacientesViewModel.Instance().ForzarListaRefresh();
-                    MessageBox.Show("El fisioterapuesta ha sido registrado.");
+
+                    ListaPacientesAsociacionViewModel.Instance().ForzarListaRefresh();
+
+                    MessageBox.Show("El fisioterapuesta ha sido registrado con éxito.","Mensaje");
                 }
 
             }

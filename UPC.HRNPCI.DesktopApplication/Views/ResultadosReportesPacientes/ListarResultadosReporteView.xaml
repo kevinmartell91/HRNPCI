@@ -1,0 +1,165 @@
+﻿<UserControl x:Class="UPC.HRNPCI.DesktopApplication.Views.ResultadosReportesPacientes.ListarResultadosReporteView"
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:vm="clr-namespace:UPC.HRNPCI.DesktopApplication.ViewModels.ResultadosPacientesReportes"
+             xmlns:control="clr-namespace:UPC.HRNPCI.DesktopApplication.Views.ResultadosReportesPacientes"
+             mc:Ignorable="d"  FontFamily="Segoe UI Light" > 
+    <UserControl.Resources>
+
+        <!--         Resultados       -->
+        <!-- ************************ -->
+        <DataTemplate x:Key="RowButtonsResultados">
+            <StackPanel Orientation="Horizontal">
+                <Button  Command="{Binding VerResultadoCommand}">
+                    <StackPanel>
+                        <Image Source="..\..\Resources\imagenes\see_icon.jpg" Width="15" Height="15" Stretch="Fill" />
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+        </DataTemplate>
+
+        <DataTemplate x:Key="CheckBoxResultados">
+            <StackPanel Orientation="Horizontal">
+                <CheckBox IsChecked="{Binding IsChecked}"  Command="{Binding PressedCheckBoxCommand}">
+
+                </CheckBox>
+            </StackPanel>
+        </DataTemplate>
+
+        <!--         Reportes          -->
+        <!-- ************************ -->
+        <DataTemplate x:Key="RowButtonsReportes">
+            <StackPanel Orientation="Horizontal">
+                <Button  Command="{Binding VerReporteCommand}">
+                    <StackPanel>
+                        <Image Source="..\..\Resources\imagenes\see_icon.jpg" Width="15" Height="15" Stretch="Fill" />
+                    </StackPanel>
+                </Button>
+        <!-- |-->     <Button  Command="{Binding ImportPDFCommand}">
+                    <StackPanel>
+                        <Image Source="..\..\Resources\imagenes\pdf_icon.jpg" Width="15" Height="15" Stretch="Fill" />
+                    </StackPanel>
+                </Button>
+          
+            </StackPanel>
+        </DataTemplate>
+
+        <DataTemplate x:Key="CheckBoxReportes">
+            <StackPanel Orientation="Horizontal">
+                <CheckBox IsChecked="{Binding IsChecked}" Command="{Binding PressedCheckBoxReporteCommand}"/>
+            </StackPanel>
+        </DataTemplate>
+
+    </UserControl.Resources>
+
+    <Grid  x:Name="m_MyGrid" Margin="0,0,0,10" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="237*"/>
+            <ColumnDefinition Width="9*"/>
+            <ColumnDefinition Width="233*"/>
+            <ColumnDefinition Width="13*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="34*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="286*"/>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+
+
+        <!-- Filtrar columnas -->
+
+        <!-- ListaResultadosPacientes -->
+        <!-- ************************ -->
+        <Image Source="/UPC.HRNPCI.DesktopApplication;component/Resources/imagenes/resultado_paciente_02_icon.png" Margin="200,128,164,61" RenderTransformOrigin="0.5,0.5" Grid.Row="3" Stretch="Fill" Grid.Column="3" Opacity="0.2"/>
+
+        <Image Source="/UPC.HRNPCI.DesktopApplication;component/Resources/imagenes/resultado_paciente_01_icon.png" Margin="199,158,184,85" RenderTransformOrigin="0.5,0.5" Grid.Row="3" Stretch="Fill" Opacity="0.2" Grid.Column="1"/>
+        <!-- ************************ -->
+        <TextBlock HorizontalAlignment="Left" Margin="0,10,0,0" TextWrapping="Wrap" Text="Lista de Reultados" VerticalAlignment="Top" Height="27" Width="336" Grid.Row="1" FontSize="16" FontFamily="Segoe UI Semibold" Grid.ColumnSpan="2"/>
+
+        <Button Command="{Binding BuscarResultadosCommand}" Content="Buscar resultados" Margin="0,10,24,0" Grid.Row="1" VerticalAlignment="Top" Height="30"  Background="#FF007ACC" Foreground="White" FontFamily="Segoe UI Semibold" HorizontalAlignment="Right" Width="148" Grid.Column="1"/>
+
+        <ListView ItemsSource="{Binding ListaResultadosPacientes}" SelectedItem="{Binding ResultadosPacienteSeleccionado}"  Margin="3,16,12,1" Grid.Row="3" Grid.Column="1">
+            <ListView.Background>
+                <ImageBrush/>
+            </ListView.Background>
+            <!--<ListView.Background>
+                <ImageBrush ImageSource="/UPC.HRNPCI.DesktopApplication;component/Resources/imagenes/resultado_paciente_01_icon.png"/>
+            </ListView.Background>
+            -->
+            <ListView.View>
+                <GridView >
+
+                    <!-- esta en el mismo orden que la BD-->
+                    <GridViewColumn Header="" CellTemplate="{StaticResource CheckBoxResultados}"/>
+                    <GridViewColumn Header="Nombre" DisplayMemberBinding="{Binding strNombresPaciente}" />
+                    <GridViewColumn Header="Apellidos" DisplayMemberBinding="{Binding strApellidosPaciente}" />
+                    <GridViewColumn Header="Unidad" DisplayMemberBinding="{Binding strNombreUnidad}"/>
+                    <GridViewColumn Header="Lateralidad" DisplayMemberBinding="{Binding strNombreLateralidad}" />
+                    <GridViewColumn Header="Fecha" DisplayMemberBinding="{Binding strFecAnalisisPaciente}" Width="85"/>
+                    <GridViewColumn Header="Opcion" CellTemplate="{StaticResource RowButtonsResultados}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <TextBlock HorizontalAlignment="Left" Margin="7,9,0,0" TextWrapping="Wrap" Text="Opciones masivas :" VerticalAlignment="Top" Grid.Row="4" Height="20" Width="196" Grid.Column="1"/>
+
+        <ComboBox x:Name="cbxOpcionesResultados" ItemsSource="{Binding lstOpcionesResultados}" SelectedIndex="{Binding iOpcionResultadoSeleccionado}"  HorizontalAlignment="Left" Margin="7,7,0,19" Grid.Row="5" Width="200" Height="30" Grid.Column="1" />
+
+        <Button  Content="Generar reporte" Command="{Binding GenerarReporteCommand}"  Margin="0,10,17,0" Grid.Row="5" VerticalAlignment="Top" Height="27" HorizontalAlignment="Right" Width="133" Background="#FFF33030" Foreground="White" FontFamily="Segoe UI Semibold" Grid.Column="1"/>
+
+        <!-- ************************ -->
+        <TextBlock HorizontalAlignment="Left" Margin= "9,10,0,0" TextWrapping="Wrap" Text="Lista de reportes" VerticalAlignment="Top" Height="27" Width="336" Grid.Row="1" FontSize="16" FontFamily="Segoe UI Semibold" Grid.Column="3"/>
+
+        <Button Content="Buscar reportes" Margin="0,10,7,0" Grid.Row="1" VerticalAlignment="Top" Height="30"
+                Command="{Binding BuscarReportesCommand}"  Background="#FF007ACC" Foreground="White" FontFamily="Segoe UI Semibold" Grid.Column="3" HorizontalAlignment="Right" Width="144"/>
+
+
+        <ListView ItemsSource="{Binding ListaReportesPacientes}" SelectedItem="{Binding ReportePacienteSeleccionado}"  Margin="5,16,3,0" Grid.Row="3" Grid.Column="3">
+            <ListView.Background>
+                <ImageBrush/>
+            </ListView.Background>
+            <!--<ListView.Background>
+                <ImageBrush ImageSource="/UPC.HRNPCI.DesktopApplication;component/Resources/imagenes/resultado_paciente_02_icon.png"/>
+            </ListView.Background>
+            -->
+            <ListView.View>
+                <GridView >
+
+                    <!-- esta en el mismo orden que la BD-->
+                    <GridViewColumn Header="" CellTemplate="{StaticResource CheckBoxReportes}"/>
+                    <GridViewColumn Header="Nombre" DisplayMemberBinding="{Binding strNombresPaciente}" />
+                    <GridViewColumn Header="Apellidos" DisplayMemberBinding="{Binding strApellidosPaciente}" />
+                    <GridViewColumn Header="Tipo Reporte" DisplayMemberBinding="{Binding strNombreTipoReporte}"/>
+                    <GridViewColumn Header="Fecha" DisplayMemberBinding="{Binding strFecReportePaciente}" Width="85"/>
+                    <GridViewColumn Header="Opcion" CellTemplate="{StaticResource RowButtonsReportes}" Width="80"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <TextBlock Margin="9,9,485,0" TextWrapping="Wrap" Text="Opciones masivas :" VerticalAlignment="Top" Grid.Row="4" Height="23" Grid.Column="3" Grid.RowSpan="2"/>
+
+        <ComboBox x:Name="cbxOpcionesReportes" ItemsSource="{Binding lstOpcionesReportes}" SelectedIndex="{Binding iOpcionReporteSeleccionado}"  HorizontalAlignment="Left" Margin="9,7,0,0" Grid.Row="5" VerticalAlignment="Top" Width="200" Height="30" Grid.Column="3"/>
+        <TextBlock Margin="161,217,712,79" TextWrapping="Wrap" Grid.Row="3"
+        	Text="{Binding MesajeResultadoBusqueda}" Grid.Column="1" Grid.ColumnSpan="3" />
+        <TextBlock Margin="164,216,-82,65" TextWrapping="Wrap" Grid.Row="3"
+        	Text="{Binding MesajeReporteBusqueda}" Grid.Column="3" Grid.ColumnSpan="2" />
+
+        <!-- ************************ -->
+
+
+
+        <!--<TextBlock HorizontalAlignment="Left" Margin="484,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Row="3" Height="16" Width="27"
+                   Text="{Binding blnShowStatusColumn}" />-->
+
+
+
+
+    </Grid>
+
+</UserControl>

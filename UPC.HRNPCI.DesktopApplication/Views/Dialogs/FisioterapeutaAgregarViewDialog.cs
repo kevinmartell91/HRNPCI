@@ -8,7 +8,7 @@ using UPC.HRNPCI.DesktopApplication.Views.Fisioterapueta;
 
 namespace UPC.HRNPCI.DesktopApplication.Views.Dialogs
 {
-    class FisioterapeutaAgregarViewDialog : IModalDialog
+    public class FisioterapeutaAgregarViewDialog : IModalDialog
     {
         private FisioterapeutaAgregarView view;
 

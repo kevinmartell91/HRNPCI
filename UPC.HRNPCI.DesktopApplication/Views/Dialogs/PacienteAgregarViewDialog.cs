@@ -8,7 +8,7 @@ using UPC.HRNPCI.DesktopApplication.Views.Pacinete;
 
 namespace UPC.HRNPCI.DesktopApplication.Views.Dialogs
 {
-    class PacienteAgregarViewDialog : IModalDialog
+    public class PacienteAgregarViewDialog : IModalDialog
     {
         private PacienteAgregarView view;
 
