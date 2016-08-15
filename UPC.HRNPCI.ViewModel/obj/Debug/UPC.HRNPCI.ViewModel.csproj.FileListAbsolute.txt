@@ -27,3 +27,7 @@ C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI
 C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.ViewModel\obj\Debug\UPC.HRNPCI.ViewModel.csprojResolveAssemblyReference.cache
 C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.ViewModel\obj\Debug\UPC.HRNPCI.ViewModel.dll
 C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.ViewModel\obj\Debug\UPC.HRNPCI.ViewModel.pdb
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.ViewModel\bin\Debug\UPC.HRNPCI.ViewModel.dll
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.ViewModel\bin\Debug\UPC.HRNPCI.ViewModel.pdb
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.ViewModel\obj\Debug\UPC.HRNPCI.ViewModel.dll
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.ViewModel\obj\Debug\UPC.HRNPCI.ViewModel.pdb

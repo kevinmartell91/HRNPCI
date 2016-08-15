@@ -16,7 +16,7 @@ using System.Windows.Threading;
 using System.Drawing.Imaging;
 
 using System.IO;
-using Microsoft.Kinect;
+//using Microsoft.Kinect;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Globalization;
@@ -49,6 +49,7 @@ namespace UPC.HRNPCI.DesktopApplication.Views.Fisioterapueta
         int _iEstadosAnalisisMarcha;
         string _strEstadosAnalisisMarcha;
         double xm, ym;
+        int frame;
         
 
         DispatcherTimer timer = new DispatcherTimer();
@@ -72,73 +73,73 @@ namespace UPC.HRNPCI.DesktopApplication.Views.Fisioterapueta
 
         #endregion
 
-        #region Declarations Kinect v1.0
+        //#region Declarations Kinect v1.0
 
-        /// <summary>
-        /// Active Kinect sensor
-        /// </summary>
-        private KinectSensor sensor;
+        ///// <summary>
+        ///// Active Kinect sensor
+        ///// </summary>
+        //private KinectSensor sensor;
 
-        /// <summary>
-        /// Bitmap that will hold color information
-        /// </summary>
-        private WriteableBitmap colorBitmap;
+        ///// <summary>
+        ///// Bitmap that will hold color information
+        ///// </summary>
+        //private WriteableBitmap colorBitmap;
 
-        /// <summary>
-        /// Intermediate storage for the color data received from the camera
-        /// </summary>
-        private byte[] colorPixels;
+        ///// <summary>
+        ///// Intermediate storage for the color data received from the camera
+        ///// </summary>
+        //private byte[] colorPixels;
 
-        #endregion
+        //#endregion
 
-        #region Declarations Kinect v2 integration
+        //#region Declarations Kinect v2 integration
 
-        /// <summary>
-        /// Maximum value (as a float) that can be returned by the InfraredFrame
-        /// </summary>
-        private const float InfraredSourceValueMaximum = (float)ushort.MaxValue;
+        ///// <summary>
+        ///// Maximum value (as a float) that can be returned by the InfraredFrame
+        ///// </summary>
+        //private const float InfraredSourceValueMaximum = (float)ushort.MaxValue;
 
-        /// <summary>
-        /// The value by which the infrared source data will be scaled
-        /// </summary>
-        private const float InfraredSourceScale = 0.75f;
+        ///// <summary>
+        ///// The value by which the infrared source data will be scaled
+        ///// </summary>
+        //private const float InfraredSourceScale = 0.75f;
 
-        /// <summary>
-        /// Smallest value to display when the infrared data is normalized
-        /// </summary>
-        private const float InfraredOutputValueMinimum = 0.01f;
+        ///// <summary>
+        ///// Smallest value to display when the infrared data is normalized
+        ///// </summary>
+        //private const float InfraredOutputValueMinimum = 0.01f;
 
-        /// <summary>
-        /// Largest value to display when the infrared data is normalized
-        /// </summary>
-        private const float InfraredOutputValueMaximum = 1.0f;
+        ///// <summary>
+        ///// Largest value to display when the infrared data is normalized
+        ///// </summary>
+        //private const float InfraredOutputValueMaximum = 1.0f;
 
-        /// <summary>
-        /// Active Kinect sensor
-        /// </summary>
-        private KinectSensor kinectSensor = null;
+        ///// <summary>
+        ///// Active Kinect sensor
+        ///// </summary>
+        //private KinectSensor kinectSensor = null;
 
-        /// <summary>
-        /// Reader for infrared frames
-        /// </summary>
-        private InfraredFrameReader infraredFrameReader = null;
+        ///// <summary>
+        ///// Reader for infrared frames
+        ///// </summary>
+        //private InfraredFrameReader infraredFrameReader = null;
 
-        /// <summary>
-        /// Description (width, height, etc) of the infrared frame data
-        /// </summary>
-        private FrameDescription infraredFrameDescription = null;
+        ///// <summary>
+        ///// Description (width, height, etc) of the infrared frame data
+        ///// </summary>
+        //private FrameDescription infraredFrameDescription = null;
 
-        /// <summary>
-        /// Bitmap to display
-        /// </summary>
-        private WriteableBitmap infraredBitmap = null;
+        ///// <summary>
+        ///// Bitmap to display
+        ///// </summary>
+        //private WriteableBitmap infraredBitmap = null;
 
-        /// <summary>
-        /// Current status text to display
-        /// </summary>
-        //private string statusText = null;
+        ///// <summary>
+        ///// Current status text to display
+        ///// </summary>
+        ////private string statusText = null;
 
-        #endregion
+        //#endregion
 
         #region Declarations Capture Angles demo
 
@@ -195,7 +196,7 @@ namespace UPC.HRNPCI.DesktopApplication.Views.Fisioterapueta
 
             markerInitialContact = 0;
 
-
+            frame = 0;
             
 
             #endregion
@@ -261,41 +262,41 @@ namespace UPC.HRNPCI.DesktopApplication.Views.Fisioterapueta
            
             #endregion
 
-            #region Initialization of Kinect v2.0
+            //#region Initialization of Kinect v2.0
 
-            // get the kinectSensor object
-            this.kinectSensor = KinectSensor.GetDefault();
+            //// get the kinectSensor object
+            //this.kinectSensor = KinectSensor.GetDefault();
 
-            // open the reader for the depth frames
-            this.infraredFrameReader = this.kinectSensor.InfraredFrameSource.OpenReader();
+            //// open the reader for the depth frames
+            //this.infraredFrameReader = this.kinectSensor.InfraredFrameSource.OpenReader();
 
-            // wire handler for frame arrival
-            this.infraredFrameReader.FrameArrived += this.Reader_InfraredFrameArrived;
+            //// wire handler for frame arrival
+            //this.infraredFrameReader.FrameArrived += this.Reader_InfraredFrameArrived;
 
-            // get FrameDescription from InfraredFrameSource
-            this.infraredFrameDescription = this.kinectSensor.InfraredFrameSource.FrameDescription;
+            //// get FrameDescription from InfraredFrameSource
+            //this.infraredFrameDescription = this.kinectSensor.InfraredFrameSource.FrameDescription;
 
-            // create the bitmap to display
-            this.infraredBitmap = new WriteableBitmap(this.infraredFrameDescription.Width, this.infraredFrameDescription.Height, 96.0, 96.0, PixelFormats.Gray32Float, null);
+            //// create the bitmap to display
+            //this.infraredBitmap = new WriteableBitmap(this.infraredFrameDescription.Width, this.infraredFrameDescription.Height, 96.0, 96.0, PixelFormats.Gray32Float, null);
 
-            // set IsAvailableChanged event notifier
-            //this.kinectSensor.IsAvailableChanged += this.Sensor_IsAvailableChanged;
+            //// set IsAvailableChanged event notifier
+            ////this.kinectSensor.IsAvailableChanged += this.Sensor_IsAvailableChanged;
 
-            // open the sensor
-            this.kinectSensor.Open();
+            //// open the sensor
+            //this.kinectSensor.Open();
 
-            // set the status text
-            //this.StatusText = this.kinectSensor.IsAvailable ? Properties.Resources.RunningStatusText
-            //                                                : Properties.Resources.NoSensorStatusText;
+            //// set the status text
+            ////this.StatusText = this.kinectSensor.IsAvailable ? Properties.Resources.RunningStatusText
+            ////                                                : Properties.Resources.NoSensorStatusText;
 
-            // use the window object as the view model in this simple example
-            //this.DataContext = this;
+            //// use the window object as the view model in this simple example
+            ////this.DataContext = this;
 
-            // initialize the components (controls) of the window
-            //this.InitializeComponent();
+            //// initialize the components (controls) of the window
+            ////this.InitializeComponent();
 
 
-            #endregion
+            //#endregion
 
             #region Initialization of Capture Angles demo
 
@@ -325,9 +326,10 @@ namespace UPC.HRNPCI.DesktopApplication.Views.Fisioterapueta
                     btnGrabarGrafica.IsEnabled = false;
 
 
-                    for (int i = 0; i < 141; i++)
+                    for (int i = 0; i < 41; i++)
+                    //for (int i = frame; i < frame+1; i++)
                     {
-                        string path = @"C:\Users\Fabrizio\Desktop\kevin_borrar\to_photoshop\231228_03\edited\" + i + ".jpg";
+                        string path = @"C:\Tesis\\20151121_231333_00_FiveMarkers\" + i + ".png";
                         imgEmguFormat = new Image<Bgr, byte>(new Bitmap(path));
                         GaitAnalysis(imgEmguFormat, false);
                     }
@@ -428,37 +430,52 @@ namespace UPC.HRNPCI.DesktopApplication.Views.Fisioterapueta
 
         private void btnEstadosAnalisis_Click(object sender, RoutedEventArgs e)
         {
-
-            if (_iEstadosAnalisisMarcha == 0) { _iEstadosAnalisisMarcha = 1; return; }
-            if (_iEstadosAnalisisMarcha == 1) { _iEstadosAnalisisMarcha = 2; return; }
-            if (_iEstadosAnalisisMarcha == 2)
+            if (frame < 41)
+            //if (frame < 401)
             {
-                blnLimpiarGrafica = true;
-                tbxResults.Clear();
-                _iEstadosAnalisisMarcha = 3;
+                frame++;
+                timer.IsEnabled = true;
+                btnGrabarGrafica.IsEnabled = true;
             }
+            else
+            {
+                frame = 0;
+            }
+            //if (_iEstadosAnalisisMarcha == 0) { _iEstadosAnalisisMarcha = 1; return; }
+            //if (_iEstadosAnalisisMarcha == 1) { _iEstadosAnalisisMarcha = 2; return; }
+            //if (_iEstadosAnalisisMarcha == 2)
+            //{
+            //    blnLimpiarGrafica = true;
+            //    tbxResults.Clear();
+            //    _iEstadosAnalisisMarcha = 3;
+            //}
 
         }
 
         private void btnGrabarGrafica_Click(object sender, RoutedEventArgs e)
         {
-            if (angles != null || angles.Count == 0)
-                FisioterapeutaStatic.setAngles(angles, 1);
-
-
-
-            if (_iEstadosAnalisisMarcha == 2 && FisioterapeutaStatic.blnGuardar) // selcione todo los combos  static 
-            //if (true)
+            if (frame > 0)
             {
-                //MessageBox.Show("Guardo en base de datos y se guardo en la clase estatica");
-                FisioterapeutaStatic.setAngles(angles, 1);
-                angles.Clear();// listo para u nuevo analisis la grafica deberia seguir mostrandose
+                frame--;
+                timer.IsEnabled = true;
+            }
+            //if (angles != null || angles.Count == 0)
+            //    FisioterapeutaStatic.setAngles(angles, 1);
+
+
+
+            //if (_iEstadosAnalisisMarcha == 2 && FisioterapeutaStatic.blnGuardar) // selcione todo los combos  static 
+            ////if (true)
+            //{
+            //    //MessageBox.Show("Guardo en base de datos y se guardo en la clase estatica");
+            //    FisioterapeutaStatic.setAngles(angles, 1);
+            //    angles.Clear();// listo para u nuevo analisis la grafica deberia seguir mostrandose
                
 
-            }
-            _iEstadosAnalisisMarcha = 3;
-            // y Grabar  grafica en la clase estatica que sirve de puente
-            //y en el view model golpear directamente a la BD con los angulos de la grafica
+            //}
+            //_iEstadosAnalisisMarcha = 3;
+            //// y Grabar  grafica en la clase estatica que sirve de puente
+            ////y en el view model golpear directamente a la BD con los angulos de la grafica
         }
 
         private void btnFoto_Click(object sender, RoutedEventArgs e)
@@ -579,197 +596,197 @@ namespace UPC.HRNPCI.DesktopApplication.Views.Fisioterapueta
         //}
         #endregion
 
-        #region Methods Kinect v2.0
+        //#region Methods Kinect v2.0
 
-        /// <summary>
-        /// INotifyPropertyChangedPropertyChanged event to allow window controls to bind to changeable data
-        /// </summary>
-        //public event PropertyChangedEventHandler PropertyChanged;
+        ///// <summary>
+        ///// INotifyPropertyChangedPropertyChanged event to allow window controls to bind to changeable data
+        ///// </summary>
+        ////public event PropertyChangedEventHandler PropertyChanged;
 
-        /// <summary>
-        /// Gets the bitmap to display
-        /// </summary>
-        public ImageSource ImageSource
-        {
-            get
-            {
-                return this.infraredBitmap;
-            }
-        }
-
-        /// <summary>
-        /// Gets or sets the current status text to display
-        /// </summary>
-        public string statusText;
-        public string StatusText
-        {
-            get
-            {
-                return this.statusText;
-            }
-
-            set
-            {
-                if (this.statusText != value)
-                {
-                    this.statusText = value;
-
-                    // notify any bound elements that the text has changed
-                    if (this.PropertyChanged != null)
-                    {
-                        this.PropertyChanged(this, new PropertyChangedEventArgs("StatusText"));
-                    }
-                }
-            }
-        }
-
-        /// <summary>
-        /// Handles the infrared frame data arriving from the sensor
-        /// </summary>
-        /// <param name="sender">object sending the event</param>
-        /// <param name="e">event arguments</param>
-        private void Reader_InfraredFrameArrived(object sender, InfraredFrameArrivedEventArgs e)
-        {
-            // InfraredFrame is IDisposable
-            using (InfraredFrame infraredFrame = e.FrameReference.AcquireFrame())
-            {
-                if (infraredFrame != null)
-                {
-
-                    //Process the IR frame from kinect which is more beutiful than the default image is lighter
-                    //imgEmguFormat = new Image<Bgr, Byte>(new Bitmap(ToBitmap(ToBitmapSource(infraredFrame))));
-
-                    GaitAnalysisStates();
-
-
-                    // the fastest way to process the infrared frame data is to directly access 
-                    // the underlying buffer
-                    //using (Microsoft.Kinect.KinectBuffer infraredBuffer = infraredFrame.LockImageBuffer())
-                    //{
-                    //    // verify data and write the new infrared frame data to the display bitmap
-                    //    if (((this.infraredFrameDescription.Width * this.infraredFrameDescription.Height) == (infraredBuffer.Size / this.infraredFrameDescription.BytesPerPixel)) &&
-                    //        (this.infraredFrameDescription.Width == this.infraredBitmap.PixelWidth) && (this.infraredFrameDescription.Height == this.infraredBitmap.PixelHeight))
-                    //    {
-                    //        this.ProcessInfraredFrameData(infraredBuffer.UnderlyingBuffer, infraredBuffer.Size);
-                    //    }
-                    //}
-                }
-            }
-        }
-
-        /// <summary>
-        /// Directly accesses the underlying image buffer of the InfraredFrame to 
-        /// create a displayable bitmap.
-        /// This function requires the /unsafe compiler option as we make use of direct
-        /// access to the native memory pointed to by the infraredFrameData pointer.
-        /// </summary>
-        /// <param name="infraredFrameData">Pointer to the InfraredFrame image data</param>
-        /// <param name="infraredFrameDataSize">Size of the InfraredFrame image data</param>
-        private unsafe void ProcessInfraredFrameData(IntPtr infraredFrameData, uint infraredFrameDataSize)
-        {
-            // infrared frame data is a 16 bit value
-            ushort* frameData = (ushort*)infraredFrameData;
-
-            // lock the target bitmap
-            this.infraredBitmap.Lock();
-
-            // get the pointer to the bitmap's back buffer
-            float* backBuffer = (float*)this.infraredBitmap.BackBuffer;
-
-            // process the infrared data
-            for (int i = 0; i < (int)(infraredFrameDataSize / this.infraredFrameDescription.BytesPerPixel); ++i)
-            {
-                // since we are displaying the image as a normalized grey scale image, we need to convert from
-                // the ushort data (as provided by the InfraredFrame) to a value from [InfraredOutputValueMinimum, InfraredOutputValueMaximum]
-                backBuffer[i] = Math.Min(InfraredOutputValueMaximum, (((float)frameData[i] / InfraredSourceValueMaximum * InfraredSourceScale) * (1.0f - InfraredOutputValueMinimum)) + InfraredOutputValueMinimum);
-            }
-
-
-            // mark the entire bitmap as needing to be drawn
-            this.infraredBitmap.AddDirtyRect(new Int32Rect(0, 0, this.infraredBitmap.PixelWidth, this.infraredBitmap.PixelHeight));
-
-            // unlock the bitmap
-            this.infraredBitmap.Unlock();
-
-
-            // Lo hace lento 
-            ////Process the IR frame from kinect which is more beutiful than the default image is lighter
-            //Bitmap bitmap = new Bitmap(BitmapImage2Bitmap());
-            //Image<Bgr, Byte> KinectIrFrame = new Image<Bgr, Byte>(bitmap);
-            //GaitAnalysis(KinectIrFrame);
-
-
-
-
-
-        }
-
-        /// <summary>
-        /// Handles the event which the sensor becomes unavailable (E.g. paused, closed, unplugged).
-        /// </summary>
-        /// <param name="sender">object sending the event</param>
-        /// <param name="e">event arguments</param>
-        //private void Sensor_IsAvailableChanged(object sender, IsAvailableChangedEventArgs e)
+        ///// <summary>
+        ///// Gets the bitmap to display
+        ///// </summary>
+        //public ImageSource ImageSource
         //{
-        //    // set the status text
-        //    this.StatusText = this.kinectSensor.IsAvailable ? Properties.Resources.RunningStatusText
-        //                                                    : Properties.Resources.SensorNotAvailableStatusText;
+        //    get
+        //    {
+        //        return this.infraredBitmap;
+        //    }
         //}
 
+        ///// <summary>
+        ///// Gets or sets the current status text to display
+        ///// </summary>
+        //public string statusText;
+        //public string StatusText
+        //{
+        //    get
+        //    {
+        //        return this.statusText;
+        //    }
 
-        public Bitmap BitmapImage2Bitmap()
-        {
+        //    set
+        //    {
+        //        if (this.statusText != value)
+        //        {
+        //            this.statusText = value;
 
-            using (MemoryStream outStream = new MemoryStream())
-            {
-                BitmapEncoder enc = new BmpBitmapEncoder();
-                enc.Frames.Add(BitmapFrame.Create(this.infraredBitmap));
-                enc.Save(outStream);
-                System.Drawing.Bitmap bitmap = new System.Drawing.Bitmap(outStream);
+        //            // notify any bound elements that the text has changed
+        //            if (this.PropertyChanged != null)
+        //            {
+        //                this.PropertyChanged(this, new PropertyChangedEventArgs("StatusText"));
+        //            }
+        //        }
+        //    }
+        //}
 
-                // return bitmap; <– leads to problems, stream is closed/closing …
-                return new Bitmap(bitmap);
-            }
-        }
+        ///// <summary>
+        ///// Handles the infrared frame data arriving from the sensor
+        ///// </summary>
+        ///// <param name="sender">object sending the event</param>
+        ///// <param name="e">event arguments</param>
+        ////private void Reader_InfraredFrameArrived(object sender, InfraredFrameArrivedEventArgs e)
+        ////{
+        ////    // InfraredFrame is IDisposable
+        ////    using (InfraredFrame infraredFrame = e.FrameReference.AcquireFrame())
+        ////    {
+        ////        if (infraredFrame != null)
+        ////        {
 
-        public BitmapSource ToBitmapSource(InfraredFrame frame)
-        {
-            int width = frame.FrameDescription.Width;
-            int height = frame.FrameDescription.Height;
-            System.Windows.Media.PixelFormat format = PixelFormats.Bgr32;
+        ////            //Process the IR frame from kinect which is more beutiful than the default image is lighter
+        ////            //imgEmguFormat = new Image<Bgr, Byte>(new Bitmap(ToBitmap(ToBitmapSource(infraredFrame))));
 
-            ushort[] frameData = new ushort[width * height];
-            byte[] pixels = new byte[width * height * (format.BitsPerPixel + 7) / 8];
+        ////            GaitAnalysisStates();
 
-            frame.CopyFrameDataToArray(frameData);
 
-            int colorIndex = 0;
-            for (int infraredIndex = 0; infraredIndex < frameData.Length; infraredIndex++)
-            {
-                ushort ir = frameData[infraredIndex];
+        ////            // the fastest way to process the infrared frame data is to directly access 
+        ////            // the underlying buffer
+        ////            //using (Microsoft.Kinect.KinectBuffer infraredBuffer = infraredFrame.LockImageBuffer())
+        ////            //{
+        ////            //    // verify data and write the new infrared frame data to the display bitmap
+        ////            //    if (((this.infraredFrameDescription.Width * this.infraredFrameDescription.Height) == (infraredBuffer.Size / this.infraredFrameDescription.BytesPerPixel)) &&
+        ////            //        (this.infraredFrameDescription.Width == this.infraredBitmap.PixelWidth) && (this.infraredFrameDescription.Height == this.infraredBitmap.PixelHeight))
+        ////            //    {
+        ////            //        this.ProcessInfraredFrameData(infraredBuffer.UnderlyingBuffer, infraredBuffer.Size);
+        ////            //    }
+        ////            //}
+        ////        }
+        ////    }
+        ////}
 
-                byte intensity = (byte)(ir >> 7);
+        ///// <summary>
+        ///// Directly accesses the underlying image buffer of the InfraredFrame to 
+        ///// create a displayable bitmap.
+        ///// This function requires the /unsafe compiler option as we make use of direct
+        ///// access to the native memory pointed to by the infraredFrameData pointer.
+        ///// </summary>
+        ///// <param name="infraredFrameData">Pointer to the InfraredFrame image data</param>
+        ///// <param name="infraredFrameDataSize">Size of the InfraredFrame image data</param>
+        ////private unsafe void ProcessInfraredFrameData(IntPtr infraredFrameData, uint infraredFrameDataSize)
+        ////{
+        ////    // infrared frame data is a 16 bit value
+        ////    ushort* frameData = (ushort*)infraredFrameData;
 
-                pixels[colorIndex++] = (byte)(intensity / 1); // Blue
-                pixels[colorIndex++] = (byte)(intensity / 1); // Green   
-                pixels[colorIndex++] = (byte)(intensity / 1); // Red
+        ////    // lock the target bitmap
+        ////    this.infraredBitmap.Lock();
 
-                colorIndex++;
-            }
+        ////    // get the pointer to the bitmap's back buffer
+        ////    float* backBuffer = (float*)this.infraredBitmap.BackBuffer;
 
-            int stride = width * format.BitsPerPixel / 8;
+        ////    // process the infrared data
+        ////    for (int i = 0; i < (int)(infraredFrameDataSize / this.infraredFrameDescription.BytesPerPixel); ++i)
+        ////    {
+        ////        // since we are displaying the image as a normalized grey scale image, we need to convert from
+        ////        // the ushort data (as provided by the InfraredFrame) to a value from [InfraredOutputValueMinimum, InfraredOutputValueMaximum]
+        ////        backBuffer[i] = Math.Min(InfraredOutputValueMaximum, (((float)frameData[i] / InfraredSourceValueMaximum * InfraredSourceScale) * (1.0f - InfraredOutputValueMinimum)) + InfraredOutputValueMinimum);
+        ////    }
 
-            return BitmapSource.Create(width, height, 96, 96, format, null, pixels, stride);
-        }
 
-        #endregion
+        ////    // mark the entire bitmap as needing to be drawn
+        ////    this.infraredBitmap.AddDirtyRect(new Int32Rect(0, 0, this.infraredBitmap.PixelWidth, this.infraredBitmap.PixelHeight));
+
+        ////    // unlock the bitmap
+        ////    this.infraredBitmap.Unlock();
+
+
+        ////    // Lo hace lento 
+        ////    ////Process the IR frame from kinect which is more beutiful than the default image is lighter
+        ////    //Bitmap bitmap = new Bitmap(BitmapImage2Bitmap());
+        ////    //Image<Bgr, Byte> KinectIrFrame = new Image<Bgr, Byte>(bitmap);
+        ////    //GaitAnalysis(KinectIrFrame);
+
+
+
+
+
+        ////}
+
+        ///// <summary>
+        ///// Handles the event which the sensor becomes unavailable (E.g. paused, closed, unplugged).
+        ///// </summary>
+        ///// <param name="sender">object sending the event</param>
+        ///// <param name="e">event arguments</param>
+        ////private void Sensor_IsAvailableChanged(object sender, IsAvailableChangedEventArgs e)
+        ////{
+        ////    // set the status text
+        ////    this.StatusText = this.kinectSensor.IsAvailable ? Properties.Resources.RunningStatusText
+        ////                                                    : Properties.Resources.SensorNotAvailableStatusText;
+        ////}
+
+
+        ////public Bitmap BitmapImage2Bitmap()
+        ////{
+
+        ////    using (MemoryStream outStream = new MemoryStream())
+        ////    {
+        ////        BitmapEncoder enc = new BmpBitmapEncoder();
+        ////        enc.Frames.Add(BitmapFrame.Create(this.infraredBitmap));
+        ////        enc.Save(outStream);
+        ////        System.Drawing.Bitmap bitmap = new System.Drawing.Bitmap(outStream);
+
+        ////        // return bitmap; <– leads to problems, stream is closed/closing …
+        ////        return new Bitmap(bitmap);
+        ////    }
+        ////}
+
+        ////public BitmapSource ToBitmapSource(InfraredFrame frame)
+        ////{
+        ////    int width = frame.FrameDescription.Width;
+        ////    int height = frame.FrameDescription.Height;
+        ////    System.Windows.Media.PixelFormat format = PixelFormats.Bgr32;
+
+        ////    ushort[] frameData = new ushort[width * height];
+        ////    byte[] pixels = new byte[width * height * (format.BitsPerPixel + 7) / 8];
+
+        ////    frame.CopyFrameDataToArray(frameData);
+
+        ////    int colorIndex = 0;
+        ////    for (int infraredIndex = 0; infraredIndex < frameData.Length; infraredIndex++)
+        ////    {
+        ////        ushort ir = frameData[infraredIndex];
+
+        ////        byte intensity = (byte)(ir >> 7);
+
+        ////        pixels[colorIndex++] = (byte)(intensity / 1); // Blue
+        ////        pixels[colorIndex++] = (byte)(intensity / 1); // Green   
+        ////        pixels[colorIndex++] = (byte)(intensity / 1); // Red
+
+        ////        colorIndex++;
+        ////    }
+
+        ////    int stride = width * format.BitsPerPixel / 8;
+
+        ////    return BitmapSource.Create(width, height, 96, 96, format, null, pixels, stride);
+        ////}
+
+        //#endregion
 
         #region Methods of Capture Angles demo - Gait Analysis process
 
         private void GaitAnalysis(Image<Bgr, byte> image, bool captureAngles)
         {
             Contour<System.Drawing.Point> contours = null;
-            List<System.Drawing.PointF> markers = null ;
+            List<System.Drawing.PointF> markers = null;
 
             MCvScalar markerColor;
 
@@ -807,7 +824,7 @@ namespace UPC.HRNPCI.DesktopApplication.Views.Fisioterapueta
                     //        //&& 50 < markerPosX && markerPosX < original_Frame.Width - 50
                     //    )
 
-                     
+
                     //if ((contours.Area > Math.Pow(sliderMinSize.Value, 2)) && (contours.Area < Math.Pow(sliderMaxSize.Value, 2)))
 
                     // TO extract markers from kinect recordings in PUCP
@@ -817,56 +834,78 @@ namespace UPC.HRNPCI.DesktopApplication.Views.Fisioterapueta
                     //    )
 
                     // To examinate from photoshop
-                    if ((contours.Area > Math.Pow(sliderMinSize.Value, 2)) && (contours.Area < Math.Pow(sliderMaxSize.Value, 2))
-                        
-                        )
+                    int l1 = 60;
+                    int l2 = original_Frame.Width - 400;
 
+                    int v1 = 30;
+                    int v2 = original_Frame.Height - 80;
+
+                    MCvBox2D box = contours.GetMinAreaRect();
+                    if ((contours.Area > Math.Pow(sliderMinSize.Value, 2)) && (contours.Area < Math.Pow(sliderMaxSize.Value, 2))
+                        && box.center.X > l1 && box.center.X < l2
+                        && box.center.Y > v1 && box.center.Y < v2
+                        )
                     {
-                        MCvBox2D box = contours.GetMinAreaRect();
+
                         //openCVImg.Draw(box, new Bgr(System.Drawing.Color.Red), 2);
                         //umbral_frame.Draw(box, new Gray(88), 2);
-                        blobCount++; 
+                        blobCount++;
                         markerColor = new MCvScalar(0, 0, 255);
 
-                        //if (blobCount == 3) // Marcador del tobillo
-                        //{
-                        //    double actualMarkerInitialContact = box.center.Y;
-                        //    if (actualMarkerInitialContact > markerInitialContact)
-                        //    {
-                        //        markerInitialContact = actualMarkerInitialContact;
-                        //        markerColor = new MCvScalar(255, 0, 0);
-                        //    }
-                        //}
-                        
-                      
-                        
+                        LineSegment2DF lineV1 = new LineSegment2DF(new System.Drawing.PointF((float)l1, 0),
+                                                    new System.Drawing.PointF((float)l1, (float)original_Frame.Height));
+                        LineSegment2DF lineV2 = new LineSegment2DF(new System.Drawing.PointF((float)l2, 0),
+                                                    new System.Drawing.PointF((float)l2, (float)original_Frame.Height));
+
+                        LineSegment2DF lineH1 = new LineSegment2DF(new System.Drawing.PointF((float)0, v1),
+                                                    new System.Drawing.PointF((float)original_Frame.Width, (float)v1));
+                        LineSegment2DF lineH2 = new LineSegment2DF(new System.Drawing.PointF((float)0, v2),
+                                                    new System.Drawing.PointF((float)original_Frame.Width, (float)v2));
+
+                        original_Frame.Draw(lineV1, new Bgr(System.Drawing.Color.Red), 2);
+                        original_Frame.Draw(lineV2, new Bgr(System.Drawing.Color.Red), 2);
+                        original_Frame.Draw(lineH1, new Bgr(System.Drawing.Color.Red), 2);
+                        original_Frame.Draw(lineH2, new Bgr(System.Drawing.Color.Red), 2);
+
+
+
                         CvInvoke.cvCircle(original_Frame,
-                                  new System.Drawing.Point((int)box.center.X, (int)box.center.Y),
-                                  2,
+                                  new System.Drawing.Point((int)markerPosX, (int)markerPosY),
+                                  1,
                                   markerColor,
                                   -1,
                                   LINE_TYPE.CV_AA,
                                   0);
 
-                        System.Drawing.PointF pointF = new System.Drawing.PointF(box.center.X, box.center.Y);
+                        System.Drawing.PointF pointF = new System.Drawing.PointF(markerPosX, markerPosY);
 
-                        //CircleF c = new CircleF(pointF, 20);
-                        //original_Frame.Draw(c,
-                        //             new Bgr(System.Drawing.Color.Orange),
-                        //             3);
+                        CircleF c = new CircleF(pointF, box.size.Width / 2);
+                        original_Frame.Draw(c,
+                                     new Bgr(System.Drawing.Color.Orange),
+                                     1);
 
 
                         markers.Add(pointF);
 
-                    }
-                }
+                        /// Changes August
+                        //writerTextMarkerPosition(markerPosX, markerPosY);
+                        showMarkerPosition(markerPosX, markerPosY);
 
-            }
+
+                    }// end if
+
+                }// end for
+
+            }// end mem usage
 
 
-            if (markers.Count == 3)
+            if (markers.Count == 6)
             {
-                DrawLines(markers, original_Frame,captureAngles);
+                Dictionary<string,PointF> dicMarkers = labelMarkers(markers, original_Frame, captureAngles);
+                //CalculateKneeAngles(dicMarkers, original_Frame, captureAngles);
+                CalculateAnkleAngles(dicMarkers, original_Frame, captureAngles);
+                
+                
                 markersHistory.Add(markers);
             }
 
@@ -879,24 +918,280 @@ namespace UPC.HRNPCI.DesktopApplication.Views.Fisioterapueta
 
         }
 
-        private void DrawLines(List<System.Drawing.PointF> markersF, Image<Bgr, byte> outImg1, bool captureAngles)
+        struct PairDistance
         {
+            double dist1;
+            double dist2;
+
+            public double getDist1()
+            {
+                return dist1;
+            }
+            public void setDist1(double _dist1)
+            {
+                dist1 = _dist1;
+            }
+            public double getDist2()
+            {
+                return dist2;
+            }
+            public void setDist2(double _dist2)
+            {
+                dist2 = _dist2;
+            }
+
+        }
+
+        private Dictionary<string,PointF> labelMarkers(List<PointF> markers, Image<Bgr, byte> original_Frame, bool captureAngles)
+        {
+            /// Creating a list of pairs where is saved the distaces 
+            /// between markers. This will facilitate the identification 
+            /// of Calcaneus, ankle and foot markers
+
+            int makersIterationLimit = 3;
+            List<PairDistance> lstPairDist = new List<PairDistance>();
+
+            for (int i = 0; i < makersIterationLimit; i++)
+            {
+                PairDistance pair = new PairDistance();
+                bool firstDistCalculated = false;
+
+                for (int j = 0; j < makersIterationLimit; j++)
+                {
+                    //if not the same marker
+                    if (i != j) 
+                    {
+                        double distance = calculateEuclideanDistance(markers[i], markers[j]);
+
+                        if (!firstDistCalculated)
+                        {
+                            pair.setDist1(distance);
+                            firstDistCalculated = true;
+                        }
+                        else 
+                        {
+                            pair.setDist2(distance);
+                        }
+                    }
+                }
+                lstPairDist.Add(pair);
+            }
 
 
+            /// Detecting the ankle and foot marker by minimum sum and maximum sum
+            /// of distances, repectively.
+            /// 
 
-            LineSegment2D line1 = new LineSegment2D(new System.Drawing.Point((int)markersF[0].X, (int)markersF[0].Y),
-                                                    new System.Drawing.Point((int)markersF[1].X, (int)markersF[1].Y));
-            LineSegment2D line2 = new LineSegment2D(new System.Drawing.Point((int)markersF[1].X, (int)markersF[1].Y),
-                                                    new System.Drawing.Point((int)markersF[2].X, (int)markersF[2].Y));
+            double minSum = lstPairDist[0].getDist1() + lstPairDist[0].getDist2();
+            double maxSum = minSum;
+
+            int posAnkleMarker = 0;
+            int posfootMarker = 0;
+
+            for (int i = 1; i < lstPairDist.Count; i++)
+            {
+                double sumTemp = lstPairDist[i].getDist1() + lstPairDist[i].getDist2();
+                if (minSum > sumTemp)
+                {
+                    minSum = sumTemp;
+                    posAnkleMarker = i;
+                }
+                if (maxSum < sumTemp)
+                {
+                    maxSum = sumTemp;
+                    posfootMarker = i;
+                }
+            }
+
+            /// Detecting Calcaneus marker by simple calculations
+            /// 
+
+            int posCalcaneusMarker = -1;
+
+            if (posAnkleMarker + posfootMarker == 3)
+            {
+                posCalcaneusMarker = 0;
+            }
+            else
+            {
+                posCalcaneusMarker = 3 - posfootMarker - posAnkleMarker;
+            }
+
+            /// testing by drawing
+            /// 
+
+            System.Drawing.PointF calcaneusPointF = new System.Drawing.PointF(markers[posCalcaneusMarker].X, markers[posCalcaneusMarker].Y);
+            System.Drawing.PointF footPointF = new System.Drawing.PointF(markers[posfootMarker].X, markers[posfootMarker].Y);
+            System.Drawing.PointF anklePointF = new System.Drawing.PointF(markers[posAnkleMarker].X, markers[posAnkleMarker].Y);
+
+            CircleF c = new CircleF(calcaneusPointF, 30);
+            original_Frame.Draw(c,
+                         new Bgr(System.Drawing.Color.Red),
+                         2); 
+             c = new CircleF(anklePointF, 30);
+            original_Frame.Draw(c,
+                         new Bgr(System.Drawing.Color.Orange),
+                         2); 
+            c = new CircleF(footPointF, 30);
+            original_Frame.Draw(c,
+                         new Bgr(System.Drawing.Color.Yellow),
+                         2);
+
+
+            /// labeling the marker by its names
+            /// 
+
+            Dictionary<String, PointF> dicJoints = new Dictionary<string, PointF>();
+
+            for (int i = 0; i < markers.Count; i++)
+            {
+                string keyJoint = "";
+                PointF markerPos = new PointF();
+                if(i == posAnkleMarker)
+                {
+                    keyJoint = "Ankle";
+                    markerPos.X = markers[posAnkleMarker].X;
+                    markerPos.Y = markers[posAnkleMarker].Y;
+                }
+
+                if (i == posCalcaneusMarker)
+                {
+                    keyJoint = "Calcaneus";
+                    markerPos.X = markers[posCalcaneusMarker].X;
+                    markerPos.Y = markers[posCalcaneusMarker].Y;
+                }
+
+                if (i == posfootMarker)
+                {
+                    keyJoint = "Foot";
+                    markerPos.X = markers[posfootMarker].X;
+                    markerPos.Y = markers[posfootMarker].Y;
+                }
+
+                if (i == 3)
+                {
+                    keyJoint = "Tibia";
+                    markerPos.X = markers[i].X;
+                    markerPos.Y = markers[i].Y;
+                }
+
+                if (i == 4)
+                {
+                    keyJoint = "Knee";
+                    markerPos.X = markers[i].X;
+                    markerPos.Y = markers[i].Y;
+                }
+
+                if (i == 5)
+                {
+                    keyJoint = "Trochanter";
+                    markerPos.X = markers[i].X;
+                    markerPos.Y = markers[i].Y;
+                }
+
+                dicJoints.Add(keyJoint, markerPos);
+                
+            }
+
+            return dicJoints;
+        }
+
+        private double calculateEuclideanDistance(PointF pointF1, PointF pointF2)
+        {
+            return Math.Sqrt(Math.Pow(pointF1.X - pointF2.X, 2) + Math.Pow(pointF1.Y - pointF2.Y, 2));
+        }
+
+        private void showMarkerPosition(float markerPosX, float markerPosY)
+        {
+            MCvFont f = new MCvFont(FONT.CV_FONT_HERSHEY_COMPLEX, 0.6, 0.4);
+            original_Frame.Draw("  " + (markerPosX).ToString() + "\n" + (markerPosY).ToString(), ref f, new System.Drawing.Point((int)markerPosX, (int)markerPosY), new Bgr(121, 116, 40));
+            //original_Frame.Draw(contours.Area.ToString(), ref f, new System.Drawing.Point((int)markerPosX, (int)markerPosY), new Bgr(121, 116, 40));
+        }
+
+        private void writerTextMarkerPosition(float markerPosX, float markerPosY)
+        {
+            tbxResults.AppendText("{" + markerPosX.ToString() + " - " + markerPosY.ToString() + "}");
+            tbxResults.AppendText(Environment.NewLine);
+        }
+
+        private void CalculateKneeAngles(Dictionary<string, PointF> markersF, Image<Bgr, byte> outImg1, bool captureAngles)
+        {
+            LineSegment2D line1 = new LineSegment2D(new System.Drawing.Point((int)markersF["Ankle"].X, (int)markersF["Ankle"].Y),
+                                                    new System.Drawing.Point((int)markersF["Knee"].X, (int)markersF["Knee"].Y));
+            LineSegment2D line2 = new LineSegment2D(new System.Drawing.Point((int)markersF["Knee"].X, (int)markersF["Knee"].Y),
+                                                    new System.Drawing.Point((int)markersF["Trochanter"].X, (int)markersF["Trochanter"].Y));
 
             outImg1.Draw(line1, new Bgr(System.Drawing.Color.Red), 1);
             outImg1.Draw(line2, new Bgr(System.Drawing.Color.Red), 1);
-            double angleEmgu = line1.GetExteriorAngleDegree(line2);
+
+            /// In order to calculate positive and negative angles use GetExteriorAngleDegree
+            /// If pendient is positive, then ExteriorAngleDegree =>  +
+            /// If pendient is negative, then ExteriorAngleDegree =>  -
+            /// When analizing the left leg multiple the angle by (-1)  to get coherent angles
+            /// When analizing the rigth leg multiple the angle by (+1)  to get coherent angles
+            /// 
+            double angleEmgu = line1.GetExteriorAngleDegree(line2) * -1;
+
+            /// Ths method always will calculate the positive  Interior angle
             double angle = findAngle(markersF);
             // double angle = angleEmgu;
 
             MCvFont f = new MCvFont(FONT.CV_FONT_HERSHEY_COMPLEX, 1.0, 1.0);
-            outImg1.Draw(((int)angle).ToString(), ref f, new System.Drawing.Point((int)markersF[1].X, (int)markersF[1].Y), new Bgr(121, 116, 40));
+            outImg1.Draw(((int)angleEmgu).ToString(), ref f, new System.Drawing.Point((int)markersF["Knee"].X, (int)markersF["Knee"].Y), new Bgr(121, 116, 40));
+
+            if (captureAngles)
+                angles.Add(angle);
+
+            //========================== activar un BOOL para empezar a capturar lo angulos y desactivarlo al presionarlo nuevamente 
+            //========================== luego guardar la lista de angulos y mostrarlo en la grafica
+
+            //tbxResults.AppendText("line.AddPoint(" + (countFrames * 1.0).ToString() + "," + Math.Abs(angle).ToString() + ");");
+            //tbxResults.AppendText(Math.Abs(angle).ToString() + ",");
+            tbxResults.AppendText(Math.Abs(angle).ToString());
+            tbxResults.AppendText(Environment.NewLine);
+
+            /*
+            ListBoxItem item = new ListBoxItem();
+            item.Content = "AddPoint(" + (countFrames * 1.0).ToString() + "," + angle.ToString() + ");";
+            listResults.Items.Add(item);
+            */
+            countFrames++;
+        }
+        
+        private void CalculateAnkleAngles(Dictionary<string, PointF> markersF, Image<Bgr, byte> outImg1, bool captureAngles)
+        {
+            /// finding the missing P(x,y) that form a perfect triangle
+            /// Source => http://www.freemathhelp.com/forum/threads/82575-need-help-finding-3rd-set-of-coordinates-to-a-right-triangle/page2
+            /// 
+            float px = markersF["Ankle"].X - (markersF["Knee"].Y - markersF["Ankle"].Y);
+            float py = markersF["Ankle"].Y - (markersF["Ankle"].X - markersF["Knee"].X);
+
+            /// calculating longitudinal axis
+            /// 
+            LineSegment2D tibiaLogAxis = new LineSegment2D(new System.Drawing.Point((int)markersF["Ankle"].X, (int)markersF["Ankle"].Y),
+                                                    new System.Drawing.Point((int)markersF["Knee"].X, (int)markersF["Knee"].Y));
+
+            LineSegment2D retropieLogAxis = new LineSegment2D(new System.Drawing.Point((int)markersF["Calcaneus"].X, (int)markersF["Calcaneus"].Y),
+                                                    new System.Drawing.Point((int)markersF["Foot"].X, (int)markersF["Foot"].Y));
+            
+            LineSegment2D perpendicularTibiaLongAxis = new LineSegment2D(new System.Drawing.Point((int)markersF["Ankle"].X, (int)markersF["Ankle"].Y),
+                                                   new System.Drawing.Point((int)px, (int)py));
+
+            /// drawing axis
+            /// 
+            outImg1.Draw(tibiaLogAxis, new Bgr(System.Drawing.Color.Yellow), 1);
+            outImg1.Draw(retropieLogAxis, new Bgr(System.Drawing.Color.Red), 1);
+            outImg1.Draw(perpendicularTibiaLongAxis, new Bgr(System.Drawing.Color.Green), 1);
+
+            /// ankle angle calculation
+            double angleEmguAnkle1 = retropieLogAxis.GetExteriorAngleDegree(perpendicularTibiaLongAxis);
+            double angleEmguAnkle2 = perpendicularTibiaLongAxis.GetExteriorAngleDegree(retropieLogAxis);
+
+            double angle = findAngle(markersF);
+            // double angle = angleEmgu;
+
+            MCvFont f = new MCvFont(FONT.CV_FONT_HERSHEY_COMPLEX, 1.0, 1.0);
+            outImg1.Draw(((int)angleEmguAnkle1).ToString(), ref f, new System.Drawing.Point((int)markersF["Knee"].X, (int)markersF["Knee"].Y), new Bgr(121, 116, 40));
 
             if(captureAngles)
                 angles.Add(angle);
@@ -906,7 +1201,7 @@ namespace UPC.HRNPCI.DesktopApplication.Views.Fisioterapueta
 
             //tbxResults.AppendText("line.AddPoint(" + (countFrames * 1.0).ToString() + "," + Math.Abs(angle).ToString() + ");");
             //tbxResults.AppendText(Math.Abs(angle).ToString() + ",");
-            tbxResults.AppendText(Math.Abs(angle).ToString());
+            tbxResults.AppendText(angleEmguAnkle1.ToString());
             tbxResults.AppendText(Environment.NewLine);
 
             /*
@@ -933,13 +1228,14 @@ namespace UPC.HRNPCI.DesktopApplication.Views.Fisioterapueta
             countFrames++;
         }
 
-        private double findAngle(List<System.Drawing.PointF> markersF)
+        private double findAngle(Dictionary<string, PointF> markersF)
         {
-              double a = Math.Pow(markersF[1].X-markersF[0].X,2) + Math.Pow(markersF[1].Y-markersF[0].Y,2);
-              double b = Math.Pow(markersF[1].X-markersF[2].X,2) + Math.Pow(markersF[1].Y-markersF[2].Y, 2);
-              double c = Math.Pow(markersF[2].X-markersF[0].X,2) + Math.Pow(markersF[2].Y-markersF[0].Y,2);
-              return Math.Abs (Math.Acos( (a+b-c) / Math.Sqrt(4*a*b) ) * 180/Math.PI - 180);
-            }
+            double a = Math.Pow(markersF["Knee"].X - markersF["Ankle"].X, 2) + Math.Pow(markersF["Knee"].Y - markersF["Ankle"].Y, 2);
+            double b = Math.Pow(markersF["Knee"].X - markersF["Trochanter"].X, 2) + Math.Pow(markersF["Knee"].Y - markersF["Trochanter"].Y, 2);
+            double c = Math.Pow(markersF["Trochanter"].X - markersF["Ankle"].X, 2) + Math.Pow(markersF["Trochanter"].Y - markersF["Ankle"].Y, 2);
+
+            return Math.Abs(Math.Acos((a + b - c) / Math.Sqrt(4 * a * b)) * 180 / Math.PI - 180);
+        }
 
         #endregion
 

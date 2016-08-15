@@ -1,572 +1,105 @@
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.DesktopApplication.exe.config
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.exe
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.pdb
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\bin\Debug\opencv_core231.dll
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\bin\Debug\opencv_highgui231.dll
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\bin\Debug\opencv_imgproc231.dll
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.DesktopApplication.exe
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.DesktopApplication.pdb
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\bin\Debug\Emgu.CV.dll
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\bin\Debug\Emgu.CV.UI.dll
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\bin\Debug\Emgu.Util.dll
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\bin\Debug\Microsoft.Practices.Unity.dll
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.Model.dll
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.ViewModel.dll
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.Model.pdb
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.ViewModel.pdb
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.csprojResolveAssemblyReference.cache
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Resources\IconsResourceDictionary.baml
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Resources\ImplicitStylesResourceDictionary.baml
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Resources\MainDictionary.baml
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Resources\StylesResourceDictionary.baml
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\MultiSelectComboBoxAsociacionView.baml
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\MultiSelectComboBoxView.baml
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\MultiSelectComboBoxPacienteView.baml
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteActualizarView.baml
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteAgregarView.baml
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteVerView.baml
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ValidationStyle.baml
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\VentanaInicio.baml
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\_Validation\ValidationStyle.baml
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\AsociarPacienteFisioterapeutaView.g.cs
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\ListaPacientesAsociacionView.g.cs
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\MultiSelectComboBoxAsociacionView.g.cs
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaActualizarView.g.cs
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaAgregarView.g.cs
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaTestAnalisisView.g.cs
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaVerView.g.cs
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\ListarFisioterapeutasView.g.cs
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\MultiSelectComboBoxView.g.cs
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\LoginView.g.cs
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\MainWindow.g.cs
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ModuloAdminView.g.cs
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ModuloFisioterapeutaView.g.cs
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\ListarPacientesView.g.cs
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\MultiSelectComboBoxPacienteView.g.cs
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteActualizarView.g.cs
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteAgregarView.g.cs
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteVerView.g.cs
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\testUserControlView.g.cs
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\VentanaInicio.g.cs
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\App.g.cs
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication_Content.g.cs
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication_MarkupCompile.cache
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication_MarkupCompile.lref
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\AsociarPacienteFisioterapeutaView.baml
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\ListaPacientesAsociacionView.baml
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaActualizarView.baml
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaAgregarView.baml
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaTestAnalisisView.baml
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaVerView.baml
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\ListarFisioterapeutasView.baml
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\LoginView.baml
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\MainWindow.baml
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ModuloAdminView.baml
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ModuloFisioterapeutaView.baml
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\ListarPacientesView.baml
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\testUserControlView.baml
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.g.resources
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.Properties.Resources.resources
-D:\kevin\repo\HRNPCI-copia-copia-replacementupToDate\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.csproj.GenerateResource.Cache
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\bin\Debug\Emgu.CV.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\bin\Debug\Emgu.CV.UI.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\bin\Debug\Emgu.Util.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\bin\Debug\itextsharp.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\bin\Debug\itextsharp.pdfa.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\bin\Debug\iTextSharp.xml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\bin\Debug\itextsharp.xtra.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\bin\Debug\Microsoft.Kinect.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\bin\Debug\Microsoft.Practices.Unity.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\bin\Debug\opencv_core231.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\bin\Debug\opencv_highgui231.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\bin\Debug\opencv_imgproc231.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.DesktopApplication.exe.config
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.DesktopApplication.exe
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.DesktopApplication.pdb
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.Model.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.ViewModel.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.Model.pdb
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.ViewModel.pdb
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.csprojResolveAssemblyReference.cache
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Resources\IconsResourceDictionary.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Resources\ImplicitStylesResourceDictionary.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Resources\MainDictionary.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Resources\StylesResourceDictionary.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\MultiSelectComboBoxAsociacionView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\MultiSelectComboBoxView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\MultiSelectComboBoxPacienteView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteActualizarView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteAgregarView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteVerView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ResultadosBuscarView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\RutasAlmacenamiento\RutasAlmacenamientosView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ValidationStyle.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\_Validation\ValidationStyle.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\AsociarPacienteFisioterapeutaView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\ListaPacientesAsociacionView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\MultiSelectComboBoxAsociacionView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaActualizarView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaAgregarView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaTestAnalisisView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaVerView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\ListarFisioterapeutasView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\MultiSelectComboBoxView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\LoginView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ModuloAdminView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ModuloFisioterapeutaView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\ListarPacientesView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\MultiSelectComboBoxPacienteView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteActualizarView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteAgregarView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteVerView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ListarResultadosReporteView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ReportesBuscarView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ReportesVer2View.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ReportesVerView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ResultadosBuscarView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ResultadosVerView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\RutasAlmacenamiento\RutasAlmacenamientosView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\App.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication_Content.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication_MarkupCompile.cache
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication_MarkupCompile.lref
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\AsociarPacienteFisioterapeutaView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\ListaPacientesAsociacionView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaActualizarView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaAgregarView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaTestAnalisisView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaVerView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\ListarFisioterapeutasView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\LoginView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ModuloAdminView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ModuloFisioterapeutaView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\ListarPacientesView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ListarResultadosReporteView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ReportesBuscarView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ReportesVer2View.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ReportesVerView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ResultadosVerView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.g.resources
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.Properties.Resources.resources
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.csproj.GenerateResource.Cache
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.exe
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.pdb
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\bin\Debug\HRNPCIData.sdf
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\bin\Debug\x64\sqlceca40.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\bin\Debug\x64\sqlcecompact40.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\bin\Debug\x64\sqlceer40EN.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\bin\Debug\x64\sqlceme40.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\bin\Debug\x64\sqlceoledb40.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\bin\Debug\x64\sqlceqp40.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\bin\Debug\x64\sqlcese40.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\bin\Debug\x86\sqlceca40.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\bin\Debug\x86\sqlcecompact40.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\bin\Debug\x86\sqlceer40EN.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\bin\Debug\x86\sqlceme40.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\bin\Debug\x86\sqlceoledb40.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\bin\Debug\x86\sqlceqp40.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\bin\Debug\x86\sqlcese40.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\bin\Debug\System.Data.SqlServerCe.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\bin\Debug\System.Data.SqlServerCe.Entity.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\bin\Debug\Emgu.CV.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\bin\Debug\Emgu.CV.UI.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\bin\Debug\Emgu.Util.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\bin\Debug\itextsharp.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\bin\Debug\itextsharp.pdfa.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\bin\Debug\iTextSharp.xml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\bin\Debug\itextsharp.xtra.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\bin\Debug\Microsoft.Kinect.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\bin\Debug\Microsoft.Practices.Unity.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\bin\Debug\opencv_core231.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\bin\Debug\opencv_highgui231.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\bin\Debug\opencv_imgproc231.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.DesktopApplication.exe.config
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.DesktopApplication.exe
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.DesktopApplication.pdb
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.Model.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.ViewModel.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.Model.pdb
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.ViewModel.pdb
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.csprojResolveAssemblyReference.cache
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Resources\IconsResourceDictionary.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Resources\ImplicitStylesResourceDictionary.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Resources\MainDictionary.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Resources\StylesResourceDictionary.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\MultiSelectComboBoxAsociacionView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\MultiSelectComboBoxView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\MultiSelectComboBoxPacienteView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteActualizarView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteAgregarView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteVerView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ResultadosBuscarView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\RutasAlmacenamiento\RutasAlmacenamientosView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ValidationStyle.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\_Validation\ValidationStyle.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\AsociarPacienteFisioterapeutaView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\ListaPacientesAsociacionView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\MultiSelectComboBoxAsociacionView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaActualizarView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaAgregarView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaTestAnalisisView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaVerView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\ListarFisioterapeutasView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\MultiSelectComboBoxView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\LoginView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ModuloAdminView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ModuloFisioterapeutaView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\ListarPacientesView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\MultiSelectComboBoxPacienteView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteActualizarView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteAgregarView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteVerView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ListarResultadosReporteView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ReportesBuscarView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ReportesVer2View.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ReportesVerView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ResultadosBuscarView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ResultadosVerView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\RutasAlmacenamiento\RutasAlmacenamientosView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\App.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication_Content.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication_MarkupCompile.cache
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication_MarkupCompile.lref
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\AsociarPacienteFisioterapeutaView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\ListaPacientesAsociacionView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaActualizarView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaAgregarView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaTestAnalisisView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaVerView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\ListarFisioterapeutasView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\LoginView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ModuloAdminView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ModuloFisioterapeutaView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\ListarPacientesView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ListarResultadosReporteView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ReportesBuscarView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ReportesVer2View.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ReportesVerView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ResultadosVerView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.g.resources
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.Properties.Resources.resources
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.csproj.GenerateResource.Cache
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.exe
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.pdb
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\App.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\bin\Debug\HRNPCIData.sdf
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\bin\Debug\x64\sqlceca40.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\bin\Debug\x64\sqlcecompact40.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\bin\Debug\x64\sqlceer40EN.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\bin\Debug\x64\sqlceme40.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\bin\Debug\x64\sqlceoledb40.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\bin\Debug\x64\sqlceqp40.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\bin\Debug\x64\sqlcese40.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\bin\Debug\x86\sqlceca40.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\bin\Debug\x86\sqlcecompact40.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\bin\Debug\x86\sqlceer40EN.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\bin\Debug\x86\sqlceme40.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\bin\Debug\x86\sqlceoledb40.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\bin\Debug\x86\sqlceqp40.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\bin\Debug\x86\sqlcese40.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\bin\Debug\System.Data.SqlServerCe.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\bin\Debug\System.Data.SqlServerCe.Entity.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\bin\Debug\Emgu.CV.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\bin\Debug\Emgu.CV.UI.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\bin\Debug\Emgu.Util.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\bin\Debug\itextsharp.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\bin\Debug\itextsharp.pdfa.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\bin\Debug\iTextSharp.xml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\bin\Debug\itextsharp.xtra.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\bin\Debug\Microsoft.Kinect.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\bin\Debug\Microsoft.Practices.Unity.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\bin\Debug\opencv_core231.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\bin\Debug\opencv_highgui231.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\bin\Debug\opencv_imgproc231.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.DesktopApplication.exe.config
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.DesktopApplication.exe
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.DesktopApplication.pdb
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.Model.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.ViewModel.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.Model.pdb
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.ViewModel.pdb
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.csprojResolveAssemblyReference.cache
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Control\Block.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Resources\IconsResourceDictionary.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Resources\ImplicitStylesResourceDictionary.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Resources\MainDictionary.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Resources\StylesResourceDictionary.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\MultiSelectComboBoxAsociacionView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\MultiSelectComboBoxView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\MultiSelectComboBoxPacienteView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteActualizarView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteAgregarView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteVerView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ResultadosBuscarView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\RutasAlmacenamiento\RutasAlmacenamientosView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ValidationStyle.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\_Validation\ValidationStyle.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Control\Block.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Control\LoadingAnimation.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\AsociarPacienteFisioterapeutaView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\ListaPacientesAsociacionView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\MultiSelectComboBoxAsociacionView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaActualizarView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaAgregarView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaTestAnalisisView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaVerView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\ListarFisioterapeutasView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\MultiSelectComboBoxView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\LoginView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ModuloAdminView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ModuloFisioterapeutaView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\ListarPacientesView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\MultiSelectComboBoxPacienteView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteActualizarView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteAgregarView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteVerView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ListarResultadosReporteView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ReportesBuscarView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ReportesVer2View.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ReportesVerView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ResultadosBuscarView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ResultadosVerView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\RutasAlmacenamiento\RutasAlmacenamientosView.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\App.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication_Content.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication_MarkupCompile.cache
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication_MarkupCompile.lref
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Control\LoadingAnimation.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\AsociarPacienteFisioterapeutaView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\ListaPacientesAsociacionView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaActualizarView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaAgregarView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaTestAnalisisView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaVerView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\ListarFisioterapeutasView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\LoginView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ModuloAdminView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ModuloFisioterapeutaView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\ListarPacientesView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ListarResultadosReporteView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ReportesBuscarView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ReportesVer2View.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ReportesVerView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ResultadosVerView.baml
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.g.resources
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.Properties.Resources.resources
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.csproj.GenerateResource.Cache
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.exe
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade - Con SQL Compact - Improve UI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.pdb
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.DesktopApplication.exe.config
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.exe
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.pdb
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\HRNPCIData.sdf
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\x64\sqlceca40.dll
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\x64\sqlcecompact40.dll
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\x64\sqlceer40EN.dll
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\x64\sqlceme40.dll
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\x64\sqlceoledb40.dll
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\x64\sqlceqp40.dll
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\x64\sqlcese40.dll
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\x86\sqlceca40.dll
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\x86\sqlcecompact40.dll
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\x86\sqlceer40EN.dll
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\x86\sqlceme40.dll
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\x86\sqlceoledb40.dll
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\x86\sqlceqp40.dll
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\x86\sqlcese40.dll
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\System.Data.SqlServerCe.dll
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\System.Data.SqlServerCe.Entity.dll
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\Emgu.CV.dll
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\Emgu.CV.UI.dll
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\Emgu.Util.dll
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\itextsharp.dll
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\itextsharp.pdfa.dll
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\iTextSharp.xml
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\itextsharp.xtra.dll
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\Microsoft.Kinect.dll
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\Microsoft.Practices.Unity.dll
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\opencv_core231.dll
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\opencv_highgui231.dll
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\opencv_imgproc231.dll
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.DesktopApplication.exe
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.DesktopApplication.pdb
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.Model.dll
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.ViewModel.dll
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.Model.pdb
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.ViewModel.pdb
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.csprojResolveAssemblyReference.cache
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Control\Block.baml
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Resources\IconsResourceDictionary.baml
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Resources\ImplicitStylesResourceDictionary.baml
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Resources\MainDictionary.baml
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Resources\StylesResourceDictionary.baml
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\MultiSelectComboBoxAsociacionView.baml
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\MultiSelectComboBoxView.baml
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\MultiSelectComboBoxPacienteView.baml
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteActualizarView.baml
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteAgregarView.baml
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteVerView.baml
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ResultadosBuscarView.baml
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\RutasAlmacenamiento\RutasAlmacenamientosView.baml
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ValidationStyle.baml
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\_Validation\ValidationStyle.baml
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Control\Block.g.cs
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Control\LoadingAnimation.g.cs
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\AsociarPacienteFisioterapeutaView.g.cs
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\ListaPacientesAsociacionView.g.cs
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\MultiSelectComboBoxAsociacionView.g.cs
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaActualizarView.g.cs
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaAgregarView.g.cs
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaTestAnalisisView.g.cs
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaVerView.g.cs
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\ListarFisioterapeutasView.g.cs
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\MultiSelectComboBoxView.g.cs
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\LoginView.g.cs
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ModuloAdminView.g.cs
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ModuloFisioterapeutaView.g.cs
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\ListarPacientesView.g.cs
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\MultiSelectComboBoxPacienteView.g.cs
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteActualizarView.g.cs
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteAgregarView.g.cs
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteVerView.g.cs
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ListarResultadosReporteView.g.cs
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ReportesBuscarView.g.cs
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ReportesVer2View.g.cs
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ReportesVerView.g.cs
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ResultadosBuscarView.g.cs
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ResultadosVerView.g.cs
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\RutasAlmacenamiento\RutasAlmacenamientosView.g.cs
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\App.g.cs
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication_Content.g.cs
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication_MarkupCompile.cache
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication_MarkupCompile.lref
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Control\LoadingAnimation.baml
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\AsociarPacienteFisioterapeutaView.baml
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\ListaPacientesAsociacionView.baml
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaActualizarView.baml
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaAgregarView.baml
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaTestAnalisisView.baml
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaVerView.baml
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\ListarFisioterapeutasView.baml
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\LoginView.baml
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ModuloAdminView.baml
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ModuloFisioterapeutaView.baml
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\ListarPacientesView.baml
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ListarResultadosReporteView.baml
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ReportesBuscarView.baml
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ReportesVer2View.baml
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ReportesVerView.baml
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ResultadosVerView.baml
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.g.resources
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.Properties.Resources.resources
-C:\Users\Fabrizio\Desktop\kevin - NO lo borres\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.csproj.GenerateResource.Cache
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.DesktopApplication.exe.config
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.exe
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.pdb
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\HRNPCIData.sdf
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\x64\sqlceca40.dll
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\x64\sqlcecompact40.dll
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\x64\sqlceer40EN.dll
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\x64\sqlceme40.dll
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\x64\sqlceoledb40.dll
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\x64\sqlceqp40.dll
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\x64\sqlcese40.dll
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\x86\sqlceca40.dll
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\x86\sqlcecompact40.dll
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\x86\sqlceer40EN.dll
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\x86\sqlceme40.dll
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\x86\sqlceoledb40.dll
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\x86\sqlceqp40.dll
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\x86\sqlcese40.dll
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\System.Data.SqlServerCe.dll
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\System.Data.SqlServerCe.Entity.dll
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\Emgu.CV.dll
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\Emgu.CV.UI.dll
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\Emgu.Util.dll
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\itextsharp.dll
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\itextsharp.pdfa.dll
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\iTextSharp.xml
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\itextsharp.xtra.dll
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\Microsoft.Kinect.dll
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\Microsoft.Practices.Unity.dll
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\opencv_core231.dll
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\opencv_highgui231.dll
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\opencv_imgproc231.dll
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.DesktopApplication.exe
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.DesktopApplication.pdb
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.Model.dll
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.ViewModel.dll
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.Model.pdb
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.ViewModel.pdb
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.csprojResolveAssemblyReference.cache
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Control\Block.baml
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Resources\IconsResourceDictionary.baml
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Resources\ImplicitStylesResourceDictionary.baml
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Resources\MainDictionary.baml
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Resources\StylesResourceDictionary.baml
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\MultiSelectComboBoxAsociacionView.baml
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\MultiSelectComboBoxView.baml
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\MultiSelectComboBoxPacienteView.baml
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteActualizarView.baml
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteAgregarView.baml
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteVerView.baml
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ResultadosBuscarView.baml
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\RutasAlmacenamiento\RutasAlmacenamientosView.baml
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ValidationStyle.baml
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\_Validation\ValidationStyle.baml
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Control\Block.g.cs
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Control\LoadingAnimation.g.cs
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\AsociarPacienteFisioterapeutaView.g.cs
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\ListaPacientesAsociacionView.g.cs
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\MultiSelectComboBoxAsociacionView.g.cs
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaActualizarView.g.cs
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaAgregarView.g.cs
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaTestAnalisisView.g.cs
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaVerView.g.cs
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\ListarFisioterapeutasView.g.cs
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\MultiSelectComboBoxView.g.cs
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\LoginView.g.cs
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ModuloAdminView.g.cs
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ModuloFisioterapeutaView.g.cs
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\ListarPacientesView.g.cs
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\MultiSelectComboBoxPacienteView.g.cs
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteActualizarView.g.cs
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteAgregarView.g.cs
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteVerView.g.cs
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ListarResultadosReporteView.g.cs
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ReportesBuscarView.g.cs
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ReportesVer2View.g.cs
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ReportesVerView.g.cs
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ResultadosBuscarView.g.cs
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ResultadosVerView.g.cs
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\RutasAlmacenamiento\RutasAlmacenamientosView.g.cs
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\App.g.cs
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication_Content.g.cs
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication_MarkupCompile.cache
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication_MarkupCompile.lref
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Control\LoadingAnimation.baml
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\AsociarPacienteFisioterapeutaView.baml
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\ListaPacientesAsociacionView.baml
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaActualizarView.baml
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaAgregarView.baml
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaTestAnalisisView.baml
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaVerView.baml
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\ListarFisioterapeutasView.baml
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\LoginView.baml
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ModuloAdminView.baml
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ModuloFisioterapeutaView.baml
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\ListarPacientesView.baml
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ListarResultadosReporteView.baml
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ReportesBuscarView.baml
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ReportesVer2View.baml
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ReportesVerView.baml
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ResultadosVerView.baml
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.g.resources
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.Properties.Resources.resources
-C:\Users\Fabrizio\Desktop\kevin_borrar\HRNPCI - codigo fuente\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.csproj.GenerateResource.Cache
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\bin\Debug\HRNPCIData.sdf
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\bin\Debug\x64\sqlceca40.dll
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\bin\Debug\x64\sqlcecompact40.dll
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\bin\Debug\x64\sqlceer40EN.dll
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\bin\Debug\x64\sqlceme40.dll
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\bin\Debug\x64\sqlceoledb40.dll
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\bin\Debug\x64\sqlceqp40.dll
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\bin\Debug\x64\sqlcese40.dll
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\bin\Debug\x86\sqlceca40.dll
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\bin\Debug\x86\sqlcecompact40.dll
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\bin\Debug\x86\sqlceer40EN.dll
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\bin\Debug\x86\sqlceme40.dll
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\bin\Debug\x86\sqlceoledb40.dll
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\bin\Debug\x86\sqlceqp40.dll
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\bin\Debug\x86\sqlcese40.dll
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\bin\Debug\System.Data.SqlServerCe.dll
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\bin\Debug\System.Data.SqlServerCe.Entity.dll
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\bin\Debug\Emgu.CV.dll
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\bin\Debug\Emgu.CV.UI.dll
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\bin\Debug\Emgu.Util.dll
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\bin\Debug\itextsharp.dll
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\bin\Debug\itextsharp.pdfa.dll
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\bin\Debug\iTextSharp.xml
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\bin\Debug\itextsharp.xtra.dll
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\bin\Debug\Microsoft.Kinect.dll
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\bin\Debug\opencv_core231.dll
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\bin\Debug\opencv_highgui231.dll
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\bin\Debug\opencv_imgproc231.dll
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.DesktopApplication.exe.config
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.DesktopApplication.exe
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.DesktopApplication.pdb
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.Model.dll
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.ViewModel.dll
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.Model.pdb
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\bin\Debug\UPC.HRNPCI.ViewModel.pdb
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.csprojResolveAssemblyReference.cache
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Control\Block.baml
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Resources\IconsResourceDictionary.baml
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Resources\ImplicitStylesResourceDictionary.baml
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Resources\MainDictionary.baml
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Resources\StylesResourceDictionary.baml
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\MultiSelectComboBoxAsociacionView.baml
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\MultiSelectComboBoxView.baml
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\MultiSelectComboBoxPacienteView.baml
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteActualizarView.baml
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteAgregarView.baml
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteVerView.baml
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ResultadosBuscarView.baml
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\RutasAlmacenamiento\RutasAlmacenamientosView.baml
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ValidationStyle.baml
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\_Validation\ValidationStyle.baml
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Control\Block.g.cs
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Control\LoadingAnimation.g.cs
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\AsociarPacienteFisioterapeutaView.g.cs
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\ListaPacientesAsociacionView.g.cs
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\MultiSelectComboBoxAsociacionView.g.cs
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaActualizarView.g.cs
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaAgregarView.g.cs
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaTestAnalisisView.g.cs
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaVerView.g.cs
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\ListarFisioterapeutasView.g.cs
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\MultiSelectComboBoxView.g.cs
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\LoginView.g.cs
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ModuloAdminView.g.cs
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ModuloFisioterapeutaView.g.cs
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\ListarPacientesView.g.cs
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\MultiSelectComboBoxPacienteView.g.cs
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteActualizarView.g.cs
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteAgregarView.g.cs
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\PacienteVerView.g.cs
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ListarResultadosReporteView.g.cs
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ReportesBuscarView.g.cs
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ReportesVer2View.g.cs
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ReportesVerView.g.cs
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ResultadosBuscarView.g.cs
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ResultadosVerView.g.cs
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\RutasAlmacenamiento\RutasAlmacenamientosView.g.cs
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\App.g.cs
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication_Content.g.cs
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication_MarkupCompile.cache
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication_MarkupCompile.lref
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Control\LoadingAnimation.baml
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\AsociarPacienteFisioterapeutaView.baml
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\AsociarPacienteFisioterapeuta\ListaPacientesAsociacionView.baml
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaActualizarView.baml
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaAgregarView.baml
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaTestAnalisisView.baml
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\FisioterapeutaVerView.baml
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Fisioterapueta\ListarFisioterapeutasView.baml
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\LoginView.baml
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ModuloAdminView.baml
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ModuloFisioterapeutaView.baml
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\Pacinete\ListarPacientesView.baml
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ListarResultadosReporteView.baml
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ReportesBuscarView.baml
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ReportesVer2View.baml
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ReportesVerView.baml
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\Views\ResultadosReportesPacientes\ResultadosVerView.baml
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.g.resources
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.Properties.Resources.resources
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.csproj.GenerateResource.Cache
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.exe
+C:\Tesis\repo\HRNPCI\UPC.HRNPCI.DesktopApplication\obj\x86\Debug\UPC.HRNPCI.DesktopApplication.pdb

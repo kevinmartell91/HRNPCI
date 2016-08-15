@@ -54,7 +54,7 @@
             SelectedItem="{Binding Path=SelectedKeyUno}"  Grid.Column="1" HorizontalAlignment="Right" Margin="0,5,10,0" Width="120" Height="22" VerticalAlignment="Top" FontSize="11" Grid.RowSpan="2"/>
         <TextBlock Text="Pacientes asignados  :" HorizontalAlignment="Right" Margin="0,5,131,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Row="1" Height="23" Width="180" Grid.Column="1" FontSize="16" FontWeight="Bold" FontFamily="Segoe UI Semibold"/>
         <GroupBox Header="{Binding strNombresPaciente}" Margin="0,0,10,10" Grid.Row="1" Grid.RowSpan="3" FontSize="18" FontWeight="Bold" FontFamily="Segoe UI Semibold">
-            <Image  Name="IImageFormat"  Margin="-2,62,0,0" Grid.Row="2" Height="580" VerticalAlignment="Top" MouseLeftButtonDown="IImageFormat_MouseLeftButtonDown" MouseDown="IImageFormat_MouseDown" Stretch="Fill"/>
+            <Image  Name="IImageFormat"  Margin="-2,62,-440,0" Grid.Row="2" Height="580" VerticalAlignment="Top" MouseLeftButtonDown="IImageFormat_MouseLeftButtonDown" MouseDown="IImageFormat_MouseDown" Stretch="Fill"/>
         </GroupBox>
 
 
@@ -93,7 +93,7 @@
 
         <Button x:Name="btnEstadosAnalisis" Grid.Column="1" HorizontalAlignment="Left" Margin="101,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="75" Height="20" FontSize="11" Click="btnEstadosAnalisis_Click" Background="#FF007ACC" Foreground="White" FontFamily="Segoe UI Semibold"/>
 
-        <StackPanel  Margin="00,120,232,15" Width="300" Background="#f0f0f0" HorizontalAlignment="Right" Grid.Column="1" Grid.Row="2" >
+        <StackPanel  Margin="900,120,232,15" Width="300" Background="#f0f0f0" HorizontalAlignment="Right" Grid.Column="1" Grid.Row="2" >
             <TextBlock Text="Settings"  Padding="10" Background="#ccc" />
             <TextBlock Text="Min Umbral" Padding="10"/>
             <StackPanel  Orientation="Horizontal">
@@ -158,8 +158,8 @@
                 </Image.OpacityMask>
             </Image>
         </Button>
-        <TextBox x:Name="tbxResults" HorizontalAlignment="Left" Height="126" Margin="25,-100,0,-155" Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="247" Grid.Column="1"/>
-        
+        <TextBox x:Name="tbxResults" HorizontalAlignment="Left" Height="126" Margin="307,519,0,0" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="247" Grid.Column="1" Grid.RowSpan="2"/>
+
         <!--
         <StatusBar Grid.Row="3" HorizontalAlignment="Stretch" Name="statusBar" VerticalAlignment="Bottom" Background="White" >
             <StatusBarItem Content="{Binding StatusText}" />
