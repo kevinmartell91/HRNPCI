@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 using System.Windows.Threading;
 using UPC.HRNPCI.DesktopApplication.ViewModels.Fisioterapueta;
 using UPC.HRNPCI.Model.FisioterapeutaModel;
+using UPC.HRNPCI.Model.AdministradorModel;
 
 using UPC.HRNPCI.Model;
 using System.ComponentModel;
@@ -31,7 +32,7 @@ namespace UPC.HRNPCI.DesktopApplication.Views
 
         private readonly BackgroundWorker worker = new BackgroundWorker();
         string mensajeBuckup;
-       
+        bool blnUserAdminExist;
 
         public LoginView()
         {
@@ -48,6 +49,21 @@ namespace UPC.HRNPCI.DesktopApplication.Views
             worker.DoWork += worker_DoWork;
             worker.RunWorkerCompleted += worker_RunWorkerCompleted;
 
+            lblChangePassword.Visibility = System.Windows.Visibility.Hidden;
+            btnCrearCuentaAdmin.Visibility = System.Windows.Visibility.Hidden;
+
+
+            //Validate if admin user exist
+            blnUserAdminExist = AdministradorDL.UserAdminExist();
+            if (blnUserAdminExist)
+            {
+                btnLogin.Visibility = System.Windows.Visibility.Hidden;
+                btnCancel.Visibility = System.Windows.Visibility.Hidden;
+                lblChangePassword.Visibility = System.Windows.Visibility.Visible;
+                btnCrearCuentaAdmin.Visibility = System.Windows.Visibility.Visible;
+            }
+
+
 
         }
         public void RefreshUIListaFisioterapuetas(object sender, EventArgs e)
@@ -55,40 +71,28 @@ namespace UPC.HRNPCI.DesktopApplication.Views
             if (FisioterapeutaStatic.kblnLoginExitoso)
             {
                 FisioterapeutaStatic.kblnLoginExitoso = false;
-                
+
                 pbContrasena.Password = "";
                 txtUsuario.Text = "";
                 this.Show();
             }
         }
 
-        private void pbContrasena_TextInput_1(object sender, TextCompositionEventArgs e)
-        {
-
-        }
+        private void pbContrasena_TextInput_1(object sender, TextCompositionEventArgs e) { }
 
         private void btnCancel_Click(object sender, RoutedEventArgs e)
         {
-            
-
-            //SplashScreen splashScreen = new SplashScreen("/../Resources/imagenes/foto_icon.jpg");
-            //splashScreen.Show(true);
-
             Loading.Visibility = System.Windows.Visibility.Visible;
-            
-            //mensajeBuckup = Class_MainConStr.UDF_MainCnStr();
             worker.RunWorkerAsync();
-            //Loading.Visibility = System.Windows.Visibility.Hidden;
-            
         }
 
         private void worker_DoWork(object sender, DoWorkEventArgs e)
         {
-            
+
             mensajeBuckup = Class_MainConStr.UDF_MainCnStr();
         }
 
-        private void worker_RunWorkerCompleted(object sender,RunWorkerCompletedEventArgs e)
+        private void worker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             System.Windows.Forms.MessageBox.Show(mensajeBuckup);
             this.Close();
@@ -96,75 +100,94 @@ namespace UPC.HRNPCI.DesktopApplication.Views
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            
-
-            //if (FisioterapeutaStatic.kblnLoginExitoso)
-            //{
-            //    this.Hide();
-            //}
-            
             ValidarUsuario();
         }
 
+        public bool ValidateFields(string Password, string Usuario)
+        {
+            if (Password == "" && Usuario == "")
+            {
+                System.Windows.Forms.MessageBox.Show("Debe ingresar un usuario y contraseña.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return false;
+            }
+            if (Usuario == "")
+            {
+                System.Windows.Forms.MessageBox.Show("Debe ingresar un usuario.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return false;
+            }
+            if (Password == "")
+            {
+                System.Windows.Forms.MessageBox.Show("Debe ingresar una contraseña.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return false;
+            }
+            return true;
+        }
         private void ValidarUsuario()
         {
             try
             {
                 var passwordBox = pbContrasena as PasswordBox;
-            string Usuario = txtUsuario.Text;
+                string Usuario = txtUsuario.Text;
 
-            if (passwordBox.Password == "" && Usuario == "")
-            {
-                System.Windows.Forms.MessageBox.Show("Debe ingresar un usuario y contraseña.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-            if (Usuario == "")
-            {
-                System.Windows.Forms.MessageBox.Show("Debe ingresar un usuario.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-            if (passwordBox.Password == "")
-            {
-                System.Windows.Forms.MessageBox.Show("Debe ingresar una contraseña.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
+                if (ValidateFields(passwordBox.Password, Usuario))
+                {
 
-            int iStatusLogin = FisioterapeutaDL.ValidarUsuario(Usuario, passwordBox.Password);
-            switch (iStatusLogin)
-            {
-                case -2 :
-                    System.Windows.Forms.MessageBox.Show("Error de conxión a base de datos.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    int iStatusLogin = FisioterapeutaDL.ValidarUsuario(Usuario, passwordBox.Password);
+                    switch (iStatusLogin)
+                    {
+                        case -2:
+                            System.Windows.Forms.MessageBox.Show("Error de conxión a base de datos.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-                    break;
-                case -1:
-                    System.Windows.Forms.MessageBox.Show("Usuario y/o contraseña incorrectas.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    break;
-                case 0:
-                    //login fisoterapueta
-                    this.Hide();
+                            break;
+                        case -1:
+                            System.Windows.Forms.MessageBox.Show("Usuario y/o contraseña incorrectas.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            break;
+                        case 0:
+                            //login fisoterapueta
+                            this.Hide();
 
-                    //if (MessageBoxResult.OK == MessageBox.Show("Simulación de ingreso a módulofisioterapeuta", " Rol Fisioterapeuta", MessageBoxButton.OK)) 
-                    //{
-                    //    FisioterapeutaStatic.kblnLoginExitoso = true;
-                    //    this.Show();
-                    //}
+                            //if (MessageBoxResult.OK == MessageBox.Show("Simulación de ingreso a módulofisioterapeuta", " Rol Fisioterapeuta", MessageBoxButton.OK)) 
+                            //{
+                            //    FisioterapeutaStatic.kblnLoginExitoso = true;
+                            //    this.Show();
+                            //}
 
-                    break;
+                            break;
 
-                case 1:
+                        case 1:
 
-                    this.Hide();
+                            this.Hide();
 
-                    break;
-            }
+                            break;
+                    }
+                }
 
             }
             catch (Exception ex)
             {
-                
+
                 throw ex;
             }
 
+        }
+
+        private void lblChangePassword_MouseDown(object sender, MouseButtonEventArgs e) { }
+
+        private void btnCrearCuentaAdmin_Click(object sender, RoutedEventArgs e)
+        {
+            var passwordBox = pbContrasena as PasswordBox;
+
+            if (ValidateFields(passwordBox.Password, txtUsuario.Text))
+            {
+                if (AdministradorDL.ActualizarAdministradorPassword(txtUsuario.Text, passwordBox.Password.ToString()))
+                {
+                    btnLogin.Visibility = System.Windows.Visibility.Visible;
+                    btnCancel.Visibility = System.Windows.Visibility.Visible;
+                    lblChangePassword.Visibility = System.Windows.Visibility.Hidden;
+                    btnCrearCuentaAdmin.Visibility = System.Windows.Visibility.Hidden;
+
+                }
+            }
         }
     }
 }

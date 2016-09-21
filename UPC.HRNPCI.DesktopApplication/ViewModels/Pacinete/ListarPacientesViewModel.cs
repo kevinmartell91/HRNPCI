@@ -16,6 +16,7 @@ using UPC.HRNPCI.Model;
 using System.Collections.Specialized;
 using System.Windows.Threading;
 using UPC.HRNPCI.DesktopApplication.ViewModels.AsociarPacienteFisioterapeuta;
+using UPC.HRNPCI.DesktopApplication.ViewModels.Fisioterapueta;
 
 namespace UPC.HRNPCI.DesktopApplication.ViewModels.Pacinete
 {
@@ -322,6 +323,12 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Pacinete
 
         private void AgregarPacienteDialog(object parameter)
         {
+            if (PacienteStatic.kstrRutaFoto == "")
+            {
+                MessageBox.Show("Aún no ha determinado la ruta de almacenamiento de las fotos. Antes de realizar este proceso dirigase a la pestaña de Rutas de Almacenamiento", "Advertencia", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                return;
+            }
+
             PacienteAgregarViewModel pacienteAgregarViewModel = new PacienteAgregarViewModel();
             IModalDialog dialog = ServiceProvider.Instance5.Get<IModalDialog>();
 

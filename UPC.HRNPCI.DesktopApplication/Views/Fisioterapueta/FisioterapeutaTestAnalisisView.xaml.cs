@@ -323,17 +323,6 @@ namespace UPC.HRNPCI.DesktopApplication.Views.Fisioterapueta
                     btnEstadosAnalisis.Content = "Capturar";
                     btnFoto.IsEnabled = true;
                     btnGrabarGrafica.IsEnabled = false;
-
-
-                    for (int i = 0; i < 141; i++)
-                    {
-                        string path = @"C:\Users\Fabrizio\Desktop\kevin_borrar\to_photoshop\231228_03\edited\" + i + ".jpg";
-                        imgEmguFormat = new Image<Bgr, byte>(new Bitmap(path));
-                        GaitAnalysis(imgEmguFormat, false);
-                    }
-
-                    timer.IsEnabled = false;
-
                     break;
 
                 case 1: // Gait analysis begin, for getting only angles List
@@ -637,7 +626,7 @@ namespace UPC.HRNPCI.DesktopApplication.Views.Fisioterapueta
                 {
 
                     //Process the IR frame from kinect which is more beutiful than the default image is lighter
-                    //imgEmguFormat = new Image<Bgr, Byte>(new Bitmap(ToBitmap(ToBitmapSource(infraredFrame))));
+                    imgEmguFormat = new Image<Bgr, Byte>(new Bitmap(ToBitmap(ToBitmapSource(infraredFrame))));
 
                     GaitAnalysisStates();
 
@@ -801,25 +790,16 @@ namespace UPC.HRNPCI.DesktopApplication.Views.Fisioterapueta
 
                     //if ((contours.Area > Math.Pow(sliderMinSize.Value, 2)) && (contours.Area < Math.Pow(sliderMaxSize.Value, 2)))
 
-                    //CURRENT
-                    //if ((contours.Area > Math.Pow(sliderMinSize.Value, 2)) && (contours.Area < Math.Pow(sliderMaxSize.Value, 2))
-                    //        //&& 40 < markerPosY && markerPosY < original_Frame.Height - 60
-                    //        //&& 50 < markerPosX && markerPosX < original_Frame.Width - 50
-                    //    )
+                    if ((contours.Area > Math.Pow(sliderMinSize.Value, 2)) && (contours.Area < Math.Pow(sliderMaxSize.Value, 2))
+                            && 40 < markerPosY && markerPosY < original_Frame.Height - 60
+                            && 50 < markerPosX && markerPosX < original_Frame.Width - 50)
 
                      
                     //if ((contours.Area > Math.Pow(sliderMinSize.Value, 2)) && (contours.Area < Math.Pow(sliderMaxSize.Value, 2)))
 
-                    // TO extract markers from kinect recordings in PUCP
                     //if ((contours.Area > Math.Pow(sliderMinSize.Value, 2)) && (contours.Area < Math.Pow(sliderMaxSize.Value, 2))
                     //     && 70 < markerPosY && markerPosY < ym
-                    //     && xm < markerPosX && markerPosX < original_Frame.Width - 90
-                    //    )
-
-                    // To examinate from photoshop
-                    if ((contours.Area > Math.Pow(sliderMinSize.Value, 2)) && (contours.Area < Math.Pow(sliderMaxSize.Value, 2))
-                        
-                        )
+                    //     && xm < markerPosX && markerPosX < original_Frame.Width - 50)
 
                     {
                         MCvBox2D box = contours.GetMinAreaRect();
@@ -905,8 +885,7 @@ namespace UPC.HRNPCI.DesktopApplication.Views.Fisioterapueta
             //========================== luego guardar la lista de angulos y mostrarlo en la grafica
 
             //tbxResults.AppendText("line.AddPoint(" + (countFrames * 1.0).ToString() + "," + Math.Abs(angle).ToString() + ");");
-            //tbxResults.AppendText(Math.Abs(angle).ToString() + ",");
-            tbxResults.AppendText(Math.Abs(angle).ToString());
+            tbxResults.AppendText(Math.Abs(angle).ToString() + ",");
             tbxResults.AppendText(Environment.NewLine);
 
             /*
@@ -1990,22 +1969,18 @@ namespace UPC.HRNPCI.DesktopApplication.Views.Fisioterapueta
 
         private void IImageFormat_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            // This draw a vertical and horizontal line order to 
-            // Slit the area recognition for detecting the correct markers
-            // from the VICOM markers 
+            //System.Drawing.Point point = System.Windows.Forms.Control.MousePosition;
+            //xm = e.GetPosition(IImageFormat).X;
+            //ym = e.GetPosition(IImageFormat).Y;
+            //LineSegment2DF lineH = new LineSegment2DF(new System.Drawing.PointF(0, (float)ym),
+            //                                        new System.Drawing.PointF((float)original_Frame.Width, (float)ym));
 
-            System.Drawing.Point point = System.Windows.Forms.Control.MousePosition;
-            xm = e.GetPosition(IImageFormat).X;
-            ym = e.GetPosition(IImageFormat).Y;
-            LineSegment2DF lineH = new LineSegment2DF(new System.Drawing.PointF(0, (float)ym),
-                                                    new System.Drawing.PointF((float)original_Frame.Width, (float)ym));
+            //LineSegment2DF lineV = new LineSegment2DF(new System.Drawing.PointF((float)xm, 0),
+            //                                        new System.Drawing.PointF((float)xm, (float)original_Frame.Height));
 
-            LineSegment2DF lineV = new LineSegment2DF(new System.Drawing.PointF((float)xm, 0),
-                                                    new System.Drawing.PointF((float)xm, (float)original_Frame.Height));
-
-            original_Frame.Draw(lineH, new Bgr(System.Drawing.Color.Green), 1);
-            original_Frame.Draw(lineV, new Bgr(System.Drawing.Color.Green), 1);
-            IImageFormat.Source = ToBitmapSource(original_Frame);
+            //original_Frame.Draw(lineH, new Bgr(System.Drawing.Color.Green), 1);
+            //original_Frame.Draw(lineV, new Bgr(System.Drawing.Color.Green), 1);
+            //IImageFormat.Source = ToBitmapSource(original_Frame);
         }
 
         private void IImageFormat_MouseDown(object sender, MouseButtonEventArgs e)

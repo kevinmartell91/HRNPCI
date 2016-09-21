@@ -295,6 +295,12 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Fisioterapueta
 
         private void AgregarFisioterapeutaDialog(object parameter)
         {
+            if (FisioterapeutaStatic.kstrRutaFoto == "")
+            {
+                MessageBox.Show("Aún no ha determinado la ruta de almacenamiento de las fotos. Antes de realizar este proceso dirigase a la pestaña de Rutas de Almacenamiento", "Advertencia", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                return;
+            }
+
             FisioterapeutaAgregarViewModel fvm = new FisioterapeutaAgregarViewModel();
             IModalDialog dialog = ServiceProvider.Instance2.Get<IModalDialog>();
 

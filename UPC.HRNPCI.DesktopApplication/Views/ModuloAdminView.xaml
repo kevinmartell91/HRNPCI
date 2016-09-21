@@ -11,9 +11,9 @@
         xmlns:vm3="clr-namespace:UPC.HRNPCI.DesktopApplication.ViewModels.AsociarPacienteFisioterapeuta"
         xmlns:vm4="clr-namespace:UPC.HRNPCI.DesktopApplication.ViewModels.ResultadosPacientesReportes"
         xmlns:vm5="clr-namespace:UPC.HRNPCI.DesktopApplication.ViewModels.RutasAlmacenamiento"
-        Title="HRNPCI" Height="698.477" Width="1200" FontWeight="Bold" FontFamily="Segoe UI Light" FontSize="18" Background="White" WindowStyle="None" ResizeMode="NoResize" WindowState="Maximized"
+        Title="HRNPCI" Height="698.477" Width="1200" FontWeight="Bold" FontFamily="Segoe UI Light" FontSize="18" Background="White" WindowStyle="ThreeDBorderWindow" ResizeMode="NoResize" WindowState="Normal"
         >
-    
+
     <Window.Resources>
         <DataTemplate x:Key="ListarFisioterapeutas">
             <v1:ListarFisioterapeutasView/>
@@ -56,11 +56,11 @@
         </Menu>
 
 
-        <TextBlock HorizontalAlignment="Right" Margin="0,0,7,2" VerticalAlignment="Center" Text="{Binding RolLogueado}" TextWrapping="Wrap" Height="28" Width="119" FontSize="18" Grid.Column="1" FontFamily="Segoe UI Semibold"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,3,10,43" VerticalAlignment="Center" Text="{Binding RolLogueado}" TextWrapping="Wrap" Height="28" Width="119" FontSize="18" Grid.Column="1" FontFamily="Segoe UI Semibold" Grid.RowSpan="2"/>
 
 
         <!--Tabs -->
-        <TabControl Margin="10,11,10,6" Grid.Row="1" FontWeight="Normal" FontFamily="Segoe UI Light" FontSize="16" Grid.ColumnSpan="2" Grid.RowSpan="2">
+        <TabControl x:Name="tcModuloAdmin"  Margin="10,11,10,6" Grid.Row="1" FontWeight="Normal" FontFamily="Segoe UI Light" FontSize="16" Grid.ColumnSpan="2" Grid.RowSpan="2">
             <TabItem DataContext="{Binding Children[0]}" x:Name="Tab1" Header="Fisioterapeutas" FontFamily="Segoe UI Light">
                 <ContentControl Content="{Binding}" ContentTemplate="{StaticResource ListarFisioterapeutas}" FontFamily="Segoe UI Light"  />
             </TabItem>
@@ -73,10 +73,10 @@
             <TabItem DataContext="{Binding Children[3]}" Header="Resultados de pacientes">
                 <ContentControl Content="{Binding}" ContentTemplate="{StaticResource ListaResultadosReportesPacientes}"/>
             </TabItem>
-            <TabItem DataContext="{Binding Children[4]}" Header="Rutas de almacenamiento">
+            <TabItem DataContext="{Binding Children[4]}" x:Name="Tab2" IsSelected="{Binding BlnSavePathNoExist}" Header="Rutas de Almacenamiento">
                 <ContentControl Content="{Binding}" ContentTemplate="{StaticResource RutasALmacenamiento}"/>
             </TabItem>
-            
+
         </TabControl>
 
 

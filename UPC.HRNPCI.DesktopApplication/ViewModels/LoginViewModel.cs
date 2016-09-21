@@ -27,9 +27,7 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels
     class LoginViewModel : BaseViewModel
     {
 
-
-         public event EventHandler CloseWindowEvent;
-
+        public event EventHandler CloseWindowEvent;
 
         string _UsuarioMensajeError;
         public string UsuarioMensajeError
@@ -67,18 +65,12 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels
         public object SelectedPerson { get; set; }
 
         public RelayCommand AceptarCommand { get; set; }
-       
-
 
         public LoginViewModel()
         {
-            
             AceptarCommand = new RelayCommand(ValidarUsuario);
             Usuario = "";
             CloseWindowFlag = false;
-
-
-
         }
 
        
@@ -88,11 +80,14 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels
 
             try
             {
+                
                 if (RutasConfiguracionDL.GetRutaFotos() != null)
                     RutasAlmacenamientoStatic.strRutaFotos = RutasConfiguracionDL.GetRutaFotos().vRutaEstatica;
                 if (RutasConfiguracionDL.GetRutaReportes() != null)
                     RutasAlmacenamientoStatic.strRutaReportes = RutasConfiguracionDL.GetRutaReportes().vRutaEstatica;
 
+
+                
                 PacienteStatic.kstrRutaFoto = RutasAlmacenamientoStatic.strRutaFotos;
                 FisioterapeutaStatic.kstrRutaFoto = RutasAlmacenamientoStatic.strRutaFotos;
 

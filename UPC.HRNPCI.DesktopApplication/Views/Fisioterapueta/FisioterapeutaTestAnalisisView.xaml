@@ -93,11 +93,11 @@
 
         <Button x:Name="btnEstadosAnalisis" Grid.Column="1" HorizontalAlignment="Left" Margin="101,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="75" Height="20" FontSize="11" Click="btnEstadosAnalisis_Click" Background="#FF007ACC" Foreground="White" FontFamily="Segoe UI Semibold"/>
 
-        <StackPanel  Margin="00,120,232,15" Width="300" Background="#f0f0f0" HorizontalAlignment="Right" Grid.Column="1" Grid.Row="2" >
+        <StackPanel  Margin="900,120,232,15" Width="300" Background="#f0f0f0" HorizontalAlignment="Right" Grid.Column="1" Grid.Row="2" >
             <TextBlock Text="Settings"  Padding="10" Background="#ccc" />
             <TextBlock Text="Min Umbral" Padding="10"/>
             <StackPanel  Orientation="Horizontal">
-                <Slider Width="250"  Minimum="0" Value="46"  Maximum="255" TickFrequency="1" IsSnapToTickEnabled="True" Interval="1" Margin="5"  x:Name="sliderMin" Padding="10"/>
+                <Slider Width="250"  Minimum="0" Value="160"  Maximum="255" TickFrequency="1" IsSnapToTickEnabled="True" Interval="1" Margin="5"  x:Name="sliderMin" Padding="10"/>
                 <TextBlock Text="{Binding Value, ElementName=sliderMin}" VerticalAlignment="Center" />
             </StackPanel>
 
@@ -109,13 +109,13 @@
 
             <TextBlock Text="Min reflective marker Size" Padding="10"/>
             <StackPanel Orientation="Horizontal">
-                <Slider Width="250" Minimum="1" Value="1" Maximum="16" Margin="5" x:Name="sliderMinSize"  TickFrequency="1" IsSnapToTickEnabled="True" Interval="1" Padding="10"/>
+                <Slider Width="250" Minimum="1" Value="3" Maximum="16" Margin="5" x:Name="sliderMinSize"  TickFrequency="1" IsSnapToTickEnabled="True" Interval="1" Padding="10"/>
                 <TextBlock Text="{Binding Value, ElementName=sliderMinSize}" VerticalAlignment="Center" />
             </StackPanel>
 
             <TextBlock Text="Max reflective marker Size" Padding="10"/>
             <StackPanel Orientation="Horizontal">
-                <Slider Width="250" Minimum="1" Value="77" Maximum="400" Margin="5" x:Name="sliderMaxSize"  TickFrequency="1" IsSnapToTickEnabled="True" Interval="1" Padding="10"/>
+                <Slider Width="250" Minimum="1" Value="77" Maximum="200" Margin="5" x:Name="sliderMaxSize"  TickFrequency="1" IsSnapToTickEnabled="True" Interval="1" Padding="10"/>
                 <TextBlock Text="{Binding Value, ElementName=sliderMaxSize}" VerticalAlignment="Center" />
             </StackPanel>
 
@@ -158,7 +158,7 @@
                 </Image.OpacityMask>
             </Image>
         </Button>
-        <TextBox x:Name="tbxResults" HorizontalAlignment="Left" Height="126" Margin="25,-100,0,-155" Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="247" Grid.Column="1"/>
+        <TextBox x:Name="tbxResults" HorizontalAlignment="Left" Height="126" Margin="145,60,0,-155" Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="247" Grid.Column="1"/>
         
         <!--
         <StatusBar Grid.Row="3" HorizontalAlignment="Stretch" Name="statusBar" VerticalAlignment="Bottom" Background="White" >

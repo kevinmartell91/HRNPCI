@@ -71,6 +71,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdministradorModel\AdministradorDL.cs" />
     <Compile Include="Class_MainConStr.cs" />
     <Compile Include="ConfiguracionModel\ConfiguracionB.cs" />
     <Compile Include="ConfiguracionModel\RutasConfiguracionDL.cs" />

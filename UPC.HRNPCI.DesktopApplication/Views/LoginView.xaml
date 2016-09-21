@@ -11,7 +11,7 @@
         WindowStartupLocation="CenterScreen"
         Height="768"
         Width="1366" BorderThickness="0" WindowStyle="None" FontFamily="Segoe UI Light" WindowState="Maximized" ResizeMode="NoResize" Icon="/UPC.HRNPCI.DesktopApplication;component/Resources/imagenes/login_icon.jpg" >
-    
+
     <Window.Resources>
         <vm:LoginViewModel x:Key="loginn" />
         <converters:IsBiggerThanConverter x:Key="IsBiggerThanConverter" />
@@ -57,6 +57,9 @@
         <Grid x:Name="Loading" Grid.Column="2" Margin="111,199,108,52" Grid.RowSpan="2">
             <control:LoadingAnimation HorizontalAlignment="Center" VerticalAlignment="Center" Height="116" Margin="9,5,19,17" Width="122" />
         </Grid>
+        <TextBlock  x:Name="lblChangePassword"  Margin="0,0,10,10" Text="Nueva Cuenta Admininistrador" TextWrapping="Wrap" FontSize="22" FontFamily="Segoe UI Semibold" Foreground="Red" HorizontalAlignment="Right" Width="322" MouseDown="lblChangePassword_MouseDown" Grid.Column="2" FontWeight="Bold" Height="30" VerticalAlignment="Bottom"/>
+        <Button HorizontalAlignment="Left" Margin="40,10,0,5" Width="259" Content="Crear" Grid.Row="4"  FontSize="34" IsDefault="True"  TabIndex="2" 
+        	x:Name="btnCrearCuentaAdmin"  CommandParameter="{Binding ElementName=pbContrasena}" Click="btnCrearCuentaAdmin_Click" BorderThickness="1" Grid.Column="2" Background="White" />
     </Grid>
-    
+
 </Window>

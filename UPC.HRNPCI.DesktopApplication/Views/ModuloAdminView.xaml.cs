@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using UPC.HRNPCI.DesktopApplication.ViewModels.Fisioterapueta;
+using UPC.HRNPCI.Model.ConfiguracionModel;
 
 namespace UPC.HRNPCI.DesktopApplication.Views
 {
@@ -27,14 +28,12 @@ namespace UPC.HRNPCI.DesktopApplication.Views
 
         private void MenuItem_Checked_1(object sender, RoutedEventArgs e)
         {
-           
         }
 
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)
         {
             if (MessageBoxResult.Yes == MessageBox.Show("¿Está seguro que desea cerrar la sesión?", "Cerrar sessión", MessageBoxButton.YesNo))
             {
-                
                 this.Close();
             }
         }

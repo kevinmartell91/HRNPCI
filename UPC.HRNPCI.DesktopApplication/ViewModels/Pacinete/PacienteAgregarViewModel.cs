@@ -231,9 +231,8 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Pacinete
                 paciente.vTelefonoApoderado = strTelefonoApod;
                 paciente.vParentescoApoderado = strParentescoApod;
                 paciente.vEdadCronologicaPaciente = strEdadCronologica;
-                paciente.vUrlFotoPaciente = strUrlFotoPaciente;
+                paciente.vUrlFotoPaciente = GuardarImagenCargada();
 
-                GuardarImagenCargada();
                 paciente.iFlagBorrradoPaciente = 0;
                 paciente.iFlagFisioAsigPaciente = 0;
 
@@ -276,6 +275,10 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Pacinete
                     strExtension = ofdImage.DefaultExt;
 
                 }
+                else
+                {
+                    // This prevents a crash when you close out of the window with nothing
+                }
             }
             catch (Exception ex)
             {
@@ -284,7 +287,7 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Pacinete
 
         }
 
-        private void GuardarImagenCargada()
+        private string GuardarImagenCargada()
         {
             //string strNombreFoto = DateTime.Now.ToString() + "_" + Apellidos + "_" + Nombre;
             try
@@ -295,7 +298,7 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Pacinete
                 FileInfo fileInfo = new FileInfo(strDestino);
                 if (!fileInfo.Exists && strExtension != null)
                     File.Copy(strUrlFotoPaciente, strDestino);
-                return;
+                return strDestino;
             }
             catch (Exception ex)
             {

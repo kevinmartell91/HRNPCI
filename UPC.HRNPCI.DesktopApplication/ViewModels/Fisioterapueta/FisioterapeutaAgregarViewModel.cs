@@ -229,10 +229,10 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Fisioterapueta
                 Random r = new Random();
                 f.vContrasenaFisioterapeuta = r.Next(1000,10000).ToString();
                 f.cGenero = Sexo.ToString();
-                f.vUrlFotoFosioterapeuta = UrlFoto;
+               
                 f.iFlagBorradoFisioterapeuta= 0;
 
-                GuardarImagenCargada();
+                f.vUrlFotoFosioterapeuta = GuardarImagenCargada();
 
                 if (FisioterapeutaDL.GuardarFisiotaerapeuta(f))
                 {
@@ -240,6 +240,7 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Fisioterapueta
                     ListarFisioterapeutasViewModel.Instance().ListaFisioterapeutas.Add(businesssObject.ObtenerFisioterapeutaCRUD(f));
                     
                     MessageBox.Show("El fisioterapuesta ha sido registrado.");
+                
                 }
 
             }
@@ -263,11 +264,15 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Fisioterapueta
                 UrlFoto = ofdImage.FileName;
                 strExtension = ofdImage.DefaultExt;
                 
-            }  
+            }
+            else
+            {
+                // This prevents a crash when you close out of the window with nothing
+            }
             
         }
         
-        private void GuardarImagenCargada()
+        private string GuardarImagenCargada()
         {
             //string strNombreFoto = DateTime.Now.ToString() + "_" + Apellidos + "_" + Nombre;
             try
@@ -278,7 +283,7 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Fisioterapueta
                 FileInfo fileInfo = new FileInfo(strDestino);
                 if (!fileInfo.Exists && strExtension != null)
                     File.Copy(UrlFoto, strDestino);
-                return;
+                return strDestino;
             }
             catch (Exception ex)
             {

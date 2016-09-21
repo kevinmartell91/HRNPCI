@@ -17,6 +17,8 @@ using UPC.HRNPCI.Model;
 using UPC.HRNPCI.DesktopApplication.ViewModels.RutasAlmacenamiento;
 using Microsoft.Win32;
 using System.IO;
+using UPC.HRNPCI.DesktopApplication.ViewModels.Pacinete;
+using UPC.HRNPCI.DesktopApplication.ViewModels.Fisioterapueta;
 
 namespace UPC.HRNPCI.DesktopApplication.Views.RutasAlmacenamiento
 {
@@ -34,6 +36,12 @@ namespace UPC.HRNPCI.DesktopApplication.Views.RutasAlmacenamiento
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            if (txtRutaReportes.Text.Trim() == "" || txtRutaFotos.Text.Trim() == "")
+            {
+                MessageBox.Show("Debe especificar las rutas de almacenamiento","Advertencia",MessageBoxButton.OK,MessageBoxImage.Exclamation);
+                return;
+            }
+
             //gruardar rutas de Fotos
             ConfiguracionB conf = new ConfiguracionB();
             conf.iCodigoConfiguracion = 1;
@@ -45,9 +53,9 @@ namespace UPC.HRNPCI.DesktopApplication.Views.RutasAlmacenamiento
 
             //if (RutasAlmacenamientoStatic.strRutaFotos == "")
            // {
-                if (RutasConfiguracionDL.GetRutaFotos() != null)
+            if (RutasConfiguracionDL.GetRutaFotos() != null)//update
                     blnfotos = RutasConfiguracionDL.GuardarConfiguracion(conf, 1);
-                else
+                else //create
                     blnfotos = RutasConfiguracionDL.GuardarConfiguracion(conf, 0);
 
             //}
@@ -65,20 +73,22 @@ namespace UPC.HRNPCI.DesktopApplication.Views.RutasAlmacenamiento
 
             //if (RutasAlmacenamientoStatic.strRutaReportes == "")
             //{
-                if (RutasConfiguracionDL.GetRutaReportes() != null)
+                if (RutasConfiguracionDL.GetRutaReportes() != null) //update
                     blnRportes = RutasConfiguracionDL.GuardarConfiguracion(conf1, 1);
-                else
+                else //create
                     blnRportes = RutasConfiguracionDL.GuardarConfiguracion(conf1, 0);
             //}
             //else
                 //blnRportes = RutasConfiguracionDL.GuardarConfiguracion(conf1, 1);
 
-
-
-
-
             if (blnfotos == blnRportes == true)
             {
+                RutasAlmacenamientoStatic.strRutaFotos = txtRutaFotos.Text;
+                RutasAlmacenamientoStatic.strRutaReportes =  txtRutaReportes.Text ;
+
+                PacienteStatic.kstrRutaFoto = RutasAlmacenamientoStatic.strRutaFotos;
+                FisioterapeutaStatic.kstrRutaFoto = RutasAlmacenamientoStatic.strRutaFotos;
+
                 MessageBox.Show("Se guardaron satisfactoriamente las configuraciones");
             }
             else
