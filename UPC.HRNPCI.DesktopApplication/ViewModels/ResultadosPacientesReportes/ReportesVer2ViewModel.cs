@@ -19,6 +19,8 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.ResultadosPacientesReportes
         public string strNombreUnidad { get; set; }
         public string strNivel { get; set; }
         public string strNivelPorcentaje { get; set; }
+        public string strFecResultadoUno { get; set; }
+        public string strFecResultadoDos { get; set; }
 
         public ReportesVer2ViewModel()
         { 

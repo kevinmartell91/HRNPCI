@@ -77,12 +77,13 @@
             </ScrollViewer>
         </Border>
 
-        <Image Source="..\..\Resources\imagenes\gait_phases_colors_percentage.jpg" Stretch="Fill" Margin="27,242,0,0" Height="48" VerticalAlignment="Top" Grid.Column="1" Grid.Row="4" HorizontalAlignment="Left" Width="214"/>
+        <Image Source="..\..\Resources\imagenes\gait_phases_colors_percentage.jpg" Stretch="Fill" Margin="15,242,5,0" Height="48" VerticalAlignment="Top" Grid.Column="1" Grid.Row="4"/>
 
         <Button Content="Cancelar" Name="btnCancelar" Margin="0,11,31,0" Grid.Row="5" VerticalAlignment="Top" Height="20" Grid.Column="4" HorizontalAlignment="Right" Width="75" Click="btnCancelar_Click" />
-        <Image Source="..\..\Resources\imagenes\gait_phases_colors_percentage.jpg" Stretch="Fill" Margin="35,242,46,0" Height="48" VerticalAlignment="Top" Grid.Column="3" Grid.Row="4" Grid.ColumnSpan="2"/>
+        <Image Source="..\..\Resources\imagenes\gait_phases_colors_percentage.jpg" Stretch="Fill" Margin="26,242,31,0" Height="48" VerticalAlignment="Top" Grid.Column="3" Grid.Row="4" Grid.ColumnSpan="2"/>
         <!--<GroupBox Grid.Column="1" Header="Descripción de Gráficas" HorizontalAlignment="Left" Margin="26,319,0,0" Grid.Row="6" VerticalAlignment="Top" Grid.ColumnSpan="4" Height="122" Width="488"/>
-       --> <Button Content="Exportar PDF" x:Name="btnExportarPDF" Margin="0,11,126,0" Grid.Row="5" VerticalAlignment="Top" Height="20" Grid.Column="3" HorizontalAlignment="Right" Width="82"  Grid.ColumnSpan="2" Click="btnExportarPDF_Click" />
+       -->
+        <Button Content="Exportar PDF" x:Name="btnExportarPDF" Margin="0,11,126,0" Grid.Row="5" VerticalAlignment="Top" Height="20" Grid.Column="3" HorizontalAlignment="Right" Width="82"  Grid.ColumnSpan="2" Click="btnExportarPDF_Click" />
         <TextBlock Margin="103,24,0,0" TextWrapping="Wrap" Text="Rodilla Derecha" VerticalAlignment="Top" Height="16" Grid.Row="3" Grid.Column="3" HorizontalAlignment="Left" Width="89" Grid.ColumnSpan="2"/>
         <TextBlock Margin="81,24,0,0" TextWrapping="Wrap" Text="Rodilla Izquierda " VerticalAlignment="Top" Height="16" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" Width="92"/>
 

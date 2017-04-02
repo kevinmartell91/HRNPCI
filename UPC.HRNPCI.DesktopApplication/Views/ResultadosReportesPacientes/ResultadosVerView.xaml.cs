@@ -233,6 +233,14 @@ namespace UPC.HRNPCI.DesktopApplication.Views.ResultadosReportesPacientes
         {
             canvas.Children.Clear();
 
+            Brush colorSide;
+            if (FisioterapeutaStatic.strLateralidad == "Izquierda")
+                colorSide = Brushes.Red;
+            else
+                colorSide = Brushes.Blue;
+ 
+            
+
             System.Windows.Point[] points = curve();
             if (points.Length < 2)
                 return;
@@ -265,7 +273,7 @@ namespace UPC.HRNPCI.DesktopApplication.Views.ResultadosReportesPacientes
             }
             PathFigure f = new PathFigure(points[0], lines, false);
             PathGeometry g = new PathGeometry(new PathFigure[] { f });
-            System.Windows.Shapes.Path path = new System.Windows.Shapes.Path() { Stroke = System.Windows.Media.Brushes.Red, StrokeThickness = 1.2, Data = g };
+            System.Windows.Shapes.Path path = new System.Windows.Shapes.Path() { Stroke = colorSide, StrokeThickness = 1.2, Data = g };
             canvas.Children.Add(path);
 
             // Draw Bezier control points markers
@@ -930,6 +938,7 @@ namespace UPC.HRNPCI.DesktopApplication.Views.ResultadosReportesPacientes
             #endregion
 
             lstAngles = FisioterapeutaStatic.getAngles(1);
+
 
             PointCount = lstAngles.Count;
                 

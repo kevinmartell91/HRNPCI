@@ -26,24 +26,29 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.ResultadosPacientesReportes
             ObservableCollection<ReporteBean> ocltnReporteBeans = ReporteDL.ListarReportesPaciente();
             if(ocltnReporteBeans != null)
             {
-                foreach (var resultadosBean in ocltnReporteBeans)
+                foreach (var reportesBean in ocltnReporteBeans)
                 {
                     ReportesCRViewModel rvm = new ReportesCRViewModel();
 
-                    rvm.iCodigoReporte = resultadosBean.iCodigoReporte;
-                    rvm.iCodigoPaciente = resultadosBean.iCodigoPaciente;
-                    rvm.iCodigoTipoReporte = resultadosBean.iCodigoTipoReporte;
-                    rvm.strNombreTipoReporte = resultadosBean.strNombreTipoReporte;
-                    rvm.strFecReportePaciente = resultadosBean.strFecReportePaciente;
-                    rvm.strNombresPaciente = resultadosBean.strNombresPaciente;
-                    rvm.strApellidosPaciente = resultadosBean.strApellidosPaciente;
+                    rvm.iCodigoReporte = reportesBean.iCodigoReporte;
+                    rvm.iCodigoPaciente = reportesBean.iCodigoPaciente;
+                    rvm.iCodigoTipoReporte = reportesBean.iCodigoTipoReporte;
+                    rvm.strNombreTipoReporte = reportesBean.strNombreTipoReporte;
+                    rvm.strFecReportePaciente = reportesBean.strFecReportePaciente;
+                    rvm.strNombresPaciente = reportesBean.strNombresPaciente;
+                    rvm.strApellidosPaciente = reportesBean.strApellidosPaciente;
                     //sacarlos angulos pocodigo
-                    rvm.iCodigoDetalleReporte = resultadosBean.iCodigoDetalleReporte;
+                    rvm.iCodigoDetalleReporte = reportesBean.iCodigoDetalleReporte;
 
-                    rvm.strListaAngulosUno = resultadosBean.ObtenerListaAngulos(1);
-                    rvm.strListaAngulosDos = resultadosBean.ObtenerListaAngulos(2);
-                    rvm.strUnidadPaciente = resultadosBean.strUnidadPaciente;
-                    rvm.strLateralidadPaciente = resultadosBean.strLateralidadPaciente;
+                    rvm.strListaAngulosUno = reportesBean.ObtenerListaAngulos(1);
+                    rvm.strListaAngulosDos = reportesBean.ObtenerListaAngulos(2);
+
+                    rvm.strFecResultadoUno = reportesBean.strFecResultadoUno;
+                    rvm.strFecResultadoDos = reportesBean.strFecResultadoDos;
+
+                    rvm.strFecReportePaciente = reportesBean.strFecReportePaciente;
+                    rvm.strUnidadPaciente = reportesBean.strUnidadPaciente;
+                    rvm.strLateralidadPaciente = reportesBean.strLateralidadPaciente;
 
                     ocltnResultadosR.Add(rvm);
                 }
@@ -58,24 +63,26 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.ResultadosPacientesReportes
             ObservableCollection<ReporteBean> ocltnReporteBeans = ReporteDL.BusquedaReportes(iCodigoPaciente, iCodigoReporte, dtFecReportePacienteLimInf, dtFecReportePacienteLimSup);
             if (ocltnReporteBeans != null)
             {
-                foreach (var resultadosBean in ocltnReporteBeans)
+                foreach (var reportesBean in ocltnReporteBeans)
                 {
                     ReportesCRViewModel rvm = new ReportesCRViewModel();
 
-                    rvm.iCodigoReporte = resultadosBean.iCodigoReporte;
-                    rvm.iCodigoPaciente = resultadosBean.iCodigoPaciente;
-                    rvm.iCodigoDetalleReporte = resultadosBean.iCodigoDetalleReporte;
-                    rvm.iCodigoTipoReporte = resultadosBean.iCodigoTipoReporte;
-                    rvm.strNombreTipoReporte = resultadosBean.strNombreTipoReporte;
-                    rvm.strFecReportePaciente = resultadosBean.strFecReportePaciente;
-                    rvm.strNombresPaciente = resultadosBean.strNombresPaciente;
-                    rvm.strApellidosPaciente = resultadosBean.strApellidosPaciente;
+                    rvm.iCodigoReporte = reportesBean.iCodigoReporte;
+                    rvm.iCodigoPaciente = reportesBean.iCodigoPaciente;
+                    rvm.iCodigoDetalleReporte = reportesBean.iCodigoDetalleReporte;
+                    rvm.iCodigoTipoReporte = reportesBean.iCodigoTipoReporte;
+                    rvm.strNombreTipoReporte = reportesBean.strNombreTipoReporte;
+                    rvm.strFecReportePaciente = reportesBean.strFecReportePaciente;
+                    rvm.strNombresPaciente = reportesBean.strNombresPaciente;
+                    rvm.strApellidosPaciente = reportesBean.strApellidosPaciente;
 
 
-                    rvm.strListaAngulosUno = resultadosBean.ObtenerListaAngulos(1);
-                    rvm.strListaAngulosDos = resultadosBean.ObtenerListaAngulos(2);
-                    rvm.strUnidadPaciente = resultadosBean.strUnidadPaciente;
-                    rvm.strLateralidadPaciente = resultadosBean.strLateralidadPaciente;
+                    rvm.strListaAngulosUno = reportesBean.ObtenerListaAngulos(1);
+                    rvm.strListaAngulosDos = reportesBean.ObtenerListaAngulos(2);
+                    rvm.strFecReportePaciente = reportesBean.strFecReportePaciente;
+
+                    rvm.strUnidadPaciente = reportesBean.strUnidadPaciente;
+                    rvm.strLateralidadPaciente = reportesBean.strLateralidadPaciente;
 
                     ocltnResultadosR.Add(rvm);
                 }

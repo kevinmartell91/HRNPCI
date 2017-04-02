@@ -81,7 +81,8 @@ namespace UPC.HRNPCI.DesktopApplication.Helpers
                 iTextSharp.text.Image PNG = iTextSharp.text.Image.GetInstance(rutafoto);
                     //PNG.ScaleAbsolute(new Rectangle(200, 200, 200, 200));
                     doc.Add(PNG);
-                
+                //Delete the extra photo generated
+                File.Delete(rutafoto);
 
                 //doc.Add(paragraph);
 

@@ -27,7 +27,7 @@
 
         </Grid.RowDefinitions>
 
-        <TextBlock Margin="12,4,0,0" TextWrapping="Wrap" Text="Paciente :" Grid.Column="1" HorizontalAlignment="Left" Width="78" FontWeight="Bold" FontSize="16" Grid.Row="1" Height="23" VerticalAlignment="Top"/>
+        <TextBlock Margin="12,4,0,0" TextWrapping="Wrap" Text="Paciente " Grid.Column="1" HorizontalAlignment="Left" Width="78" FontWeight="Bold" FontSize="16" Grid.Row="1" Height="23" VerticalAlignment="Top"/>
         <!-- Paciente -->
         <TextBlock Margin="24,4,0,0" TextWrapping="Wrap" Text="Nombres :" VerticalAlignment="Top" Height="16" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" Width="64"/>
         <TextBlock Margin="83,4,0,0" TextWrapping="Wrap" Text="{Binding strNombresPaciente}" VerticalAlignment="Top" Height="16" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" Width="121"/>
@@ -39,7 +39,7 @@
         <TextBlock Margin="84,3,0,0" TextWrapping="Wrap" Text="{Binding strNivelPorcentaje}" VerticalAlignment="Top" Height="16" Grid.Column="4" Grid.Row="2" RenderTransformOrigin="0.619,0.586" HorizontalAlignment="Left" Width="55"/>
 
         <!-- Plano Sagital -->
-        <TextBlock Margin="12,5,0,0" TextWrapping="Wrap" Text="Planto Sagital :" VerticalAlignment="Top" Height="23" Grid.Column="1" HorizontalAlignment="Left" Width="135" FontWeight="Bold" FontSize="16" Grid.Row="3"/>
+        <TextBlock Margin="12,5,0,0" TextWrapping="Wrap" Text="Planto Sagital " VerticalAlignment="Top" Height="23" Grid.Column="1" HorizontalAlignment="Left" Width="135" FontWeight="Bold" FontSize="16" Grid.Row="3"/>
         <TextBlock Margin="24,4,0,0" TextWrapping="Wrap" Text="Lateralidad :" VerticalAlignment="Top" Height="16" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left" Width="59"/>
         <TextBlock Margin="102,4,0,0" TextWrapping="Wrap" Text="{Binding strNombreLateralidad}" VerticalAlignment="Top" Height="16" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left" Width="59"/>
 
@@ -47,10 +47,10 @@
         <TextBlock Margin="44,4,0,0" TextWrapping="Wrap" Text="{Binding strNombreUnidad}" VerticalAlignment="Top" Height="16" Grid.Column="3" Grid.Row="4" HorizontalAlignment="Left" Width="48"/>
 
         <!-- Grafica -->
-        <TextBlock Margin="12,5,0,0" TextWrapping="Wrap" Text="Gráfica (t vs. θ) :" VerticalAlignment="Top" Height="23" Grid.Column="1" HorizontalAlignment="Left" Width="142" FontWeight="Bold" FontSize="16" Grid.Row="5"/>
+        <TextBlock Margin="12,5,0,0" TextWrapping="Wrap" Text="Gráfica (t vs. θ) " VerticalAlignment="Top" Height="23" Grid.Column="1" HorizontalAlignment="Left" Width="142" FontWeight="Bold" FontSize="16" Grid.Row="5"/>
 
-        <TextBlock Margin="169,27,0,0" TextWrapping="Wrap" Text="Fecha :" VerticalAlignment="Top" Height="16" Grid.Column="1" Grid.Row="5" HorizontalAlignment="Left" Width="70" Grid.ColumnSpan="2"/>
-        <TextBlock Margin="20,28,0,0" TextWrapping="Wrap" Text="{Binding strFecAnalisisPaciente}" VerticalAlignment="Top" Height="16" Grid.Column="2" Grid.Row="5" HorizontalAlignment="Left" Width="127" Grid.ColumnSpan="2"/>
+        <TextBlock Margin="11,10,0,21" TextWrapping="Wrap" Grid.Column="2" Grid.Row="5" HorizontalAlignment="Left" Width="102" Grid.ColumnSpan="2"><Run Language="es-pe" Text="Fecha de análisis : creado :"/></TextBlock>
+        <TextBlock Margin="0,12,32,19" TextWrapping="Wrap" Text="{Binding strFecAnalisisPaciente}" Grid.Column="4" Grid.Row="5" HorizontalAlignment="Right" Width="106"/>
 
         <Border BorderBrush="LightBlue" BorderThickness="5" Margin="27,8,0,0" Height="356" Width="470" Grid.Column="1" Grid.Row="6" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.ColumnSpan="4" Grid.RowSpan="1">
             <Border.Background>
@@ -65,7 +65,7 @@
             </ScrollViewer>
         </Border>
 
-        <Image Source="..\..\Resources\imagenes\gait_phases_colors_percentage.jpg" Stretch="Fill" Margin="63,365,76,0" Height="83" VerticalAlignment="Top" Grid.Column="1" Grid.Row="6" Grid.ColumnSpan="4" Grid.RowSpan="2"/>
+        <Image Source="..\..\Resources\imagenes\gait_phases_colors_percentage.jpg" Stretch="Fill" Margin="68,365,76,0" Height="83" VerticalAlignment="Top" Grid.Column="1" Grid.Row="6" Grid.ColumnSpan="4" Grid.RowSpan="2"/>
 
         <Button Content="Cancelar" Name="btnCancelar" Margin="0,11,31,0" Grid.Row="7" VerticalAlignment="Top" Height="20" Grid.Column="4" HorizontalAlignment="Right" Width="75" Click="btnCancelar_Click" />
 

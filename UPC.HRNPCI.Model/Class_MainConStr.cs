@@ -20,7 +20,7 @@ namespace UPC.HRNPCI.Model
                 InternetChecker.UploadFileToFTP(System.IO.Path.Combine(Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location), "HRNPCIData.sdf"));
 
                 //WebRequestGetExample.Main();
-                res = "Se realizó el backup con existo";
+                res = "Se realizó la copia de respaldo con éxito.";
             }
             return res;
         }
@@ -66,7 +66,8 @@ namespace UPC.HRNPCI.Model
             }
             catch (Exception ex)
             {
-                throw ex;
+                //throw ex;
+                return;
             }
         }
 

@@ -23,6 +23,9 @@ namespace UPC.HRNPCI.Model.ResultadosReportesPaciente
         public string strListaAngulosUno { set; get; }
         public string strListaAngulosDos { set; get; }
 
+        public string strFecResultadoUno { get; set; }
+        public string strFecResultadoDos { get; set; }
+
         public List<double> ObtenerListaAngulos(int p)
         {
             //split comas, recorrer uno por uno

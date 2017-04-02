@@ -101,6 +101,9 @@ namespace UPC.HRNPCI.Model.ResultadosReportesPaciente
 
                     ResultadoB resultadoUno = ResultadoDL.ObtenerResultadoCodigo((int)rd.iCodigoResultadoUno);
                     ResultadoB resultadoDos = ResultadoDL.ObtenerResultadoCodigo((int)rd.iCodigoResultadoDos);
+                    //add the two dates from each resultados 1 y 2
+                    reporteBean.strFecResultadoUno = (resultadoUno.dtFecAnalisisPaciente).ToString();
+                    reporteBean.strFecResultadoDos = (resultadoDos.dtFecAnalisisPaciente).ToString();
                     reporteBean.strListaAngulosUno = resultadoUno.vListaAngulos.ToString();
                     reporteBean.strListaAngulosDos = resultadoDos.vListaAngulos.ToString();
                     reporteBean.strUnidadPaciente = "Rodilla";

@@ -31,6 +31,8 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.Fisioterapueta
         public static bool blnLateralidad = false;
         public static bool blnGuardar = false;
 
+        public static string strLateralidad = "";
+
         //public static FisioterapeutaStatic Instance()
         //{
         //    if (instance == null)

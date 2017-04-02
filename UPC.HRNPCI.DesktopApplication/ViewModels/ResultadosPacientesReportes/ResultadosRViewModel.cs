@@ -112,6 +112,7 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.ResultadosPacientesReportes
             fvm.strNombreUnidad = strNombreUnidad;
             fvm.strFecAnalisisPaciente = strFecAnalisisPaciente;
             FisioterapeutaStatic.setAngles(strListaAngulos,1);
+            FisioterapeutaStatic.strLateralidad = strNombreLateralidad;
             fvm.strListaAngulos = strListaAngulos;
 
 

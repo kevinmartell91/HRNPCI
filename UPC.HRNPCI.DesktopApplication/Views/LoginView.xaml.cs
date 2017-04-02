@@ -55,7 +55,7 @@ namespace UPC.HRNPCI.DesktopApplication.Views
 
             //Validate if admin user exist
             blnUserAdminExist = AdministradorDL.UserAdminExist();
-            if (blnUserAdminExist)
+            if (!blnUserAdminExist)
             {
                 btnLogin.Visibility = System.Windows.Visibility.Hidden;
                 btnCancel.Visibility = System.Windows.Visibility.Hidden;
@@ -94,7 +94,8 @@ namespace UPC.HRNPCI.DesktopApplication.Views
 
         private void worker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-            System.Windows.Forms.MessageBox.Show(mensajeBuckup);
+            System.Windows.Forms.MessageBox.Show(mensajeBuckup, "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             this.Close();
         }
 

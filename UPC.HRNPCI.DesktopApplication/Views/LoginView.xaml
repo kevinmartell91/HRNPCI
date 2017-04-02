@@ -44,7 +44,7 @@
                       x:Name="pbContrasena"/>
         <Button HorizontalAlignment="Left" Margin="49,8,0,7" Width="259" Content="Ingresar" Grid.Row="4"  FontSize="34" IsDefault="True"  TabIndex="2" 
                 x:Name="btnLogin" Command="{Binding AceptarCommand}"  CommandParameter="{Binding ElementName=pbContrasena}" Click="btnLogin_Click" BorderThickness="1" Grid.Column="1" Grid.ColumnSpan="2" Background="White" />
-        <Button Margin="80,8,34,7" Content="Cancel" Grid.Column="2" Grid.Row="4"  FontSize="34" IsCancel="True" TabIndex="3" 
+        <Button Margin="80,8,34,7" Content="Salir" Grid.Column="2" Grid.Row="4"  FontSize="34" IsCancel="True" TabIndex="3" 
                 x:Name="btnCancel" Command="{Binding CancelarCommand}" Click="btnCancel_Click" Background="White" BorderThickness="1"/>
         <TextBlock HorizontalAlignment="Left" Margin="3,13,0,17" Grid.Row="1" TextWrapping="Wrap"
                    Text="{Binding UsuarioMensajeError}" Width="8" Grid.Column="3" Grid.RowSpan="2" />

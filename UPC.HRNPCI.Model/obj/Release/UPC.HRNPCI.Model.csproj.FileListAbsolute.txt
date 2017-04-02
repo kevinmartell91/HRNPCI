@@ -1,5 +1,0 @@
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.Model\bin\Release\UPC.HRNPCI.Model.dll.config
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.Model\bin\Release\UPC.HRNPCI.Model.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.Model\bin\Release\UPC.HRNPCI.Model.pdb
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.Model\obj\Release\UPC.HRNPCI.Model.dll
-D:\kevin\kevin\PRESENTACION_PARCIAL\HRNPCI - Upgrade\UPC.HRNPCI.Model\obj\Release\UPC.HRNPCI.Model.pdb

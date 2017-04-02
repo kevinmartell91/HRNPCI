@@ -41,6 +41,8 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.ResultadosPacientesReportes
         public string strApellidosPaciente { get; set; }
         public List<double> strListaAngulosUno { get; set; } //Derecho
         public List<double> strListaAngulosDos { get; set; } //Izquierdo
+        public string strFecResultadoUno { get; set; }
+        public string strFecResultadoDos { get; set; }
         public string strUnidadPaciente { get; set; }
         public string strLateralidadPaciente { get; set; }
 
@@ -187,7 +189,9 @@ namespace UPC.HRNPCI.DesktopApplication.ViewModels.ResultadosPacientesReportes
                     rv2vm.strNivelPorcentaje = paciente2.iPorcentajeNivelPaciente.ToString();
                     rv2vm.strNombreLateralidadDerecha = strLateralidadPaciente;
                     rv2vm.strNombreUnidad = strUnidadPaciente;
-                    //rv2vm.strFecAnalisisPaciente = ((DateTime)paciente2.daFecNacPaciente).Date.ToString();
+                    rv2vm.strFecAnalisisPaciente = strFecReportePaciente;
+                    rv2vm.strFecResultadoUno = strFecResultadoUno;
+                    rv2vm.strFecResultadoDos = strFecResultadoDos;
                     FisioterapeutaStatic.setAngles(strListaAngulosUno, 1);
                     FisioterapeutaStatic.setAngles(strListaAngulosDos, 2);
                     //rv2vm.strListaAngulos = strListaAngulos;
